@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.footer {
+    background-color:$green;
+    padding: rem(48) rem(15)  rem(56);
+    @include mq(md) {
+        padding: rem(80) rem(252) rem(80) rem(180);
+    }
+}
+
+.footer-link {
+    @include mq(md) {
+    display: flex;
+    }
+}
+.footer-logo {
+    width: rem(120);
+    @include mq(md) {
+    width: rem(200);
+}
+}
+.footer-sns__items {
+    display: flex;
+}
+
+.sns {
+    width:rem(32);
+}
+
+.instagram {
+    margin-left:rem(16);
+
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top:  rem(40);
+    color: $white;
+    font-family: $english-family;
+    font-size:  rem(10);
+    font-weight: $normal;
+    line-height: 1;
+    letter-spacing: 0.06em;
+}
