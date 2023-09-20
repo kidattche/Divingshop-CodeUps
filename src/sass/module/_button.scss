@@ -1,0 +1,71 @@
+@use "global" as *;
+
+
+.button-box {
+    text-align: center;
+}
+.button {
+    background: $green;
+    border: 2px solid $green;
+    color: #fff;
+    display: block;
+    font-weight: $normal;
+    max-width: rem(202);
+    padding: 16px 88px 16px 40px;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+
+}
+
+.button-text {
+    color: $white;
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: 1;
+}
+
+.button-arrow {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-arrow:after {
+    background-image: url(/src/images/common/button-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100%;
+    width: 2.5rem;
+    position: absolute;
+
+}
+
+.button.slide {
+    background:$green;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+.button.slide::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+  }
+.button.slide:hover {
+    color: #fff;
+  }
+.button.slide:hover::after {
+    transform: scale(1, 1);
+  }
