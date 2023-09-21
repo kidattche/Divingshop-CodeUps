@@ -1,0 +1,87 @@
+@use "global" as *;
+
+
+//sns//
+.sp-nav__logo {
+    width:rem(120);
+}
+
+
+
+//nav//
+
+.sp-nav {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $green;
+    padding: rem(21) rem(15)  rem(111);
+    
+}
+.sp-nav.is-active {
+    display: block;
+}
+
+// sp-nav
+.sp-nav-container {
+    display: flex;
+    margin-bottom:rem(111);
+}
+
+.sp-nav__items--wrap {
+    width: 50%;
+}
+
+.sp-nav__items {
+
+}
+.sp-nav__item {
+    position:relative;
+}
+.sp-nav__item a {
+    font-family: $base-font-family;
+    line-height: calc(18 / 16 );
+    font-weight: $bold;
+    color: $white;
+    margin-top:rem(40);
+    font-size: 1rem;
+    display: flex;
+   
+}
+
+.sp-nav__item a::before {
+    content: '';
+    display: inline-block;
+    width: rem(22);/*画像の幅*/
+    height: rem(18);/*画像の高さ*/
+    background-image: url(http://localhost:3000/assets/images/common/hitode.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    vertical-align: middle;
+
+
+}
+.sp-nav__subitem a::before {
+    content:none;
+}
+
+.sp-nav__subitems {
+    margin-left:rem(18);
+}
+
+.sp-nav__subitem {
+    
+}
+.sp-nav__subitem a {
+    font-family: $base-font-family;
+    line-height: calc(18 / 16 );
+    font-weight: $normal;
+    color: $white;
+    margin-top:rem(24);
+}
+
