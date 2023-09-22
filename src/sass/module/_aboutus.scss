@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.aboutus {
+    padding: 0 rem(15)rem(70);
+
+}
+
+.aboutus__inner {
+    @include mq(md){
+    width: rem(1080);
+    margin-inline:auto;
+}
+}
+.l-inner {
+
+}
+
+.aboutus__content {
+    margin-top: rem(26);
+}
+.aboutus__images {
+    display: flex;
+    position: relative;
+}
+
+.aboutus-left {
+    width: rem(128);
+    z-index:-1;
+    @include mq(md){
+    width: rem(606);
+    }
+}
+
+.aboutus__img--left {
+
+}
+
+.aboutus-right{
+    width: rem(281);
+    z-index: -9999;
+    margin-top: rem(26);
+    position: absolute;
+    right:0;
+    @include mq(md){
+        width: rem(880);
+        margin-top: rem(80);
+    }
+}
+
+.aboutus__text-body {
+    margin-top:rem(40);
+}
+
+.about-title {
+    font-size: rem(40);
+    font-family: $english-family;
+    color: $green;
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+
+.about-contents {
+    margin-top: rem(16);
+}
+
+.about-content {
+
+}
+
+.button-box {
+    margin-top: rem(50);
+}
+
+.button {
+
+}
+
+.button-arrow {
+
+}
+
+.button__line-f {
+
+}
+
+.button__line-s {
+
+}
+

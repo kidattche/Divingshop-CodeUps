@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.information {
+    background-color: $lightgreen;
+    padding:rem(80) rem(15) rem(80)
+}
+
+.information__inner {
+    width:rem(1080);
+    margin-inline: auto;
+}
+
+.l-inner {
+
+}
+
+
+.information-container {
+    margin-top: rem(26);
+    display: flex;
+    gap:rem(40);
+}
+
+.information-img {
+
+}
+
+.information__text-body {
+    margin-top: rem(24);
+}
+
+.infomation-title {
+    border-bottom: solid 1px $green;
+}
+
+.infomation-contents {
+    margin-top: rem(8);
+}
+
+.infomation-content {
+
+}
+
+.button-box {
+
+}
+
+.button {
+
+}
+
+.button-arrow {
+
+}
+
+.button__line-f {
+
+}
+
+.button__line-s {
+
+}
+
