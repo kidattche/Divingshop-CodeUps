@@ -2,12 +2,17 @@
 
 .information {
     background-color: $lightgreen;
-    padding:rem(80) rem(15) rem(80)
+    padding:rem(80) rem(15)
+
 }
 
+
 .information__inner {
-    width:rem(1080);
+    @include mq(md){
+    width:100%;
     margin-inline: auto;
+    max-width: rem(1080);
+    }
 }
 
 .l-inner {
@@ -16,29 +21,37 @@
 
 
 .information-container {
-    margin-top: rem(26);
+    margin-top: rem(24);
+    @include mq(md){
     display: flex;
     gap:rem(40);
 }
-
-.information-img {
-
 }
 
+.information-img {
+    aspect-ratio: 540/356;
+    width:100%;
+}
+.information-img  img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
 .information__text-body {
     margin-top: rem(24);
 }
 
-.infomation-title {
-    border-bottom: solid 1px $green;
+.information__title {
+    margin-bottom: rem(8);
 }
 
-.infomation-contents {
+.information__contents {
     margin-top: rem(8);
+    border-top: solid 1px $green;
 }
 
-.infomation-content {
-
+.information__content {
+    margin-top: rem(8);
 }
 
 .button-box {

@@ -2,4 +2,7 @@
 
 .l-information {
 margin-top: rem(40);
+@include mq(md){
+padding: rem(100) 0;
+}
 }

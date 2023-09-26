@@ -2,12 +2,16 @@
 
 .aboutus {
     padding: 0 rem(15)rem(70);
+    @include mq(md){
+    //padding: rem(15) rem(180) rem(140);
 
+}
 }
 
 .aboutus__inner {
     @include mq(md){
-    width: rem(1080);
+    width: 100%;
+    max-width: rem(1080);
     margin-inline:auto;
 }
 }
@@ -15,25 +19,57 @@
 
 }
 
+
 .aboutus__content {
-    margin-top: rem(26);
+margin-top: rem(26);
+@include mq(md){
+position: relative;
+}
+}
+
+.aboutus__content::after {
+@include mq(md){
+content: '';
+background: url(http://localhost:3000/assets/images/common/sango.png) no-repeat right bottom;
+background-size:contain;
+display: inline-block;
+width: rem(194);
+height: rem(181);
+position: absolute;
+right: calc(50% - min(48vw, 39.8125rem));
+bottom:-5.5rem;
+}
 }
 .aboutus__images {
     display: flex;
-    position: relative;
+
+    @include mq(md){
+    max-width: rem(1080);
+    width:100%;
+}
 }
 
 .aboutus-left {
     width: rem(128);
     z-index:-1;
     @include mq(md){
-    width: rem(606);
+    width: 37%;
     }
 }
 
 .aboutus__img--left {
-
+position: relative;
+@include mq(md){
+position: relative;
+aspect-ratio: 400 / 606;
 }
+}
+
+.aboutus__img--left img {
+    width: 100%;
+    height: 100%;
+}
+
 
 .aboutus-right{
     width: rem(281);
@@ -41,30 +77,59 @@
     margin-top: rem(26);
     position: absolute;
     right:0;
+    padding:0 rem(15) 0 0;
     @include mq(md){
-        width: rem(880);
-        margin-top: rem(80);
+    width: 81.4%;
+    margin-top: rem(80);
     }
+}
+.aboutus__img--right {
+    position: relative;
+    @include mq(md){
+    position: relative;
+    aspect-ratio: 880 / 581;
+    }
+    }
+.aboutus__img--right img {
+    width: 100%;
+    height: 100%;
 }
 
 .aboutus__text-body {
     margin-top:rem(40);
+    @include mq(md){
+        display: flex;
+        width: rem(840);
+        gap:rem(40);
+        position:absolute;
+        transform: translate(12.43rem, -28.8rem);
 }
-
-.about-title {
+}
+.aboutus__title {
     font-size: rem(40);
     font-family: $english-family;
     color: $green;
     font-weight: normal;
     line-height: 2.5rem;
+    @include mq(md){
+    width: rem(400);
+    font-size: rem(80);
+    text-align: left;
+    line-height: 6.25rem;
+    color: $white;
 }
-
-.about-contents {
+}
+.aboutus__contents {
     margin-top: rem(16);
+    @include mq(md){
+    width: rem(400);
+    }
 }
 
-.about-content {
-
+.aboutus-content {
+@include mq(md){
+color: $white;
+}
 }
 
 .button-box {

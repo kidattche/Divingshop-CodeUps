@@ -1,0 +1,96 @@
+@use "global" as *;
+.blog {
+padding: rem(100) rem(15);
+background: none;
+@include mq(md){
+background: url(http://localhost:3000/assets/images/common/blog.jpg) no-repeat top right / 100% 58.150%;
+}
+}
+.blog__inner {
+@include mq(md){
+width: 100%;
+margin-inline:auto;
+max-width: rem(1080);
+}
+}
+.l-inner {
+
+}
+
+.blog-card__items {
+    @include mq(md){
+    display: flex;
+    gap: rem(40);
+    margin-top: rem(80);
+    position: relative;
+}
+}
+.blog-card__items::after {
+content: '';
+background: url(http://localhost:3000/assets/images/common/hanadaill.png) no-repeat top left;
+background-size:contain;
+display: inline-block;
+width: rem(437);
+height: rem(201);
+position: absolute;
+top: -13.5rem;
+left: -3.5rem;
+}
+
+
+.blog-card__item {
+box-shadow: 1px 1px 5px rgba(204,204,204,0.3);
+padding: rem(16) rem(16) rem(24) rem(16);
+margin-top:rem(24);
+}
+
+
+
+.p-card {
+
+}
+
+.card__img {
+
+}
+
+.card__body {
+
+}
+
+.card-content__date {
+
+}
+
+.card__title {
+
+}
+
+.card__text {
+
+}
+
+.service__item {
+
+}
+
+.button-box {
+
+}
+
+.button {
+
+}
+
+.button-arrow {
+
+}
+
+.button__line-f {
+
+}
+
+.button__line-s {
+
+}
+

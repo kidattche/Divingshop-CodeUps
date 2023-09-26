@@ -4,11 +4,14 @@
     background-color:$green;
     padding: rem(48) rem(15)  rem(56);
     @include mq(md) {
-        padding: rem(80) rem(252) rem(80) rem(180);
+
     }
 }
 .footer__inner {
-
+    @include mq(md) {
+    width: rem(1080);
+    margin-inline: auto;
+}
 }
 // footer ロゴ　footer-sns
 .footer-link {

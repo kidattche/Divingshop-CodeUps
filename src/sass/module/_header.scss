@@ -1,5 +1,4 @@
 @use "global" as *;
-@use 'global' as *;
 
 
 
@@ -13,6 +12,7 @@ header {
   z-index: 1000;
   position: fixed;
   width: 100%;
+  top:0;
 }
 
 
