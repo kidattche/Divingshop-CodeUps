@@ -21,13 +21,16 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@400+700;&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- css -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -160,6 +163,55 @@
     </div>
   </header>
   <main>
+<!--ローディング  ---------------------------------------------------------------->
+    <div class="loader">
+      <div class="text-box">
+        <!-- /.text-box -->
+        <div class="text">diving</div>
+        <div class="sub-text">into the ocean</div>
+      </div>
+      <!-- /.sub-text -->
+    </div>
+
+<!-- メインビュ------------------------------------------------------------------->
+    <div class="p-swiper-container" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1.jpg');">
+              <div class="p-swiper__desc">
+                  <h3 class="p-swiper__heading">diving</h3>
+                  <div class="p-swiper__text">
+                      <p>into the ocean</p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2.jpg');">
+              <div class="p-swiper__desc">
+                  <h3 class="p-swiper__heading">diving</h3>
+                  <div class="p-swiper__text">
+                      <p>into the ocean</p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3.jpg');">
+              <div class="p-swiper__desc">
+                  <h3 class="p-swiper__heading">diving</h3>
+                  <div class="p-swiper__text">
+                      <p>into the ocean</p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4.jpg');">
+            <div class="p-swiper__desc">
+                <h3 class="p-swiper__heading">diving</h3>
+                <div class="p-swiper__text">
+                    <p>into the ocean</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
     <!--セクションヘッダー -->
     <div class="section-header">
       <h2 class="section-header__title">Campaign</h2>
@@ -169,7 +221,7 @@
     </div>
     <!-- /.section-header -->
 <!--about us ------------------------------------------------------------------>
-    
+
     <!-- /.section-header -->
     <section class="l-aboutus aboutus">
       <div class="aboutus__inner l-inner">
@@ -532,6 +584,7 @@
                   </a>
                 </div>
             </div>
+          </div>
           <!-- /.price-wrapper -->
           </section>
 

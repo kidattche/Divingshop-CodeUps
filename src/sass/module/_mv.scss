@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.p-swiper-container{
+    position: relative;
+  }
+  .swiper-slide {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
+      @include mq(md){
+      background-position: center center;
+  }
+}
+/* 768px以上の画面幅のスタイル */
+@include mq(md){
+    .swiper-slide:nth-child(1) {
+      background-image: url('./assets/images/common/mv1_pc.jpg'); /* mv1のPC用画像 */
+    }
+
+    .swiper-slide:nth-child(2) {
+      background-image: url('./assets/images/common/mv2_pc.jpg'); /* mv2のPC用画像 */
+    }
+  
+    .swiper-slide:nth-child(3) {
+      background-image: url('./assets/images/common/mv3_pc.jpg'); /* mv3のPC用画像 */
+    }
+  
+    .swiper-slide:nth-child(4) {
+      background-image: url('./assets/images/common/mv4_pc.jpg'); /* mv4のPC用画像 */
+    }
+  }
+
+
+
+  .p-swiper__desc {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .p-swiper__heading {
+    font-size: rem(40);
+    font-weight: $normal;
+    color: $white;
+    font-family: $main-title-family;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: rem(21.6    );
+    @include mq(md){
+    font-size: rem(80);
+    letter-spacing: rem(43.2);
+}
+}
+.p-swiper__text {
+    font-size: rem(20);
+    font-weight: $normal;
+    color: $white;
+    font-family: 'Gotu', sans-serif;;
+    text-align: center;
+    @include mq(md){
+    font-size: rem(20);
+}
+}

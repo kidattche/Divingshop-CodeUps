@@ -4,7 +4,8 @@
     background-size: cover;
     padding:rem(80) rem(15);
     @include mq(md){
-
+    
+   
 }
 }
 .price__inner {
@@ -12,10 +13,11 @@
     width: 100%;
     margin-inline: auto;
     max-width: rem(1080);
+    padding: 0 rem(25);
 }
 }
 .price-wrapper {
-
+margin-bottom: rem(100);
 }
 .price__img--sp {
 display: block;
@@ -56,6 +58,7 @@ object-fit: cover;
 .price-left,.price-right {
     @include mq(md){
     width: rem(493);
+
 }
 }
 
@@ -63,9 +66,10 @@ object-fit: cover;
 margin-top: rem(24);
 @include mq(md){
 display: flex;
-gap:rem(93);
+gap:8.6vw;
 flex-direction: row-reverse;
 position: relative;
+justify-content: center;
 }
 }
 .price-container::after {
