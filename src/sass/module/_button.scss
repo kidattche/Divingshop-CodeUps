@@ -3,6 +3,7 @@
 
 .button-box {
     text-align: center;
+    padding-bottom:1rem;
 }
 .button {
     align-items: center;
@@ -19,9 +20,10 @@
     white-space: nowrap;
     font-family: $english-family;
     height:rem(54);
+    z-index: 1;
 
 }
-.button::before {
+.button::after {
     background-color: #fff;
     content: "";
     position: absolute;
@@ -33,40 +35,73 @@
     transform-origin: left top;
     transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
+
 }
 
 .button:hover {
-    color: #fff;
+    color: $green;
   }
 .button:hover::after {
     transform: scale(1, 1);
+    color: $green;
   }
 .button-arrow {
     margin-left: rem(8);
     position: relative;
     width: rem(40);
+    z-index:1;
 }
+
+/*.button-arrow::after {
+    content:"";
+    color:$green;
+    position: relative;
+    width: rem(40);
+    z-index:1;
+}*/
 
 .button__line-f {
     background-color: #fff;
     display: block;
+    height: 2px;
+    width:rem(40);
+    z-index:-1;
+}
+.button__line-f::after  {
+    content:"";
+    background:$green;
+    display: block;
     height: 1px;
     width:rem(40);
+    z-index:1;
 }
 
 .button__line-s {
     background-color: #fff;
     display: block;
-    height: 1px;
+    height: 2px;
     position: absolute;
     right: 0;
     top: 0;
     transform: rotate(45deg);
     transform-origin: right bottom;
     width: rem(10);
+    z-index:-1;
+}
+
+.button__line-s::after {
+    content: "";
+    background: $green;
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: right bottom;
+    width: rem(10);
     z-index: 1;
 }
-.button::after {
+.button::before {
     border: solid 0.0625rem #408F95;
     height: rem(54);
     content: "";
@@ -74,5 +109,6 @@
     left: rem(4);
     top: rem(4);
     width: rem(202);
+    z-index: -1
     
 }

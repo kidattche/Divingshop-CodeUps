@@ -1,0 +1,108 @@
+@use "global" as *;
+.campaign {
+overflow:hidden;
+margin-bottom:0.125rem;
+}
+.campaign__inner {
+
+}
+
+.l-inner {
+
+}
+
+.campaign-card__item {
+width:rem(280);
+height:rem(366);
+
+
+@include mq(md){
+width:rem(334);
+height:rem(445);
+}
+}
+
+.p-card {
+
+}
+
+.campaign-card__img {
+width:100%;
+max-width: 100%;
+aspect-ratio:  280 / 187;
+@include mq(md){
+aspect-ratio: 333 / 223;
+}
+}
+.campaign-card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.campaign-card__body {
+width:100%;
+}
+.campaign-card__header {
+border-bottom: solid 1px $green;
+padding: rem(24) rem(16) rem(8) rem(16);
+}
+
+.campaign-category {
+font-size: rem(12);
+font-family: $base-font-family;
+padding: rem(6) rem(16);
+border:solid 1px $green;
+width: fit-content;
+}
+
+.campaign-card__title {
+font-family: $base-font-family;
+font-weight: $bold;
+line-height: 1.5;
+color: $black;
+}
+
+.campaign-card__footer {
+padding:rem(24) rem(16);
+
+}
+.campaign-card__price {
+
+}
+
+.campaign-card__meta {
+font-family: $base-font-family;
+font-size: rem(14);
+line-height: 1.5;
+text-align: center;
+}
+
+.campaign-card__priceinfo {
+    width:100%;
+   display: flex;
+   gap:rem(16);
+   align-items: baseline;
+}
+
+.campaign-card__preprice {
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    font-family: $main-title-family;
+    color: $black;
+    font-size: rem(24);
+}
+
+.campaign-card__afterprice {
+font-size: rem(38);
+color: $green;
+font-family: $main-title-family;
+}
+
+
+
+
+
+
+
+

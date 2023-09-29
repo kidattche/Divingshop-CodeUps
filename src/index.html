@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -174,10 +174,12 @@
     </div>
 
 <!-- メインビュ------------------------------------------------------------------->
-    <div class="p-swiper-container" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+  <div id="mv">
+  <!-- /.mv -->
+    <div class="p-swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1.jpg');">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -185,7 +187,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2.jpg');">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2-pc.jpg'); background-position: 10% center;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -193,7 +195,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3.jpg');">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3-pc.jpg'); background-position: 40% center;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -201,7 +203,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4.jpg');">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4-pc.jpg'); background-position: 20% center;">
             <div class="p-swiper__desc">
                 <h3 class="p-swiper__heading">diving</h3>
                 <div class="p-swiper__text">
@@ -210,16 +212,170 @@
             </div>
         </div>
       </div>
+  </div>
 
-
+<!-- Campaign----------------------------------------------------------------->
+  <section class="l-campaign campaign">
+    <div class="campaign__inner l-inner">
     <!--セクションヘッダー -->
-    <div class="section-header">
-      <h2 class="section-header__title">Campaign</h2>
-      <!-- /.section-header__title -->
-      <p class="section-header__subtitle">キャンペーン</p>
-      <!-- /.section-header__subtitle -->
+      <div class="section-header">
+        <h2 class="section-header__title">Campaign</h2>
+        <!-- /.section-header__title -->
+        <p class="section-header__subtitle">キャンペーン</p>
+        <!-- /.section-header__subtitle -->
+      </div>
+      <!-- /.section-header -->
+            <div class="campaign__swiper">
+            <!-- /.campaign__swiper -->
+            <div class="swiper-pagination">
+              <div class="swiper-button-prev"></div>
+              <!-- 次ページボタン -->
+              <div class="swiper-button-next"></div>
+            </div>
+              <div class="swiper js-campaign-swiper">
+                  <div class="swiper-wrapper">
+                    <!-- ループ処理開始 -->
+                  <div class="swiper-slide">
+                    <div class="campaign-card__item p-card">
+                      <div class="campaign-card__img">
+                        <img src="./assets/images/common/campaign1.jpg" alt="キャンペーン画像１" />
+                      </div>
+                      <div class="campaign-card__body">
+                          <div class="campaign-card__header">
+                        <!-- /.campaign-card__body--header -->
+                            <div class="campaign-category">ライセンス講習</div>
+                            <!-- /.campaign- -->
+                            <h3 class="campaign-card__title">ライセンス取得</h3>
+                          </div>
+                          <div class="campaign-card__footer">
+                            <div class="campaign-card__price">
+                              <div class="campaign-card__meta">全部コミコミ（お一人様）</div>
+                              <!-- /.campaign-card__meta -->
+                                <div class="campaign-card__priceinfo">
+                                <!-- /.campaign-card__priceinfo -->
+                                  <div class="campaign-card__preprice">¥56,000</div>
+                                <!-- /.campaign-card__preprice -->
+                                  <div class="campaign-card__afterprice">¥46,000</div>
+                                  <!-- /.campaign-card__afterprice -->
+                              </div>
+                            </div>
+                            <!-- /.campaign-card__price -->
+                          </div>
+                          <!-- /.campaign-card__footer -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="campaign-card__item p-card">
+                      <div class="campaign-card__img">
+                        <img src="./assets/images/common/campaign2.jpg" alt="キャンペーン画像2" />
+                      </div>
+                      <div class="campaign-card__body">
+                          <div class="campaign-card__header">
+                        <!-- /.campaign-card__body--header -->
+                            <div class="campaign-category">体験ダイビング</div>
+                            <!-- /.campaign- -->
+                            <h3 class="campaign-card__title">貸切体験ダイビング</h3>
+                          </div>
+                          <div class="campaign-card__footer">
+                            <div class="campaign-card__price">
+                              <div class="campaign-card__meta">全部コミコミ（お一人様）</div>
+                              <!-- /.campaign-card__meta -->
+                                <div class="campaign-card__priceinfo">
+                                <!-- /.campaign-card__priceinfo -->
+                                  <div class="campaign-card__preprice">¥24,000</div>
+                                <!-- /.campaign-card__preprice -->
+                                  <div class="campaign-card__afterprice">¥18,000</div>
+                                  <!-- /.campaign-card__afterprice -->
+                              </div>
+                            </div>
+                            <!-- /.campaign-card__price -->
+                          </div>
+                          <!-- /.campaign-card__footer -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide -->
+                  <div class="swiper-slide">
+                    <div class="campaign-card__item p-card">
+                      <div class="campaign-card__img">
+                        <img src="./assets/images/common/campaign3.jpg" alt="キャンペーン画像3" />
+                      </div>
+                      <div class="campaign-card__body">
+                          <div class="campaign-card__header">
+                        <!-- /.campaign-card__body--header -->
+                            <div class="campaign-category">体験ダイビング</div>
+                            <!-- /.campaign- -->
+                            <h3 class="campaign-card__title">ナイトダイビング</h3>
+                          </div>
+                          <div class="campaign-card__footer">
+                            <div class="campaign-card__price">
+                              <div class="campaign-card__meta">全部コミコミ（お一人様）</div>
+                              <!-- /.campaign-card__meta -->
+                                <div class="campaign-card__priceinfo">
+                                <!-- /.campaign-card__priceinfo -->
+                                  <div class="campaign-card__preprice">¥10,000</div>
+                                <!-- /.campaign-card__preprice -->
+                                  <div class="campaign-card__afterprice">¥8,000</div>
+                                  <!-- /.campaign-card__afterprice -->
+                              </div>
+                            </div>
+                            <!-- /.campaign-card__price -->
+                          </div>
+                          <!-- /.campaign-card__footer -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide -->
+                  <div class="swiper-slide">
+                    <div class="campaign-card__item p-card">
+                      <div class="campaign-card__img">
+                        <img src="./assets/images/common/campaign4.jpg" alt="キャンペーン画像4" />
+                      </div>
+                      <div class="campaign-card__body">
+                          <div class="campaign-card__header">
+                        <!-- /.campaign-card__body--header -->
+                            <div class="campaign-category">ファンダイビング</div>
+                            <!-- /.campaign- -->
+                            <h3 class="campaign-card__title">貸切ファンダイビング</h3>
+                          </div>
+                          <div class="campaign-card__footer">
+                            <div class="campaign-card__price">
+                              <div class="campaign-card__meta">全部コミコミ（お一人様）</div>
+                              <!-- /.campaign-card__meta -->
+                                <div class="campaign-card__priceinfo">
+                                <!-- /.campaign-card__priceinfo -->
+                                  <div class="campaign-card__preprice">¥20,000</div>
+                                <!-- /.campaign-card__preprice -->
+                                  <div class="campaign-card__afterprice">¥16,000</div>
+                                  <!-- /.campaign-card__afterprice -->
+                              </div>
+                            </div>
+                            <!-- /.campaign-card__price -->
+                          </div>
+                          <!-- /.campaign-card__footer -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--　ボタン  -->
+        <div class="button-box">
+          <!-- /.button-box -->
+            <a class="button">
+              View more
+              <div class="button-arrow">
+                <span class="button__line-f"></span>
+                <span class="button__line-s"></span>
+              </div>
+              <!-- /.arrow -->
+            </a>
+        </div>
     </div>
-    <!-- /.section-header -->
+  </div>
+  </section>
 <!--about us ------------------------------------------------------------------>
 
     <!-- /.section-header -->
@@ -256,8 +412,6 @@
                       <a class="button">
                         View more
                         <div class="button-arrow">
-                          <span class="button__line-f"></span>
-                          <span class="button__line-s"></span>
                         </div>
                         <!-- /.arrow -->
                       </a>
@@ -661,7 +815,15 @@
         <!-- /.arrow -->
       </a>
     </div>
+    <div class="pagetop">
+      <a href="#mv">
+        <img src="./assets/images/common/totop.png" alt="pagetop">
+      </a>
+    </div>
+    <!-- /.pagetop -->
+  
   </main>
+  
 
   <!--ーーーーーーーーーーー フッターーーーーーーーーーーーーーーーーーーーーーー-->
   <footer class="l-footer footer">

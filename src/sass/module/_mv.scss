@@ -9,29 +9,7 @@
       background-repeat: no-repeat;
       height: 100vh;
       overflow: hidden;
-      @include mq(md){
-      background-position: center center;
-  }
 }
-/* 768px以上の画面幅のスタイル */
-@include mq(md){
-    .swiper-slide:nth-child(1) {
-      background-image: url('./assets/images/common/mv1_pc.jpg'); /* mv1のPC用画像 */
-    }
-
-    .swiper-slide:nth-child(2) {
-      background-image: url('./assets/images/common/mv2_pc.jpg'); /* mv2のPC用画像 */
-    }
-  
-    .swiper-slide:nth-child(3) {
-      background-image: url('./assets/images/common/mv3_pc.jpg'); /* mv3のPC用画像 */
-    }
-  
-    .swiper-slide:nth-child(4) {
-      background-image: url('./assets/images/common/mv4_pc.jpg'); /* mv4のPC用画像 */
-    }
-  }
-
 
 
   .p-swiper__desc {
