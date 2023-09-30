@@ -58,9 +58,11 @@ const swiper = new Swiper('.js-campaign-swiper', {
   autoplay: {
       delay: 0,
   },
+  spaceBetween: 40,
+  freeModeSticky: true,
   autoWidth: true,
   autoHeight: true,
-  speed: 3000,          //追記
+  speed: 4000,          //追記
   slidesPerView: 4,     //追記
   navigation: {
 		nextEl: '.swiper-button-next',
@@ -69,7 +71,7 @@ const swiper = new Swiper('.js-campaign-swiper', {
 })
 
 
-/*informationとvoiceのアニメーション
+/*//informationとvoiceのアニメーション
 //アニメーション
 //要素の取得とスピードの設定
 var box = $('.colorbox'),
@@ -118,7 +120,7 @@ var box = $('.colorbox'),
     image.css('opacity', '0'); // 画像を初めは非表示にする
     color.css('width', '0%');
     // inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
+    $(document).on('inview','.color', function () {
         console.log("スクロールイベントがトリガーされました");
         if (counter == 0) {
             // 背景色が表示された後、画像を表示するアニメーション

@@ -31,6 +31,8 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -178,7 +180,7 @@
   <!-- /.mv -->
     <div class="p-swiper-container">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper mv-swiper-slide">
           <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
@@ -213,6 +215,7 @@
         </div>
       </div>
   </div>
+</div>
 
 <!-- Campaign----------------------------------------------------------------->
   <section class="l-campaign campaign">
@@ -233,9 +236,9 @@
               <div class="swiper-button-next"></div>
             </div>
               <div class="swiper js-campaign-swiper">
-                  <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
                     <!-- ループ処理開始 -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide canpaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign1.jpg" alt="キャンペーン画像１" />
@@ -265,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide canpaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign2.jpg" alt="キャンペーン画像2" />
@@ -296,7 +299,7 @@
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide canpaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign3.jpg" alt="キャンペーン画像3" />
@@ -327,7 +330,7 @@
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide canpaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign4.jpg" alt="キャンペーン画像4" />
@@ -374,7 +377,6 @@
             </a>
         </div>
     </div>
-  </div>
   </section>
 <!--about us ------------------------------------------------------------------>
 

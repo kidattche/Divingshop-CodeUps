@@ -35,24 +35,26 @@
     aspect-ratio: 540/356;
     overflow:hidden;
     position:relative;
+    width: 50%;
 }
 }
 .information-img  img {
     width: 100%;
     height:100%;
     object-fit: cover;
-    opacity: 0;
+    display: block;
 }
 .colorbox {
     position: relative;
+    width: 100%;
 }
 
 .colorbox .color {
     position: absolute;
     top:0;
     left:0;
-    right:auto;
-    width:0%;
+    right:0;
+    width:100%;
     height:100%;
     z-index:2;
     background-color: $green;
