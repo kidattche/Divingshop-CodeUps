@@ -25,9 +25,16 @@
 }
 
 .swiper-pagination {
-width: 240px;
-height: 80px;
-transform: translate(60.5rem, -7.5rem);
+position: absolute;
+width: rem(240);
+height: rem(80);
+margin-inline:auto;
+left:calc(50% + 220px);
+bottom:-11rem;
+}
+
+.swiper-pagination-custom{
+bottom:rem(-200); text-align:right;
 }
 
 .swiper-button-prev,

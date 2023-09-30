@@ -28,6 +28,7 @@
 }
 }
 
+
 .information-img {
     aspect-ratio: 345 /227;
     @include mq(md){
@@ -36,11 +37,17 @@
     position:relative;
 }
 }
+.information-img  img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0;
+}
 .colorbox {
     position: relative;
- }
+}
 
-.color {
+.colorbox .color {
     position: absolute;
     top:0;
     left:0;
@@ -49,13 +56,8 @@
     height:100%;
     z-index:2;
     background-color: $green;
-} 
-.information-img  img {
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    opacity: 0;
 }
+
 
 .information__text-body {
     margin-top: rem(24);

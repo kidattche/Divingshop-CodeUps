@@ -45,6 +45,7 @@ window.addEventListener('load', () => {
       // 左右のページ送りを有効にする
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      clickable: true //この行を追記する
     },
   };
   const swiper = new Swiper('.p-swiper-container', swiperParams);
@@ -68,11 +69,11 @@ const swiper = new Swiper('.js-campaign-swiper', {
 })
 
 
-
-/*//アニメーション
+/*informationとvoiceのアニメーション
+//アニメーション
 //要素の取得とスピードの設定
 var box = $('.colorbox'),
-    speed = 700;  
+    speed = 700;
  
 //.informationーimgの付いた全ての要素に対して下記の処理を行う
 box.each(function(){
@@ -81,7 +82,7 @@ box.each(function(){
     image = $(this).find('img');
     var counter = 0;
  
-    image.css('opacity','1');
+    image.css('opacity','0');
     color.css('width','0%');
     //inviewを使って背景色が画面に現れたら処理をする
     color.on('inview', function(){
@@ -101,13 +102,14 @@ box.each(function(){
   $(".information-img").css("opacity", "1"); // 要素を表示する
 });*/
 
-/*// アニメーション
+// アニメーション
 // 要素の取得とスピードの設定
 var box = $('.colorbox'),
     speed = 700;
 
 // .information-imgの付いた全ての要素に対して下記の処理を行う
-box.each(function () {
+    box.each(function () {
+    console.log("スクリプトが読み込まれました");
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
         image = $(this).find('img');
@@ -117,6 +119,7 @@ box.each(function () {
     color.css('width', '0%');
     // inviewを使って背景色が画面に現れたら処理をする
     color.on('inview', function () {
+        console.log("スクロールイベントがトリガーされました");
         if (counter == 0) {
             // 背景色が表示された後、画像を表示するアニメーション
             $(this).delay(200).animate({
@@ -134,14 +137,15 @@ box.each(function () {
             counter = 1;
         }
     });
-});*/
+});
 /*// アニメーション
 // 要素の取得とスピードの設定
 var box = $('.colorbox'),
     speed = 700;
 
 // .information-imgの付いた全ての要素に対して下記の処理を行う
-box.each(function () {
+    box.each(function () {
+         console.log("スクリプトが読み込まれました");
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
         image = $(this).find('img');
@@ -202,7 +206,7 @@ box.each(function () {
       });
   });
 });*/
-$(document).ready(function () {
+/*$(document).ready(function () {
   console.log("スクリプトが読み込まれました");
   var box = $('.colorbox');
   var speed = 700;
@@ -243,5 +247,5 @@ $(document).ready(function () {
           }
       });
   });
-});
+});*/
 
