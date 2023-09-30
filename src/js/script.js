@@ -69,19 +69,19 @@ const swiper = new Swiper('.js-campaign-swiper', {
 
 
 
-//アニメーション
+/*//アニメーション
 //要素の取得とスピードの設定
-var box = $('.informationーimg'),
+var box = $('.colorbox'),
     speed = 700;  
  
-//.colorboxの付いた全ての要素に対して下記の処理を行う
+//.informationーimgの付いた全ての要素に対して下記の処理を行う
 box.each(function(){
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
     image = $(this).find('img');
     var counter = 0;
  
-    image.css('opacity','0');
+    image.css('opacity','1');
     color.css('width','0%');
     //inviewを使って背景色が画面に現れたら処理をする
     color.on('inview', function(){
@@ -94,4 +94,154 @@ box.each(function(){
             counter = 1;
           }
      });
+});*/
+
+/*$(document).ready(function () {
+  // ドキュメントが読み込まれたら実行
+  $(".information-img").css("opacity", "1"); // 要素を表示する
+});*/
+
+/*// アニメーション
+// 要素の取得とスピードの設定
+var box = $('.colorbox'),
+    speed = 700;
+
+// .information-imgの付いた全ての要素に対して下記の処理を行う
+box.each(function () {
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($('.color')),
+        image = $(this).find('img');
+    var counter = 0;
+
+    image.css('opacity', '0'); // 画像を初めは非表示にする
+    color.css('width', '0%');
+    // inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function () {
+        if (counter == 0) {
+            // 背景色が表示された後、画像を表示するアニメーション
+            $(this).delay(200).animate({
+                'width': '100%'
+            }, speed, function () {
+                image.css('opacity', '1'); // 画像を表示
+                $(this).css({
+                    'left': '0',
+                    'right': 'auto'
+                });
+                $(this).animate({
+                    'width': '0%'
+                }, speed);
+            })
+            counter = 1;
+        }
+    });
+});*/
+/*// アニメーション
+// 要素の取得とスピードの設定
+var box = $('.colorbox'),
+    speed = 700;
+
+// .information-imgの付いた全ての要素に対して下記の処理を行う
+box.each(function () {
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($('.color')),
+        image = $(this).find('img');
+    var counter = 0;
+
+    image.css('opacity', '0'); // 画像を初めは非表示にする
+    color.css('width', '0%');
+    // inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function () {
+        if (counter == 0) {
+            // 背景色が表示された後、画像を表示するアニメーション
+            $(this).delay(200).animate({
+                'width': '100%',
+                'left': '0',
+                'right': 'auto'
+            }, speed, function () {
+                image.css('opacity', '1'); // 画像を表示
+                $(this).css('left', '0'); // leftを再設定
+                $(this).animate({
+                    'width': '0%'
+                }, speed);
+            });
+            counter = 1;
+        }
+    });
+});*/
+
+/*$(document).ready(function () {
+  var box = $('.colorbox');
+  var speed = 700;
+
+  box.each(function () {
+      var color = $(this).find('.color');
+      var image = $(this).find('img');
+      var counter = 0;
+
+      image.css('opacity', '0'); // 画像を初めは非表示にする
+      color.css('width', '0%');
+
+      $(window).on('scroll', function () {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          var elementTop = box.offset().top;
+
+          if (!counter && windowBottom > elementTop) {
+              color.animate({
+                  'width': '100%',
+                  'left': '0',
+                  'right': 'auto'
+              }, speed, function () {
+                  image.css('opacity', '1'); // 画像を表示
+                  color.css('left', '0'); // leftを再設定
+                  color.animate({
+                      'width': '0%'
+                  }, speed);
+              });
+              counter = 1;
+          }
+      });
+  });
+});*/
+$(document).ready(function () {
+  console.log("スクリプトが読み込まれました");
+  var box = $('.colorbox');
+  var speed = 700;
+
+  box.each(function () {
+      var color = $(this).find('.color');
+      var image = $(this).find('img');
+      var counter = 0;
+
+      image.css('opacity', '0'); // 画像を初めは非表示にする
+      color.css('width', '0%');
+
+      $(window).on('scroll', function () {
+        console.log("スクロールイベントがトリガーされました");
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          var elementTop = box.offset().top;
+
+          if (!counter && windowBottom > elementTop) {
+              color.animate({
+                  'width': '100%',
+                  'left': '0',
+                  'right': 'auto'
+              }, {
+                  duration: speed,
+                  step: function (now) {
+                      if (now >= 50) {
+                          image.css('opacity', '1'); // 画像を表示
+                      }
+                  },
+                  complete: function () {
+                      color.css('left', '0'); // leftを再設定
+                      color.animate({
+                          'width': '0%'
+                      }, speed);
+                  }
+              });
+              counter = 1;
+          }
+      });
+  });
 });
+
