@@ -18,6 +18,7 @@
 }
 .price-wrapper {
 margin-bottom: rem(100);
+padding:rem(25);
 }
 .price__img--sp {
 display: block;
@@ -30,7 +31,8 @@ display: none;
     @include mq(md){
     display:block;
     position: relative;
-    min-width: rem(493);
+    width: rem(493);
+    padding: rem(25);
 }
 }
 
@@ -39,6 +41,7 @@ display: none;
     content: "";
     display: block;
     padding-top: 151%;
+
 }
 }
 .price__img--pc img {
@@ -58,6 +61,7 @@ object-fit: cover;
 .price-left,.price-right {
     @include mq(md){
     width: rem(493);
+    padding: rem(25);
 
 }
 }
@@ -66,10 +70,11 @@ object-fit: cover;
 margin-top: rem(24);
 @include mq(md){
 display: flex;
-gap:8.6vw;
+gap:rem(93);
 flex-direction: row-reverse;
 position: relative;
 justify-content: center;
+padding:rem(25);
 }
 }
 .price-container::after {
