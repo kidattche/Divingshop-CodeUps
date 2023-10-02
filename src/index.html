@@ -22,8 +22,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
   <!-- css -->
@@ -31,8 +29,6 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
-
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -434,9 +430,9 @@
           <p class="section-header__subtitle">ダイビング情報</p>
           <!-- /.section-header__subtitle -->
         </div>
-        <div class="information-container">
-          <div class="information-img colorbox js-colorbox">
-            <img src="./assets/images/common/information.jpg" alt="海中画像"/>
+        <div class="information-container" id="information-container">
+          <div class="information-img js-colorbox" id="colorbox">
+            <img src="./assets/images/common/information.jpg" alt="海中画像" class="fadein"/>
           </div>
           <div class="information__text-body">
             <h2 class="information__title">ライセンス講習</h2>
