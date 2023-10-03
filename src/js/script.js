@@ -72,9 +72,6 @@ const swiper = new Swiper('.js-campaign-swiper', {
 
 
 //information
-
-const colorBox = document.querySelector('#colorbox');
-
 $(function(){
   $(window).scroll(function (){
       $('.fadein').each(function(){
@@ -85,17 +82,13 @@ $(function(){
             $(this).addClass('active');
           }
       });
-
-      colorBox.animate({
-        translate: ['100% 0', '0 0', '-100% 0']
-      },
-      {
-        duration: 2000,
-        delay: 800,
-        easing: 'ease',
-        fill: 'forwards',
-        opacity: [1,0],
-      }
-      )
-  });
+    });
+  $(window).scroll(function (){
+    {
+    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+    }
+  });// ここまで画面をスクロールをしたら動かしたい場合の記述
 });
+
+
+
