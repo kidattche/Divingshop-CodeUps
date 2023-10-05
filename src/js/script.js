@@ -16,7 +16,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 });
 
-/*//ローディング
+//ローディング
 $(function () {
   function end_loader() {
     $('.loader').fadeOut(800);
@@ -26,7 +26,7 @@ $(function () {
       end_loader();
     }, 3000)
   })
-})*/
+})
 
 //swiper
 window.addEventListener('load', () => {
