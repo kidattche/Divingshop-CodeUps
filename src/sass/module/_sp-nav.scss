@@ -20,7 +20,6 @@
     height: 100vh;
     background-color: $green;
     padding: rem(21) rem(15)  rem(111);
-    
 }
 .sp-nav.is-active {
     display: block;
@@ -30,10 +29,10 @@
 .sp-nav-container {
     display: flex;
     margin-bottom:rem(111);
+    width: 100%;
 }
 
 .sp-nav__items--wrap {
-    width: 50%;
 }
 
 .sp-nav__items {
@@ -50,7 +49,6 @@
     margin-top:rem(40);
     font-size: 1rem;
     display: flex;
-   
 }
 
 .sp-nav__item a::before {
@@ -61,7 +59,6 @@
     background-image: url(http://localhost:3000/assets/images/common/hitode.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
     vertical-align: middle;
 
 
@@ -75,7 +72,7 @@
 }
 
 .sp-nav__subitem {
-    
+
 }
 .sp-nav__subitem a {
     font-family: $base-font-family;

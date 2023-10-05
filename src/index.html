@@ -69,11 +69,11 @@
           </li>
         </ul>
       </nav>
-      <nav class="header__sp-nav sp-nav js-sp-nav js-sp-nav">
+      <nav class="header__sp-nav sp-nav js-sp-nav">
         <div class="sp-nav__logo">
           <img src="./assets/images/common/nav-codeups.png" alt="CodeUpsのロゴ"></a></div>
         <!-- /.sp-nav__logo -->
-        
+
         <div class="sp-nav-container">
           <div class="sp-nav__items--wrap">
             <ul class="sp-nav__items">
@@ -156,7 +156,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
   
       </nav>
     </div>
@@ -164,12 +164,15 @@
   <main>
 <!--ローディング  ---------------------------------------------------------------->
     <div class="loader">
-      <div class="text-box">
-        <!-- /.text-box -->
-        <div class="text">diving</div>
-        <div class="sub-text">into the ocean</div>
-      </div>
+      <!-- <div class="loader-inner"> -->
+        <div class="text-box">
+          <!-- /.text-box -->
+          <div class="text">diving</div>
+          <div class="sub-text">into the ocean</div>
+        </div>
       <!-- /.sub-text -->
+      <!-- </div> -->
+    <!-- /.loader-inner -->
     </div>
 
 <!-- メインビュ------------------------------------------------------------------->
@@ -178,7 +181,7 @@
     <div class="p-swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper mv-swiper-slide">
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center;">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center; background-size:cover;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -186,7 +189,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2-pc.jpg'); background-position: 10% center;">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2-pc.jpg'); background-position: 10% center; background-size:cover;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -194,7 +197,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3-pc.jpg'); background-position: 40% center;">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3-pc.jpg'); background-position: 40% center; background-size:cover;">
               <div class="p-swiper__desc">
                   <h3 class="p-swiper__heading">diving</h3>
                   <div class="p-swiper__text">
@@ -202,7 +205,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4-pc.jpg'); background-position: 20% center;">
+          <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4-pc.jpg'); background-position: 20% center; background-size:cover;">
             <div class="p-swiper__desc">
                 <h3 class="p-swiper__heading">diving</h3>
                 <div class="p-swiper__text">
@@ -227,15 +230,15 @@
       <!-- /.section-header -->
             <div class="campaign__swiper">
             <!-- /.campaign__swiper -->
-            <div class="swiper-pagination">
-              <div class="swiper-button-prev"></div>
-              <!-- 次ページボタン -->
-              <div class="swiper-button-next"></div>
-            </div>
+              <div class="swiper-pagination">
+                <div class="swiper-button-prev"></div>
+                <!-- 次ページボタン -->
+                <div class="swiper-button-next"></div>
+              </div>
               <div class="swiper js-campaign-swiper">
                 <div class="swiper-wrapper">
                     <!-- ループ処理開始 -->
-                  <div class="swiper-slide canpaign-swiper-slide">
+                  <div class="swiper-slide campaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign1.jpg" alt="キャンペーン画像１" />
@@ -265,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide canpaign-swiper-slide">
+                  <div class="swiper-slide campaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign2.jpg" alt="キャンペーン画像2" />
@@ -296,7 +299,7 @@
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
-                  <div class="swiper-slide canpaign-swiper-slide">
+                  <div class="swiper-slide campaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign3.jpg" alt="キャンペーン画像3" />
@@ -327,7 +330,7 @@
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
-                  <div class="swiper-slide canpaign-swiper-slide">
+                  <div class="swiper-slide campaign-swiper-slide">
                     <div class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign4.jpg" alt="キャンペーン画像4" />
@@ -359,7 +362,6 @@
                   </div>
                 </div>
             </div>
-            
         </div>
         <!--　ボタン  -->
         <div class="button-box">
@@ -411,6 +413,8 @@
                       <a class="button">
                         View more
                         <div class="button-arrow">
+                          <span class="button__line-f"></span>
+                          <span class="button__line-s"></span>
                         </div>
                         <!-- /.arrow -->
                       </a>
@@ -432,29 +436,29 @@
           <!-- /.section-header__subtitle -->
         </div>
         <div class="information-container">
-          <div class="information-img js-colorbox colorbox fadeUpTrigger">
-            <img src="./assets/images/common/information.jpg" alt="海中画像" class="fadein  infoimg"/>
-          </div>
-          <div class="information__text-body">
-            <h2 class="information__title">ライセンス講習</h2>
-            <div class="information__contents">
-              <p class="information__content">
-                当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
-正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
-              <!--　ボタン  -->
-              <div class="button-box">
-                <!-- /.button-box -->
-                  <a class="button">
-                    View more
-                    <div class="button-arrow">
-                      <span class="button__line-f"></span>
-                      <span class="button__line-s"></span>
-                    </div>
-                    <!-- /.arrow -->
-                  </a>
+            <div class="information-img js-colorbox colorbox fadeUpTrigger">
+              <img src="./assets/images/common/information.jpg" alt="海中画像" class="fadein  infoimg"/>
+            </div>
+            <div class="information__text-body">
+              <h2 class="information__title">ライセンス講習</h2>
+              <div class="information__contents">
+                <p class="information__content">
+                  当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+  正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
+                <!--　ボタン  -->
+                <div class="button-box">
+                  <!-- /.button-box -->
+                    <a class="button">
+                      View more
+                      <div class="button-arrow">
+                        <span class="button__line-f"></span>
+                        <span class="button__line-s"></span>
+                      </div>
+                      <!-- /.arrow -->
+                    </a>
+                </div>
               </div>
             </div>
-        </div>
           <!-- /.information-img -->
         </div>
         <!-- /.information-container -->
@@ -546,8 +550,8 @@
                       <div class="voice-card-title">ここにタイトルが入ります。ここにタイトル</div>
                     </div>
                       <!-- /.voice-card-title -->
-                    <div class="voice-card__img">
-                        <img src="./assets/images/common/voice1.jpg" alt="お客様の画像1" />
+                    <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
+                        <img src="./assets/images/common/voice1.jpg" alt="お客様の画像1"  class="fadein infoimg" />
                     </div>
                 </div>
                 <div class="voice-card__body">
@@ -572,8 +576,8 @@
                       <div class="voice-card-title">ここにタイトルが入ります。ここにタイトル</div>
                     </div>
                       <!-- /.voice-card-title -->
-                    <div class="voice-card__img">
-                        <img src="./assets/images/common/voice2.jpg" alt="お客様の画像1" />
+                    <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
+                        <img src="./assets/images/common/voice2.jpg" alt="お客様の画像1" class="fadein infoimg" />
                     </div>
                   </div>
                 <div class="voice-card__body">
@@ -617,10 +621,13 @@
                 <div class="price__img--sp">
                   <img src="./assets/images/common/price-sp.jpg" alt="海亀の画像1"/>
                 </div>
-                <div class="price__img--pc price-right">
-                  <img src="./assets/images/common/price-pc.jpg" alt="サンゴと熱帯魚の画像1"/>
-                </div>
+                <div class="price-right">
+                  <div class="price__img--pc js-colorbox colorbox fadeUpTrigger">
+                    <img src="./assets/images/common/price-pc.jpg" alt="サンゴと熱帯魚の画像1" class="fadein infoimg"/>
+                  </div>
                 <!-- /.price-img -->
+                </div>
+              <!-- /.price-right -->
                 <div class="price-box price-left">
                   <div class="price__text-body">
                     <h2 class="price-title">ライセンス講習</h2>
@@ -802,18 +809,6 @@
             </div>
           </section>
           <!-- /.contact-wrapper -->
-    <!--　ボタン  -->
-    <div class="button-box">
-    <!-- /.button-box -->
-      <a class="button">
-        View more
-        <div class="button-arrow">
-          <span class="button__line-f"></span>
-          <span class="button__line-s"></span>
-        </div>
-        <!-- /.arrow -->
-      </a>
-    </div>
     <div class="pagetop">
       <a href="#mv">
         <img src="./assets/images/common/totop.png" alt="pagetop">

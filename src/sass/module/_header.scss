@@ -2,18 +2,21 @@
 
 
 
-.header.is-color {
-  background: rgba(13, 41, 54, 0.68);
-}
-
 header {
   height: rem(64);
   background: rgba(13, 41, 54, 0.68);
-  z-index: 1000;
+  z-index: 9994;
   position: fixed;
-  width: 100%;
+  //width: 100%;
   top:0;
-  max-width: 100%;
+  left:0;
+  display:inline-flex;
+
+ // max-width: 100%;
+  //position: relative;
+  @include mq(md){
+    height:rem(80);
+}
 }
 
 
@@ -22,12 +25,13 @@ header {
   justify-content: space-between;
   height: inherit;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 rem(15);
+  width: 100%;
+
 
   @include mq(md){
-  padding: 0 rem(40);
+  
   }
-
 }
 
 .header__drawer {

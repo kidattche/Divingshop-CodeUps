@@ -4,7 +4,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(".js-hamburger").click(function () {
     if($(".js-hamburger").hasClass('is-active')){
     $('.js-hamburger').removeClass("is-active");
-    // $("html").toggleClass("is-fixed");
+     $("html").toggleClass("is-fixed");
     $(".js-sp-nav").fadeOut();
    } else {
     $(".js-hamburger").addClass("is-active");
@@ -16,7 +16,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 });
 
-//ローディング
+/*//ローディング
 $(function () {
   function end_loader() {
     $('.loader').fadeOut(800);
@@ -26,7 +26,7 @@ $(function () {
       end_loader();
     }, 3000)
   })
-})
+})*/
 
 //swiper
 window.addEventListener('load', () => {
@@ -63,7 +63,13 @@ const swiper = new Swiper('.js-campaign-swiper', {
   autoWidth: true,
   autoHeight: true,
   speed: 4000,          //追記
-  slidesPerView: 4,     //追記
+  slidesPerView: 1.3,     //追記
+  breakpoints: {
+      // スライドの表示枚数：767px以上の場合
+    767: {
+      slidesPerView: 4,
+    }
+  },
   navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
@@ -71,14 +77,14 @@ const swiper = new Swiper('.js-campaign-swiper', {
 })
 
 
-//information
+//information・voice
 $(function(){
   $(window).scroll(function (){
       $('.fadein').each(function(){
           var position = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();
-          if (scroll > position - windowHeight + 200){
+          if (scroll > position - windowHeight){
             $(this).addClass('active');
           }
       });

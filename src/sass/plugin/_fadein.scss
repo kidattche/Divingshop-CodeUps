@@ -1,0 +1,51 @@
+@use "global" as *;
+.colorbox {
+    background-color: $green;
+    //position: absolute;
+    inset:0;
+    z-index: 9995;
+    transform : translate(100%, 0);
+}
+.colobox.active {
+    opacity: 1;
+    transform: translate(-100%, 0);
+}
+
+.fadein {
+    opacity : 0;
+    transform : translate(100%, 0);
+    transition : all 2s;
+}
+.fadein.active{
+    opacity : 1;
+    transform : translate(0, 0);
+  }
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateX(100%);
+    overflow:hidden;
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+.information__text-body {
+    @include mq(md){
+    margin-top: rem(24);
+    width: 50%;
+    padding-top:0;
+}
+}

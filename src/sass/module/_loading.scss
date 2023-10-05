@@ -4,7 +4,7 @@
 
 .loader {
     position: fixed;
-    width: 100%;
+    //width: 100%;
     height: 100vh;
     background-color: #fff;
     z-index: 555;
@@ -22,6 +22,7 @@
     text-transform: uppercase;
     line-height: 1.25;
     letter-spacing: rem(21.6);
+    text-align: center;
     @include mq(md){
     font-size: rem(80);
     letter-spacing: rem(43.2);
@@ -36,4 +37,9 @@
     @include mq(md){
     font-size: rem(20);
 }
+}
+
+.loader-inner {
+    max-width:100%;
+    width:100%;
 }
