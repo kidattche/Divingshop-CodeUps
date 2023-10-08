@@ -28,9 +28,9 @@ position: relative;
     background-size:contain;
     display: inline-block;
     width: rem(437);
-    height: rem(201);
+    height: rem(137);
     position: absolute;
-    top: -13.5rem;
+    top: -11.5rem;
     left: calc(50% - min(48vw, 38.6875rem));
 }
 }
@@ -43,7 +43,7 @@ position: relative;
     width: rem(71);
     height: rem(162);
     position: absolute;
-    bottom: -13.5rem;
+    bottom: -13.1rem;
     right: calc(50% - min(48vw, 33.75rem));
 }
 }
@@ -60,6 +60,7 @@ width:rem(520);
 .voice-card__container {
     display: flex;
     gap:rem(13);
+    padding: 0.8rem 0.5rem;
     @include mq(md){
     gap:rem(16);
     }
@@ -69,10 +70,9 @@ background-color: #fff;
 }
 
 .voice-card__header {
-border-bottom:solid 1px $green;
 
 @include mq(md){
-width: rem(276);
+width: rem(704);
 }
 }
 
@@ -96,7 +96,7 @@ align-items: end;
 }
 }
 .voice-card-content__year{
-    font-size: rem(12);
+    font-size: rem(8.8);
     font-family: $base-font-family;
 }
 
@@ -108,19 +108,25 @@ margin-top: rem(4);
 font-size: 1rem ;
 font-weight: $bold;
 margin-top: rem(8);
+border-bottom: solid 1px #408F95;
 @include mq(md){
 font-size: rem(24);
 }
 }
+.voice-card__box {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
 
 .voice-card__img {
-margin-left: rem(16);
+//margin-left: rem(16);
 aspect-ratio: 151 / 117;
 @include mq(md){
 aspect-ratio: 180 / 140;
 overflow:hidden;
 position: relative;
-width: rem(180);
+max-width: 100%;
 }
 }
 .voice-card__img  img {
@@ -132,7 +138,8 @@ width: rem(180);
 .voice-card__body {
 margin-top:rem(16);
 @include mq(md){
-margin-top:rem(40);
+margin-top:rem(20.8);
+padding: 0 0.6rem;
 }
 }
 

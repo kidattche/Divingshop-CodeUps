@@ -3,7 +3,7 @@
 padding: rem(100) rem(15);
 background: none;
 @include mq(md){
-background: url(http://localhost:3000/assets/images/common/blog.jpg) no-repeat top right / 100% 58.150%;
+background: url(http://localhost:3000/assets/images/common/blog.jpg) no-repeat top right / 100% 63.150%;
 }
 }
 .blog__inner {
@@ -21,7 +21,7 @@ max-width: rem(1080);
     @include mq(md){
     display: flex;
     gap: rem(40);
-    margin-top: rem(80);
+    margin-top: rem(51);
     position: relative;
 }
 }
@@ -33,7 +33,7 @@ display: inline-block;
 width: rem(437);
 height: rem(201);
 position: absolute;
-top: -13.5rem;
+top: -12.4rem;
 left: calc(50% - min(48vw, 38.6875rem));
 }
 
@@ -74,7 +74,7 @@ margin-top:rem(24);
 
 }
 
-.button-box {
+.button__box {
 
 }
 

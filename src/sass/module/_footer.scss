@@ -2,7 +2,8 @@
 
 .footer {
     background-color:$green;
-    padding: rem(48) rem(15)  rem(56);
+    padding: rem(88) rem(15)  rem(56);
+    overflow: hidden;
     @include mq(md) {
 
     }
@@ -28,6 +29,7 @@
 
 .footer-sns {
     display: flex;
+    align-items: end;
 }
 .footer-sns__items {
     display: flex;
@@ -75,7 +77,10 @@
     margin-top:rem(40);
     font-size: 1rem;
     display: flex;
-   
+    @include mq(md) {
+    margin-top:rem(24);
+        }
+
 }
 
 .footer-nav__item a::before {

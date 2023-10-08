@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .contact {
-padding: rem(80) rem(30) rem(100);
+padding: rem(124) rem(30) rem(100);
 }
 
 .contact__inner {
@@ -56,11 +56,16 @@ border-right: solid 1px $green;
     width:100%;
     text-align: center;
     border-bottom:solid 1px $green;
+    @include mq(md){
+}
 }
 .contact-logo {
 width: rem(174);
 margin-inline: auto;
-margin-bottom: rem(6);
+margin-bottom: rem(9);
+@include mq(md){
+  width: rem(192);
+}
 }
 .contact-address__container {
   @include mq(md){
@@ -72,18 +77,24 @@ margin-bottom: rem(6);
 }
 
 .contact-address {
-margin-top: rem(16);
+
+
 }
 
 .address-content {
 color: $black;
+text-align: center;
+white-space: nowrap;
+line-height: 1.8;
+margin-top:rem(8);
+@include mq(md){
+text-align: start;
 }
-
+}
 .contact-info__map {
     aspect-ratio: 295/160;
-    margin-top: rem(16);
+    margin-top:rem(8);
     @include mq(md){
-      margin-top: rem(24);
       aspect-ratio: 273 / 148;
     }
   }
@@ -109,7 +120,6 @@ color: $black;
 
 
 .contact-attend {
-font-size: rem;
 font-size: rem(14);
 font-weight: $normal;
 color: $green;
@@ -117,7 +127,7 @@ text-align: center;
 margin-top: rem(8);
 }
 
-.button-box {
+.button__box {
 
 }
 

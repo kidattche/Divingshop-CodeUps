@@ -8,15 +8,15 @@
     width:rem(280);
     height:rem(366);
     overflow: hidden;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
     @include mq(md){
     max-width:rem(334);
     height:rem(445);
     overflow: hidden;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
     }
     }
@@ -26,7 +26,7 @@
   width:100%;
   @include mq(md){
     width:100%;
-    margin-right: -11.25rem;
+    margin-right: -10rem;
     padding-bottom: rem(20);
     position: relative;;
 }

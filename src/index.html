@@ -62,6 +62,9 @@
             <a href="#">Voice<span>お客様の声</span></a>
           </li>
           <li class="pc-nav__item">
+            <a href="#">Price<span>料金一覧</span></a>
+          </li>
+          <li class="pc-nav__item">
             <a href="#">FAQ<span>よくある質問</span></a>
           </li>
           <li class="pc-nav__item">
@@ -156,8 +159,7 @@
               </li>
             </ul>
           </div>
-        </div> 
-  
+        </div>
       </nav>
     </div>
   </header>
@@ -178,7 +180,7 @@
 <!-- メインビュ------------------------------------------------------------------->
   <div id="mv">
   <!-- /.mv -->
-    <div class="p-swiper-container">
+    <div class="p-swiper-container" style="overflow:hidden;">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper mv-swiper-slide">
           <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center; background-size:cover;">
@@ -364,8 +366,8 @@
             </div>
         </div>
         <!--　ボタン  -->
-        <div class="button-box">
-          <!-- /.button-box -->
+        <div class="button__box">
+          <!-- /.button__box -->
             <a class="button">
               View more
               <div class="button-arrow">
@@ -390,26 +392,26 @@
         </div>
         <div class="aboutus__content">
           <div class="aboutus__images">
-            <div class="aboutus-left">
-                <div class="aboutus__img--left">
-                  <img src="./assets/images/common/aboutus-left.jpg" alt="沖縄の画像"/>
-                </div>
-            </div>
             <div class="aboutus-right">
               <div class="aboutus__img--right">
                 <img src="./assets/images/common/aboutus-right.jpg" alt="沖縄の海の魚の画像"/>
               </div>
             </div>
+            <div class="aboutus-left">
+                <div class="aboutus__img--left">
+                  <img src="./assets/images/common/aboutus-left.jpg" alt="沖縄の画像"/>
+                </div>
+            </div>
           </div>
             <div class="aboutus__text-body">
                 <h2 class="aboutus__title">Dive into<br> the Ocean</h2>
                 <div class="aboutus__contents">
-                  <p class="aboutus-content">
+                  <p class="about__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
                    <!--　ボタン  -->
-                  <div class="button-box">
-                    <!-- /.button-box -->
+                  <div class="button__box">
+                    <!-- /.button__box -->
                       <a class="button">
                         View more
                         <div class="button-arrow">
@@ -436,18 +438,21 @@
           <!-- /.section-header__subtitle -->
         </div>
         <div class="information-container">
+          <div class="information-box">
             <div class="information-img js-colorbox colorbox fadeUpTrigger">
               <img src="./assets/images/common/information.jpg" alt="海中画像" class="fadein  infoimg"/>
             </div>
-            <div class="information__text-body">
+          </div>
+          <!-- /.information-box -->
+          <div class="information__text-body">
               <h2 class="information__title">ライセンス講習</h2>
               <div class="information__contents">
                 <p class="information__content">
                   当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
   正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
                 <!--　ボタン  -->
-                <div class="button-box">
-                  <!-- /.button-box -->
+                <div class="button__box">
+                  <!-- /.button__box -->
                     <a class="button">
                       View more
                       <div class="button-arrow">
@@ -458,7 +463,7 @@
                     </a>
                 </div>
               </div>
-            </div>
+          </div>
           <!-- /.information-img -->
         </div>
         <!-- /.information-container -->
@@ -487,7 +492,7 @@
                     >2023/11/17</time>
                 <h3 class="card__title">ライセンス取得</h3>
                 <p class="card__text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
   ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
               </div>
@@ -501,7 +506,7 @@
                     >2023/11/17</time>
                 <h3 class="card__title">ウミガメと泳ぐ</h3>
                 <p class="card__text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
   ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
               </div>
@@ -515,12 +520,24 @@
                   >2023/11/17</time>
               <h3 class="card__title">カクレクマノミ</h3>
               <p class="card__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
               </p>
             </div>
           </div>
         </div>
+        <!--　ボタン  -->
+        <div class="button__box--second">
+          <!-- /.button__box -->
+            <a class="button">
+              View more
+              <div class="button-arrow">
+                <span class="button__line-f"></span>
+                <span class="button__line-s"></span>
+              </div>
+              <!-- /.arrow -->
+            </a>
+          </div>
       </div>
     </section>
 
@@ -548,18 +565,20 @@
                         <div class="voice-card-content-category">ライセンス講習</div>
                       </div>
                       <div class="voice-card-title">ここにタイトルが入ります。ここにタイトル</div>
-                    </div>
                       <!-- /.voice-card-title -->
-                    <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
-                        <img src="./assets/images/common/voice1.jpg" alt="お客様の画像1"  class="fadein infoimg" />
+                    </div>
+                    <div class="voice-card__box">
+                      <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
+                          <img src="./assets/images/common/voice1.jpg" alt="お客様の画像1"  class="fadein infoimg" />
+                      </div>
                     </div>
                 </div>
                 <div class="voice-card__body">
-                  <p class="voice-card__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
+                    <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
                 </div>
               </div>
               <div class="voice-card__item">
@@ -574,25 +593,27 @@
                         <div class="voice-card-content-category">ファンダイビング</div>
                       </div>
                       <div class="voice-card-title">ここにタイトルが入ります。ここにタイトル</div>
-                    </div>
                       <!-- /.voice-card-title -->
-                    <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
-                        <img src="./assets/images/common/voice2.jpg" alt="お客様の画像1" class="fadein infoimg" />
                     </div>
-                  </div>
+                    <div class="voice-card__box">
+                      <div class="voice-card__img js-colorbox colorbox fadeUpTrigger">
+                          <img src="./assets/images/common/voice2.jpg" alt="お客様の画像1"  class="fadein infoimg" />
+                      </div>
+                    </div>
+                </div>
                 <div class="voice-card__body">
-                  <p class="voice-card__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
+                    <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
                 </div>
               </div>
             </div>
             <!-- /.voice-card__items -->
             <!--　ボタン  -->
-            <div class="button-box">
-              <!-- /.button-box -->
+            <div class="button__box--second">
+              <!-- /.button__box -->
                 <a class="button">
                   View more
                   <div class="button-arrow">
@@ -622,9 +643,12 @@
                   <img src="./assets/images/common/price-sp.jpg" alt="海亀の画像1"/>
                 </div>
                 <div class="price-right">
-                  <div class="price__img--pc js-colorbox colorbox fadeUpTrigger">
-                    <img src="./assets/images/common/price-pc.jpg" alt="サンゴと熱帯魚の画像1" class="fadein infoimg"/>
+                  <div class="price-img__box">
+                    <div class="price__img--pc js-colorbox colorbox fadeUpTrigger">
+                      <img src="./assets/images/common/price-pc.jpg" alt="サンゴと熱帯魚の画像1" class="fadein infoimg"/>
+                    </div>
                   </div>
+                  <!-- /.price-img__box -->
                 <!-- /.price-img -->
                 </div>
               <!-- /.price-right -->
@@ -732,8 +756,8 @@
               </div>
             </div>
               <!--　ボタン  -->
-              <div class="button-box">
-                <!-- /.button-box -->
+              <div class="button__box--third">
+                <!-- /.button__box -->
                   <a class="button">
                     View more
                     <div class="button-arrow">
@@ -792,8 +816,8 @@
                   </div>
                   <!-- /.contact-attend -->
                   <!--　ボタン  -->
-                  <div class="button-box">
-                    <!-- /.button-box -->
+                  <div class="button__box">
+                    <!-- /.button__box -->
                       <a class="button">
                         Contact us
                         <div class="button-arrow">

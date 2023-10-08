@@ -44,8 +44,9 @@ to {
 
 .information__text-body {
     @include mq(md){
-    margin-top: rem(24);
+    margin-top: rem(56);
     width: 50%;
     padding-top:0;
+    padding-left: 2.8rem;
 }
 }

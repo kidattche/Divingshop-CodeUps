@@ -20,7 +20,7 @@ height:rem(366);
 width:rem(334);
 height:auto;
 overflow: hidden;
-padding-bottom:rem(40);
+padding-bottom:rem(23);
 }
 }
 
@@ -64,6 +64,9 @@ font-family: $base-font-family;
 font-weight: $bold;
 line-height: 1.5;
 color: $black;
+margin-bottom: rem(8);
+margin-top:rem(8);
+font-size:0.9rem;
 }
 
 .campaign-card__footer {

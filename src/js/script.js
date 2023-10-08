@@ -66,7 +66,17 @@ const swiper = new Swiper('.js-campaign-swiper', {
   slidesPerView: 1.3,     //追記
   breakpoints: {
       // スライドの表示枚数：767px以上の場合
+    540: {
+      slidesPerView: 1.8,
+  },
+      // スライドの表示枚数：767px以上の場合
     767: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3.8,
+    },
+    1440: {
       slidesPerView: 4,
     }
   },
@@ -77,7 +87,7 @@ const swiper = new Swiper('.js-campaign-swiper', {
 })
 
 
-//information・voice
+//information・voice・price
 $(function(){
   $(window).scroll(function (){
       $('.fadein').each(function(){

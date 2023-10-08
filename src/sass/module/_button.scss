@@ -1,10 +1,23 @@
 @use "global" as *;
 
 
-.button-box {
+.button__box {
     text-align: center;
     padding-bottom:1rem;
+    margin-top: rem(38.4);
 }
+
+.button__box--second {
+    text-align: center;
+    padding-bottom:1rem;
+    margin-top: rem(80);
+}
+.button__box--third {
+    text-align: center;
+    padding-bottom:1rem;
+    margin-top: rem(112);
+}
+
 .button {
     align-items: center;
     background-color: #408F95;
@@ -46,19 +59,11 @@
     color: $green;
   }
 .button-arrow {
-    margin-left: rem(8);
+    margin-left:rem(8);
     position: relative;
-    width: rem(40);
+    width: rem(38.4);
     z-index:1;
 }
-
-/*.button-arrow::after {
-    content:"";
-    color:$green;
-    position: relative;
-    width: rem(40);
-    z-index:1;
-}*/
 
 .button__line-f {
     background-color: #fff;
