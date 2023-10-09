@@ -3,7 +3,7 @@
 .aboutus {
     padding: 0 rem(15)rem(70);
     @include mq(md){
-    padding: rem(15) rem(180) rem(160);
+    padding: rem(15) rem(15) rem(160);
 
 }
 }
@@ -50,9 +50,11 @@ bottom:-9.5rem;
 }
 
 .aboutus-left {
-    width: 37%;
+    max-width: 37%;
+    @include mq(md){
+    max-width: rem(400);
     }
-
+}
 
 .aboutus__img--left {
 
@@ -72,11 +74,11 @@ aspect-ratio: 400 / 606;
     margin-top: rem(26);
     position: absolute;
     right:0;
-    width: 81.4%;
-    max-width: rem(281);
+    max-width:81.7%;
+    padding: 0 0.9375rem;
     @include mq(md){
+   // max-width:rem(880);
     margin-top: rem(80);
-    max-width: rem(880);
 }
 }
 .aboutus__img--right {

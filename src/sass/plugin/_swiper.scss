@@ -1,16 +1,16 @@
 @use "global" as *;
 .p-swiper-container {
-
+overflow:hidden;
 }
 
 .campaign-swiper-slide {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     width:rem(280);
     height:rem(366);
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom:1.5rem;
     @include mq(md){
     max-width:rem(334);
     height:rem(445);
@@ -57,6 +57,8 @@ height: rem(80);
 margin-inline:auto;
 left:calc(50% + 220px);
 bottom:-11rem;
+display:block;
+gap:0.5rem;
 }
 }
 

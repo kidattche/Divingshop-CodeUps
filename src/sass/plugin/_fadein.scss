@@ -14,7 +14,7 @@
 .fadein {
     opacity : 0;
     transform : translate(100%, 0);
-    transition : all 2s;
+    transition : all 1.5s;
 }
 .fadein.active{
     opacity : 1;

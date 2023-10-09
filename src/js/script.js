@@ -36,16 +36,16 @@ window.addEventListener('load', () => {
     loop: true, // ループさせる
     effect: 'fade', // フェードのエフェクト
     autoplay: {
-      delay: 4000, // ４秒後に次の画像へ
+      delay: 3000, // ４秒後に次の画像へ
       disableOnInteraction: false, // ユーザー操作後に自動再生を再開する
     },
-    speed: 2000, // ２秒かけながら次の画像へ移動
+    speed: 4000, // ２秒かけながら次の画像へ移動
     allowTouchMove: false, // マウスでのスワイプを禁止
     navigation: {
       // 左右のページ送りを有効にする
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-      clickable: true //この行を追記する
+      clickable: true, //この行を追記する
     },
   };
   const swiper = new Swiper('.p-swiper-container', swiperParams);
@@ -65,10 +65,15 @@ const swiper = new Swiper('.js-campaign-swiper', {
   speed: 4000,          //追記
   slidesPerView: 1.3,     //追記
   breakpoints: {
-      // スライドの表示枚数：767px以上の場合
+    // スライドの表示枚数：376px以上の場合
+    376: {
+      slidesPerView: 1.5,
+    },
+
+      // スライドの表示枚数：540px以上の場合
     540: {
-      slidesPerView: 1.8,
-  },
+      slidesPerView: 2,
+    },
       // スライドの表示枚数：767px以上の場合
     767: {
       slidesPerView: 3,

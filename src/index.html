@@ -77,7 +77,7 @@
           <img src="./assets/images/common/nav-codeups.png" alt="CodeUpsのロゴ"></a></div>
         <!-- /.sp-nav__logo -->
 
-        <div class="sp-nav-container">
+        <div class="sp-nav-container" >
           <div class="sp-nav__items--wrap">
             <ul class="sp-nav__items">
               <li class="sp-nav__item">
@@ -163,7 +163,7 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main >
 <!--ローディング  ---------------------------------------------------------------->
     <div class="loader">
       <!-- <div class="loader-inner"> -->
@@ -180,7 +180,7 @@
 <!-- メインビュ------------------------------------------------------------------->
   <div id="mv">
   <!-- /.mv -->
-    <div class="p-swiper-container" style="overflow:hidden;">
+    <div class="p-swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper mv-swiper-slide">
           <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center; background-size:cover;">
@@ -232,16 +232,12 @@
       <!-- /.section-header -->
             <div class="campaign__swiper">
             <!-- /.campaign__swiper -->
-              <div class="swiper-pagination">
-                <div class="swiper-button-prev"></div>
-                <!-- 次ページボタン -->
-                <div class="swiper-button-next"></div>
-              </div>
+              
               <div class="swiper js-campaign-swiper">
                 <div class="swiper-wrapper">
                     <!-- ループ処理開始 -->
                   <div class="swiper-slide campaign-swiper-slide">
-                    <div class="campaign-card__item p-card">
+                    <a class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign1.jpg" alt="キャンペーン画像１" />
                       </div>
@@ -268,10 +264,10 @@
                           </div>
                           <!-- /.campaign-card__footer -->
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide campaign-swiper-slide">
-                    <div class="campaign-card__item p-card">
+                    <a class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign2.jpg" alt="キャンペーン画像2" />
                       </div>
@@ -298,11 +294,11 @@
                           </div>
                           <!-- /.campaign-card__footer -->
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <!-- /.swiper-slide -->
                   <div class="swiper-slide campaign-swiper-slide">
-                    <div class="campaign-card__item p-card">
+                    <a class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign3.jpg" alt="キャンペーン画像3" />
                       </div>
@@ -329,11 +325,11 @@
                           </div>
                           <!-- /.campaign-card__footer -->
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <!-- /.swiper-slide -->
                   <div class="swiper-slide campaign-swiper-slide">
-                    <div class="campaign-card__item p-card">
+                    <a class="campaign-card__item p-card">
                       <div class="campaign-card__img">
                         <img src="./assets/images/common/campaign4.jpg" alt="キャンペーン画像4" />
                       </div>
@@ -360,7 +356,7 @@
                           </div>
                           <!-- /.campaign-card__footer -->
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
             </div>
@@ -423,6 +419,11 @@
                   </div>
                 </div>
             </div>
+        </div>
+        <div class="swiper-pagination">
+          <div class="swiper-button-prev campaign__button"></div>
+          <!-- 次ページボタン -->
+          <div class="swiper-button-next campaign__button"></div>
         </div>
       </div>
     </section>
