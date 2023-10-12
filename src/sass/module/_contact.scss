@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .contact {
+padding: rem(54.4) rem(30) rem(100);
+@include mq(md){
 padding: rem(124) rem(30) rem(100);
+}
 }
 
 .contact__inner {
@@ -19,19 +22,24 @@ padding: rem(124) rem(30) rem(100);
   position: relative;
 }
 }
-.contact-container::after {
-  @include mq(md){
+.contact-container::before {
     content: '';
-    background: url(http://localhost:3000/assets/images/common/hanadaism.png) no-repeat right top;
+    background: url(http://localhost:3000/assets/images/common/hanadaism.png) no-repeat;
     background-size:contain;
     display: inline-block;
+    width: rem(109);
+    height: rem(50);
+    position: absolute;
+    //top: -2.8rem;
+    right: calc(50% - min(48vw, 12.8125rem));
+    @include mq(md){
     width: rem(301);
     height: rem(138);
-    position: absolute;
     top: -2.8rem;
     right: calc(50% - min(48vw, 41.8125rem));
 }
 }
+
 .contact-address__info {
 max-width:100%;
 width:100%;
@@ -86,10 +94,11 @@ color: $black;
 text-align: center;
 white-space: nowrap;
 line-height: 1.8;
-margin-top:rem(8);
+margin-top:rem(11.2);
 overflow:hidden;
 @include mq(md){
 text-align: start;
+margin-top:rem(8);
 }
 }
 .contact-info__map {
@@ -111,9 +120,11 @@ text-align: start;
 
 
 .contact-button__info {
-
+margin-top:rem(8);
+@include mq(md){
+margin-top:0;
 }
-
+}
 .section-header {
 
 }

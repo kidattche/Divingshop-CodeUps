@@ -52,7 +52,7 @@ overflow:hidden;
 .voice-card__item {
 margin-top: rem(30);
 box-shadow: 1px 1px 5px rgba(204,204,204,0.3);
-padding: rem(15) rem(16) rem(24) rem(16);
+padding: rem(24) rem(16) rem(24) rem(16);
 height: 100%;
 @include mq(md){
 width:rem(520);
@@ -62,9 +62,9 @@ width:rem(520);
 .voice-card__container {
     display: flex;
     gap:rem(13);
-    padding: 0.8rem 0.5rem;
     @include mq(md){
     gap:rem(16);
+    padding: 0.8rem 0.5rem;
     }
 }
 .p-card {
@@ -90,9 +90,10 @@ align-items: end;
 .voice-card-content-category{
     font-size:rem(12);
     border:solid 1px $green;
-    padding:rem(4) rem(12);
+    padding:rem(6.4) rem(12.8);
     color: $green;
     text-align:initial;
+    display: inline-block;
     @include mq(md){
     padding:rem(6) rem(16);
 }
@@ -109,10 +110,10 @@ margin-top: rem(4);
 .voice-card-title {
 font-size: 1rem ;
 font-weight: $bold;
-margin-top: rem(8);
 border-bottom: solid 1px #408F95;
 @include mq(md){
 font-size: rem(24);
+margin-top: rem(8);
 }
 }
 .voice-card__box {
@@ -121,6 +122,7 @@ font-size: rem(24);
     overflow: hidden;
     position: relative;
     z-index:9993;
+    margin-top: rem(8);
 }
 
 .voice-card__img {

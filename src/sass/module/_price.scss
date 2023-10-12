@@ -2,7 +2,10 @@
 .price {
     background-color: $lightgreen;
     background-size: cover;
-    padding:rem(96) rem(15) rem(0.1);
+    padding:rem(80) rem(15) rem(48);
+    @include mq(md){
+    padding:rem(96) rem(15) rem(48);
+}
 }
 .price__inner {
     @include mq(md){
@@ -12,7 +15,9 @@
 }
 }
 .price-wrapper {
+@include mq(md){
 margin-bottom: rem(100);
+}
 }
 .price__img--sp {
 display: block;
@@ -48,7 +53,9 @@ object-fit: cover;
 .price-right {
     width: 100%;
     transform: translateY(rem(30));
+    @include mq(md){
     margin-top:rem(8);
+}
 }
 
 .price-container {
@@ -109,18 +116,22 @@ gap:rem(92)
 width: rem(253);
 font-size: rem(14);
 font-family: $base-font-family;
-letter-spacing: 0.15em;
+letter-spacing: 0.02rem;
+white-space: nowrap;
 @include mq(md){
 width: rem(300);
+letter-spacing: 0.15em;
 }
 }
 .price-en {
 width: rem(92);
 text-align: end;
 font-family: $base-font-family;
-letter-spacing:0.01em;
+letter-spacing:0.0875rem;
+font-size: rem(12);
 @include mq(md){
 width: rem(100);
+font-size: rem(16);
 }
 }
 

@@ -28,6 +28,37 @@ $(function () {
   })
 })
 
+/*$("body").css("display", "block");
+  var webStorage = function webStorage() {
+    if (sessionStorage.getItem("access")) {
+      $(".loading").addClass("is-none");
+    } else {
+      //初回アクセス時の処理
+      sessionStorage.setItem("access", 0);
+      //ここにローディングの処理
+
+      $(document).ready(function () {
+        // ローディング画面を表示
+
+        $(".loading__left-image").addClass("is-active");
+        $(".loading__right-image").addClass("is-active");
+
+        // ローディング画面のフェードアウト後にスクロール禁止を解除
+        $("#loading").delay(1700).fadeOut("slow", function () {
+          // フェードアウトが完了した後に実行されるコールバック関数
+          // スクロール禁止を解除
+          $("body").removeClass("loading__no-scroll");
+          $(".loading__left-image").removeClass("is-active");
+          $(".loading__right-image").removeClass("is-active");
+        });
+
+        // ローディング中はスクロール禁止
+        $("body").addClass("loading__no-scroll");
+      });
+    }
+  };
+  webStorage();*/
+
 //swiper
 window.addEventListener('load', () => {
   const elem = document.querySelector('.p-swiper-container');
@@ -110,6 +141,5 @@ $(function(){
     }
   });// ここまで画面をスクロールをしたら動かしたい場合の記述
 });
-
 
 

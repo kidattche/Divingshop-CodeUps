@@ -2,10 +2,10 @@
 
 .footer {
     background-color:$green;
-    padding: rem(88) rem(15)  rem(56);
+    padding: rem(51.2) rem(15)  rem(56);
     overflow: hidden;
     @include mq(md) {
-
+    padding: rem(88) rem(15)  rem(56);
     }
 }
 .footer__inner {
@@ -30,6 +30,10 @@
 .footer-sns {
     display: flex;
     align-items: end;
+    margin-top:1rem;
+    @include mq(md) {
+    margin-top:0;
+}
 }
 .footer-sns__items {
     display: flex;
@@ -41,7 +45,10 @@
 }
 
 .sns {
+    width:rem(24);
+    @include mq(md) {
     width:rem(32);
+}
 }
 
 .instagram {
@@ -55,6 +62,7 @@
 
 .footer-nav__items--wrap {
     width: 50%;
+    margin-left: rem(8);
     @include mq(md) {
     display: flex;
 

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .aboutus {
-    padding: 0 rem(15)rem(70);
+    padding: 0 rem(15);
     @include mq(md){
     padding: rem(15) rem(15) rem(160);
 
@@ -95,7 +95,7 @@ aspect-ratio: 400 / 606;
 }
 
 .aboutus__text-body {
-    margin-top:rem(40);
+    margin-top:rem(56);
     @include mq(md){
         display: flex;
         width: rem(840);
@@ -120,7 +120,7 @@ aspect-ratio: 400 / 606;
 }
 }
 .aboutus__contents {
-    margin-top: rem(16);
+    margin-top: rem(17.6);
     @include mq(md){
     width: rem(400);
     margin-top:0;

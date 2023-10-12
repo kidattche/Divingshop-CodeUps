@@ -44,22 +44,28 @@ aspect-ratio: 333 / 223;
 
 .campaign-card__body {
 width:100%;
-padding: rem(24) rem(16) rem(8) rem(16);
+padding: rem(17) rem(16) rem(8) rem(16);
 display: flex;
 flex-direction: column;
 flex-grow: 1;
+@include mq(md){
+padding: rem(24) rem(16) rem(8) rem(16);
 }
 .campaign-card__header {
 border-bottom: solid 1px $green;
 
 }
+}
 
 .campaign-category {
 font-size: rem(12);
 font-family: $base-font-family;
-padding: rem(6) rem(16);
+padding: rem(4) rem(12);
 border:solid 1px $green;
 width: fit-content;
+@include mq(md){
+padding: rem(6) rem(16);
+}
 }
 
 .campaign-card__title {
@@ -102,13 +108,19 @@ margin-top:rem(16);
     text-decoration-color: red;
     font-family: $main-title-family;
     color: $black;
+    font-size: rem(20);
+    @include mq(md){
     font-size: rem(24);
+}
 }
 
 .campaign-card__afterprice {
-font-size: rem(38);
+font-size: rem(32);
 color: $green;
 font-family: $main-title-family;
+@include mq(md){
+font-size: rem(38);
+}
 }
 
 

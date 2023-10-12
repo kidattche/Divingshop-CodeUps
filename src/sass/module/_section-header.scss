@@ -8,9 +8,12 @@
 .section-header__title {
     color: $black;
     font-family: $english-family;
-    font-size: rem(40);
+    font-size: rem(32);
     line-height: 40px;
     font-weight: $normal;
+    @include mq(md){
+    font-size: rem(40);
+}
 }
 
 .section-header__subtitle {
@@ -28,7 +31,7 @@
 .section-header__title--blog {
     color: $black;
     font-family: $english-family;
-    font-size: rem(40);
+    font-size: rem(32);
     line-height: 40px;
     font-weight: $normal;
     @include mq(md){
@@ -39,6 +42,7 @@
     font-weight: $normal;
 }
 }
+
 .section-header__title--blog:first-letter {
     color: $green;
     text-transform: capitalize;
@@ -76,9 +80,3 @@
     text-transform: capitalize;
 }
 
-
-/*---voice-------------------------------*/
-/*.section-header--voice {
-    margin-top: rem(140);
-    text-align: center;
-}*/

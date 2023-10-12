@@ -1,9 +1,10 @@
 @use "global" as *;
 .blog {
-padding: rem(100) rem(15);
+padding: rem(32) rem(15);
 background: none;
 @include mq(md){
 background: url(http://localhost:3000/assets/images/common/blog.jpg) no-repeat top right / 100% 63.150%;
+padding: rem(100) rem(15);
 }
 }
 .blog__inner {
@@ -26,6 +27,7 @@ max-width: rem(1080);
 }
 }
 .blog-card__items::after {
+ @include mq(md){
 content: '';
 background: url(http://localhost:3000/assets/images/common/hanadaill.png) no-repeat top left;
 background-size:contain;
@@ -36,7 +38,7 @@ position: absolute;
 top: -12.4rem;
 left: calc(50% - min(48vw, 38.6875rem));
 }
-
+}
 
 .blog-card__item {
 box-shadow: 1px 1px 5px rgba(204,204,204,0.3);

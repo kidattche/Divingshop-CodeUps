@@ -10,7 +10,7 @@ overflow:hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom:1.5rem;
+
     @include mq(md){
     max-width:rem(334);
     height:rem(445);
@@ -18,6 +18,7 @@ overflow:hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+
     }
     }
 
@@ -52,10 +53,10 @@ overflow:hidden;
   display: none;
   @include mq(md){
 position: absolute;
-width: rem(240);
+min-width: rem(256);
 height: rem(80);
 margin-inline:auto;
-left:calc(50% + 220px);
+left:calc(50% + min(48vw, 17.8875rem));
 bottom:-11rem;
 display:block;
 gap:0.5rem;

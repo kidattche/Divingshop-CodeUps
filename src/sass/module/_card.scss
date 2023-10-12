@@ -26,28 +26,24 @@ background-color: $white;
 }
 
 .card__body {
+  margin-top: rem(16);
+  @include mq(md){
     margin-top: rem(24);
+}
 }
 
 .card__title {
-
-  font-size: rem(18);
+  font-size: 1rem;
   font-weight: 700;
   font-family:$base-font-family;
-  letter-spacing: 0.05em;
-  @include mq(md){
-    font-size: 1rem;
-    letter-spacing: normal;
-    font-size: 1rem;
-}
+  padding-left: 0.5rem;
 }
 
 .card__text {
   font-size: rem(16);
   font-weight: 400;
-  letter-spacing: 0.05em;
-  line-height: 1.79;
   margin-top: rem(16);
+  padding: 0.4rem;
   @include mq(md){
     font-size: 1rem;
     font-weight: 400;
@@ -61,4 +57,9 @@ background-color: $white;
 
 .card-content__date {
   font-size: rem(12);
+  font-family: Gotu;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  padding-left: 0.5rem;
 }
