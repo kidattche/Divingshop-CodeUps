@@ -17,7 +17,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 //ローディング
-/*$(function () {
+$(function () {
   function end_loader() {
     $('.loader').fadeOut(800);
   }
@@ -26,7 +26,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       end_loader();
     }, 3000)
   })
-})*/
+})
 
 gsap.fromTo(".loading__left-image", {
   y: '100%',
