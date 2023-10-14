@@ -26,7 +26,8 @@ $(function () {
       end_loader();
     }, 3000)
   })
-})
+  });
+
 
 gsap.fromTo(".loading__left-image", {
   y: '100%',
@@ -43,7 +44,6 @@ gsap.fromTo(".loading__right-image", {
 },{
   y:0,
 });
-
 
 //swiper
 window.addEventListener('load', () => {

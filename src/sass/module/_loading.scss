@@ -10,9 +10,22 @@
     z-index: 555;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.loading__inner {
+    max-width:100%;
+    width:100%;
+    position: relative;
+}
+
+.text-box {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
 }
 .loader .text{
     font-size: rem(40);
@@ -39,8 +52,4 @@
 }
 }
 
-.loader-inner {
-    max-width:100%;
-    width:100%;
-}
 
