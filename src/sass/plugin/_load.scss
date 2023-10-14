@@ -4,21 +4,40 @@
     overflow: hidden;
     width: 100%; /* コンテナの幅 */
     height: 100%; /* 画像の高さ */
-    position: relative;
+    display: flex;
+   // position: relative;
   }
-  .image {
+  .loading__left-image,
+  .loading__right-image{
     width: 50%; /* 画像の幅 */
-    height: 100%; /* 画像の高さ */
-    position: absolute;
-    top: 0;
+    height: 100vh; /* 画像の高さ */
+   // position: absolute;
+    //top: 0;
   }
-  #title {
+
+
+  /*#title {
     display: none;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;s
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
     border-radius: 5px;
+  }*/
+
+  .loading__left-image  {
+    @include mq(md){
+    background: url(http://localhost:3000/assets/images/common/pc-left1.jpg) no-repeat;
+    object-fit:cover;
+    }
+  }
+
+  .loading__right-image {
+    @include mq(md){
+    background: url(http://localhost:3000/assets/images/common/pc-right1.jpg) no-repeat;
+    object-fit:cover;
+    }
+
   }

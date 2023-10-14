@@ -26,13 +26,21 @@
 
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
-  <script defer src="./assets/js/script.js"></script>
+  
 </head>
 <body>
+  <!--ローディング  ---------------------------------------------------------------->
+  <div id="loading" class="loader">
+      <div class="text-box">
+        <h1 class="text">diving</h1>
+        <div class="sub-text">into the ocean</div>
+      </div>
+  </div>
+  <div id="container">
+    <div class="loading__left-image"></div>
+    <div class="loading__right-image"></div>
+  </div> 
+  <!-- ヘッダ---------------------------------------------------------------------->
   <header>
     <div class="header__inner">
       <h1 class="header__logo">
@@ -164,29 +172,7 @@
     </div>
   </header>
   <main >
-<!--ローディング  ---------------------------------------------------------------->
-    <div id="container">
-      <img class="image" src="./assets/images/common/load1.jpg" alt="ローディング1">
-      <img class="image" src="./assets/images/common/load2.jpg" alt="ローディング2">
-    </div>
 
-    <div id="title">
-      <h1 class="text">diving</h1>
-      <div class="sub-text">into the ocean</div>
-    </div>
-
-
-    <div class="loader">
-      <!-- <div class="loader-inner"> -->
-        <div class="text-box">
-          <!-- /.text-box -->
-          <h1 class="text">diving</h1>
-          <div class="sub-text">into the ocean</div>
-        </div>
-      <!-- /.sub-text -->
-      <!-- </div> -->
-    <!-- /.loader-inner -->
-    </div>
 
 <!-- メインビュ------------------------------------------------------------------->
   <div id="mv">
@@ -905,6 +891,12 @@
       </div>
     </div>
   </footer>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </body>
 
 </html>
