@@ -129,3 +129,14 @@ $(function(){
 });
 
 
+//headerクラス付与
+let header = $('.header');
+let headerHeight = $('.header').height();
+let height =$('.mv').height();
+$(window).scroll(function () {
+  if ($(this).scrollTop() > height - headerHeight) {//メインビューの高さから、headerの高さをひいてあげるコード。メインビュー以下になった時にパッと切り替わるようになる！
+    header.addClass('is-color');
+  } else {
+    header.removeClass('is-color');
+  }
+});
