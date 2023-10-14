@@ -30,14 +30,12 @@
   .loading__left-image  {
     @include mq(md){
     background: url(http://localhost:3000/assets/images/common/pc-left1.jpg) no-repeat;
-    object-fit:cover;
     }
   }
 
   .loading__right-image {
     @include mq(md){
     background: url(http://localhost:3000/assets/images/common/pc-right1.jpg) no-repeat;
-    object-fit:cover;
     }
 
   }
