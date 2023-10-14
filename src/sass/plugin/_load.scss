@@ -5,27 +5,15 @@
     width: 100%; /* コンテナの幅 */
     height: 100%; /* 画像の高さ */
     display: flex;
-   // position: relative;
-  }
+}
   .loading__left-image,
   .loading__right-image{
     width: 50%; /* 画像の幅 */
     height: 100vh; /* 画像の高さ */
-   // position: absolute;
-    //top: 0;
+  
   }
 
 
-  /*#title {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;s
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-  }*/
 
   .loading__left-image  {
     @include mq(md){
