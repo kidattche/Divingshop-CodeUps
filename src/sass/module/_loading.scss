@@ -1,7 +1,4 @@
 @use "global" as *;
-
-
-
 .loader {
     position: fixed;
     width: 100%;
@@ -16,6 +13,8 @@
     max-width:100%;
     width:100%;
     position: relative;
+    background-color: #fff;
+    height: inherit;
 }
 
 .text-box {

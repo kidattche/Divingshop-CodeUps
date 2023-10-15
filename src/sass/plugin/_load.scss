@@ -16,14 +16,17 @@
 
 
   .loading__left-image  {
-    @include mq(md){
-
-    }
+   object-fit: cover;
+   display:none;
+   @include mq(md){
+    display: block;
   }
+}
 
   .loading__right-image {
-    @include mq(md){
-
-    }
-
+  object-fit: cover;
+  display:none;
+  @include mq(md){
+    display: block;
+  }
   }

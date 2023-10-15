@@ -21,30 +21,91 @@ $(function () {
   function end_loader() {
     $('.loader').fadeOut(800);
   }
-  $(window).on('load', function () {
-    setTimeout(function () {
-      end_loader();
-    }, 3000)
-  })
-  });
+  var element = $("loading__left-image ");
+  var element = $("loading__right-image ");
 
+
+$(window).on('load', function () {
+  setTimeout(function () {
+    end_loader();
+  }, 2000)
+})
+});
 
 gsap.fromTo(".loading__left-image", {
   y: '100%',
   ease: "slow(0.7,0.7,false)",
-  duration: 15
+  duration: 2,
+  delay: 2
 },{
   y:0,
 });
 gsap.fromTo(".loading__right-image", {
   y: '150%',
   ease: "slow(0.7,0.7,false)",
-  duration: 15,
-  delay: 0.5
+  duration:2,
+  delay: 2
 },{
   y:0,
 });
 
+
+
+/*$(function(){
+  let flg = null;
+  let check_access = function () {
+    // ★sessionStorageの値を判定
+    if (sessionStorage.getItem('access_flg')) {
+      // 2回目以降
+      flg = 1;
+    } else {
+      // 1回目
+      sessionStorage.setItem('access_flg', true);
+      flg = 0
+    }
+    return flg;
+  }
+
+  let $i = check_access();
+  if($i == 0){
+    // 1回目アクセスの処理
+    $(document).ready(function() {
+           // ローディング画面ちらつき防止
+          $('.js-loading').css('display','block');
+          $('.js-loading').delay(3000).fadeOut(2000);
+          $('body').css('display','block');
+        setTimeout(function() {
+          // fvスライダー
+          const swiper1 = new Swiper(".js-fv-slider", {
+            loop: true,
+            speed: 1500,
+            autoplay: {
+              delay: 2500,
+            },
+          });
+          $('.js-btn,.js-mask').addClass('is-hidden');
+          $('.js-header').addClass('color');
+        }, 7000); // 遅延時間
+      });
+  }else{
+    // 2回目アクセスの処理
+    $(document).ready(function() {
+      $('.js-loading').hide();
+      $('.js-btn,.js-mask,.js-loading').addClass('is-hidden');
+      $('body').css('display','block');
+    setTimeout(function() {
+      const swiper1 = new Swiper(".js-fv-slider", {
+        loop: true,
+        speed: 1500,
+        autoplay: {
+          delay: 2500,
+        },
+      });
+      $('.js-header').addClass('color');
+    }, 4000);
+  });
+  }
+})*/
 //swiper
 window.addEventListener('load', () => {
   const elem = document.querySelector('.p-swiper-container');
