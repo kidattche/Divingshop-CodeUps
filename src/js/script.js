@@ -17,13 +17,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 //ローディング
-$(function () {
+/*$(function () {
   function end_loader() {
     $('.loader').fadeOut(800, function(){
       // ローダーがフェードアウトした後に以下のコードを実行
       $('.mv').fadeIn(500); // .mvを表示
     });
-  }
+  }*/
 
 
 const jsLoaderBg = '.loader' // カーテン（白い背景）
@@ -31,6 +31,7 @@ const jsTextbox = '.text-box' //テキストボックス
 const jsText = '.p-swiper-desc'//メインビジュアルのタイトル
 /*const jsLeftimg = '.loading__left-image'
 const jsRightimg = '.loading__right-image'*/
+const mv = '.mv'
 const tl = gsap.timeline();
 
 tl.to(
@@ -43,29 +44,31 @@ tl.to(
   jsTextbox, {
     opacity: 0
   }
-).to(".loading__left-image", {
+).fromTo(".loading__left-image", {
   y: '100%',
-  ease: "slow(0.7,0.7,false)",
-  duration: 2,
-  delay: 2
 },{
   y:0,
-}).to(".loading__right-image", {
-  y: '150%',
-  ease: "slow(0.7,0.7,false)",
-  duration:2,
-  delay: 2
+  duration: 0.5,
+  delay: 0
+}, '+=0.2').fromTo(".loading__right-image", {
+  y: '108%',
 },{
   y:0,
-});
+  duration:0.5,
+  delay: 0.01,
+},'+=0.05').to(
+  mv, {
+    opacity: 1,
+    y: 0,
+  },
+)
 
-$(window).on('load', function () {
+/*$(window).on('load', function () {
   setTimeout(function () {
     end_loader();
   }, 2000)
-})
-});
-
+})*/
+//});
 
 
 //swiper
