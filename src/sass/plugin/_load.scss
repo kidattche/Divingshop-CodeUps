@@ -6,46 +6,42 @@
     height: 100vh; /* 画像の高さ */
     display: flex;
     object-fit:cover;
+
 }
   .loading__left-image,
   .loading__right-image{
     width: 50%; /* 画像の幅 */
     height: 100vh; /* 画像の高さ */
-  
+    transform: translateY(100%);
   }
 
 
 
   .loading__left-image  {
-   object-fit: cover;
    display:none;
    @include mq(md){
     display: block;
+    aspect-ratio: 720/768;
+    overflow: hidden;
   }
 }
 
-.loading__left-image  img{
+.loading__left-image  img,.loading__right-image img{
   display:none;
   @include mq(md){
    display: block;
    width: 100%;
-   height:inherit;
+   height:100%;
+  
  }
 }
 
   .loading__right-image {
-  object-fit: cover;
   display:none;
   @include mq(md){
     display: block;
+    aspect-ratio: 720/768;
+    overflow: hidden;
   }
   }
 
-  .loading__right-image img{
-    display:none;
-    @include mq(md){
-      display: block;
-      width: 100%;
-      height:inherit;
- }
-    }

@@ -17,14 +17,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 //ローディング
-/*$(function () {
+$(function () {
   function end_loader() {
     $('.loader').fadeOut(800, function(){
       // ローダーがフェードアウトした後に以下のコードを実行
       $('.mv').fadeIn(500); // .mvを表示
     });
-  }*/
-
+  }
 
 const jsLoaderBg = '.loader' // カーテン（白い背景）
 const jsTextbox = '.text-box' //テキストボックス
@@ -40,28 +39,31 @@ tl.to(
     duration: 0.8,
     delay: 0.8,
   },
-).to(
-  jsTextbox, {
-    opacity: 0
-  }
-).fromTo(".loading__left-image", {
-  y: '100%',
-},{
-  y:0,
-  duration: 0.5,
-  delay: 0
-}, '+=0.2').fromTo(".loading__right-image", {
-  y: '108%',
-},{
-  y:0,
-  duration:0.5,
-  delay: 0.01,
-},'+=0.05').to(
-  mv, {
-    opacity: 1,
-    y: 0,
-  },
 )
+.to(
+  jsTextbox, {
+    opacity: 0,
+  }
+)
+.to(".js-load-img",
+{
+  y:0,
+  duration: 1,
+  stagger:0.2,
+  delay: 0
+})
+.to("#container",{
+opacity: 0,
+display:"none",
+})
+.to(
+  jsLoaderBg, {
+    opacity: 0,
+    display:"none",
+  }
+)
+})
+
 
 /*$(window).on('load', function () {
   setTimeout(function () {
