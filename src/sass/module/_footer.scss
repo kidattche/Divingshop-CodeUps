@@ -86,7 +86,7 @@
     font-size: 1rem;
     display: flex;
     @include mq(md) {
-    margin-top:rem(24);
+    margin-top:rem(26);
         }
 
 }
@@ -135,5 +135,6 @@
     letter-spacing: 0.06em;
     @include mq(md) {
         font-size: rem(14);
+        margin-top:rem(88);
 }
 }

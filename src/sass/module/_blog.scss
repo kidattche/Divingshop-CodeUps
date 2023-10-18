@@ -27,7 +27,7 @@ max-width: rem(1080);
 }
 }
 .blog-card__items::after {
- @include mq(md){
+@include mq(md){
 content: '';
 background: url(http://localhost:3000/assets/images/common/hanadaill.png) no-repeat top left;
 background-size:contain;

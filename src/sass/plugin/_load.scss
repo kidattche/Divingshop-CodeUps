@@ -6,6 +6,8 @@
     height: 100vh; /* 画像の高さ */
     display: flex;
     object-fit:cover;
+    position: relative;
+    z-index:2;
 
 }
   .loading__left-image,

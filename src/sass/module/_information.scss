@@ -61,6 +61,7 @@
 .information__title {
 font-size: rem(20);
 margin-top: rem(20.8);
+font-weight: 700;
 @include mq(md){
 margin-top: 0;
 }
@@ -72,8 +73,10 @@ margin-top: 0;
 
 .information__content {
     margin-top: rem(8);
+    line-height: 1.5;
+    color: #000;
+    padding: 0 0.5rem 0 0;
 }
-
 .button__box {
 
 }

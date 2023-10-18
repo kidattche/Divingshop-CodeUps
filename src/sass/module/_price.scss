@@ -2,7 +2,7 @@
 .price {
     background-color: $lightgreen;
     background-size: cover;
-    padding:rem(80) rem(15) rem(48);
+    padding:rem(85) rem(15) rem(48);
     @include mq(md){
     padding:rem(96) rem(15) rem(48);
 }
@@ -16,7 +16,7 @@
 }
 .price-wrapper {
 @include mq(md){
-margin-bottom: rem(100);
+margin-bottom: rem(43);
 }
 }
 .price__img--sp {
@@ -108,6 +108,8 @@ display: flex;
 margin-top: rem(8);
 font-family: $base-font-family;
 letter-spacing:0.05em;
+justify-content: space-between;
+color: $black;
 @include mq(md){
 gap:rem(92)
 }
