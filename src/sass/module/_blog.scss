@@ -3,7 +3,7 @@
 padding: rem(32) rem(15);
 background: none;
 @include mq(md){
-background: url(http://localhost:3000/assets/images/common/blog.jpg) no-repeat top right / 100% 63.150%;
+background: url(..//images/common/blog.jpg) no-repeat top right / 100% 63.150%;
 padding: rem(100) rem(15);
 }
 }
@@ -29,7 +29,7 @@ max-width: rem(1080);
 .blog-card__items::after {
 @include mq(md){
 content: '';
-background: url(http://localhost:3000/assets/images/common/hanadaill.png) no-repeat top left;
+background: url(..//images/common/hanadaill.png) no-repeat top left;
 background-size:contain;
 display: inline-block;
 width: rem(437);

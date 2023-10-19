@@ -25,7 +25,7 @@ padding: 0 3px 10px 3px;
 .voice-card__items::after {
     @include mq(md){
     content: '';
-    background: url(http://localhost:3000/assets/images/common/hanadaigr.png) no-repeat top left;
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
     background-size:contain;
     display: inline-block;
     width: rem(437);
@@ -38,7 +38,7 @@ padding: 0 3px 10px 3px;
 .voice-card__items::before {
     @include mq(md){
     content: '';
-    background: url(http://localhost:3000/assets/images/common/tatu.jpg) no-repeat right bottom;
+    background: url(..//images/common/tatu.jpg) no-repeat right bottom;
     background-size:contain;
     display: inline-block;
     width: rem(71);

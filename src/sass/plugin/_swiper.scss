@@ -86,11 +86,11 @@ text-align:right;
 }
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
-  background-image: url(http://localhost:3000/assets/images/common/buttonpre.png);
+  background-image: url(..//images/common/buttonpre.png);
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
-  background-image: url(http://localhost:3000/assets/images/common/buttonnext.png);
+  background-image: url(..//images/common/buttonnext.png);
 }
 /* 画像サイズ調整 */
 .swiper-slide img {

@@ -72,7 +72,7 @@ margin-top: 0;
 .price-container::after {
     @include mq(md){
     content: '';
-    background: url(http://localhost:3000/assets/images/common/hanadaigl.png) no-repeat bottom left;
+    background: url(..//images/common/hanadaigl.png) no-repeat bottom left;
     background-size:contain;
     display: inline-block;
     width: rem(437);

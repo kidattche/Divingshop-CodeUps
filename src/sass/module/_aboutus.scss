@@ -30,7 +30,7 @@ position: relative;
 .aboutus__content::after {
 @include mq(md){
 content: '';
-background: url(http://localhost:3000/assets/images/common/sango.png) no-repeat right bottom;
+background: url(..//images/common/sango.png) no-repeat right bottom;
 background-size:contain;
 display: inline-block;
 width: rem(194);
