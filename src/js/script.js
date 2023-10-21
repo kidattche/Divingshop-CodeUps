@@ -65,13 +65,6 @@ display:"none",
 })
 
 
-/*$(window).on('load', function () {
-  setTimeout(function () {
-    end_loader();
-  }, 2000)
-})*/
-//});
-
 
 //swiper
 window.addEventListener('load', () => {
@@ -133,6 +126,7 @@ const swiper = new Swiper('.js-campaign-swiper', {
   navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+    clickable: true
 	}
 })
 
