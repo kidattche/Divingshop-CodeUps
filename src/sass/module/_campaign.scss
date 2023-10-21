@@ -111,6 +111,9 @@ margin-top:rem(16);
     font-size: rem(20);
     font-weight: 700;
     @include mq(md){
+    font-size: rem(22);
+}
+    @include mq(lg){
     font-size: rem(24);
 }
 }
@@ -121,7 +124,10 @@ color: $green;
 font-family: $main-title-family;
 font-weight: 700;
 @include mq(md){
-font-size: rem(38);
+font-size: rem(35);
+}
+@include mq(lg){
+    font-size: rem(38);
 }
 }
 

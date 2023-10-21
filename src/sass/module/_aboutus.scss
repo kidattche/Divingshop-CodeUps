@@ -100,11 +100,16 @@ aspect-ratio: 400 / 606;
     margin-top:rem(56);
     @include mq(md){
         display: flex;
-        width: rem(840);
-        gap:rem(40);
+        max-width: 78%;
+        width: 100%;
+        gap:2%;
         position:absolute;
         transform: translate(12.43rem, -28.8rem);
         margin-top:rem(56);
+}
+        @include mq(lg){
+        width:  rem(840);
+        gap:rem(40);
 }
 }
 .aboutus__title {
@@ -114,18 +119,24 @@ aspect-ratio: 400 / 606;
     font-weight: normal;
     line-height: 2.5rem;
     @include mq(md){
-    width: rem(400);
+    width: 38%;
     font-size: rem(80);
     text-align: left;
     line-height: 6.25rem;
     color: $white;
 }
+@include mq(lg){
+    width: rem(400);
+}
 }
 .aboutus__contents {
     margin-top: rem(17.6);
     @include mq(md){
-    width: rem(400);
+    width: 38%;
     margin-top:0;
+    }
+    @include mq(lg){
+    width: rem(400);
     }
 }
 

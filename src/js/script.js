@@ -112,6 +112,9 @@ const swiper = new Swiper('.js-campaign-swiper', {
     540: {
       slidesPerView: 2,
     },
+    630: {
+      slidesPerView: 2.2,
+    },
       // スライドの表示枚数：767px以上の場合
     767: {
       slidesPerView: 3,
