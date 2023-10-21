@@ -10,7 +10,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-hamburger").addClass("is-active");
     $(".js-sp-nav").fadeIn();
 
-   }
+    }
   });
 
 
