@@ -2,18 +2,13 @@
 
 .footer {
     background-color:$green;
-    padding: rem(51.2) rem(15)  rem(56);
+    padding: rem(51.2) 0  rem(56);
     overflow: hidden;
     @include mq(md) {
-    padding: rem(88) rem(15)  rem(56);
+    padding: rem(88) 0  rem(56);
     }
 }
-.footer__inner {
-    @include mq(md) {
-    width: rem(1080);
-    margin-inline: auto;
-}
-}
+
 // footer ロゴ　footer-sns
 .footer-link {
     @include mq(md) {
@@ -90,6 +85,9 @@
         }
 
 }
+.footer-nav__item a:hover {
+    opacity: 0.5;
+}
 
 .footer-nav__item a::before {
     content: '';
@@ -99,11 +97,13 @@
     background-image: url(..//images/common/hitode.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
     vertical-align: middle;
-
-
 }
+
+.footer-nav__item a::before:hover {
+    opacity: 0.5;
+}
+
 .footer-nav__subitem a::before {
     content:none;
 }

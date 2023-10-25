@@ -1,21 +1,14 @@
 @use "global" as *;
 
 .contact {
-padding: rem(54.4) rem(30) rem(100);
+padding: rem(54.4) 0 rem(100);
 @include mq(md){
-padding: rem(124) rem(30) rem(100);
+padding: rem(124) 0 rem(100);
 }
 }
 
-.contact__inner {
-  @include mq(md){
-    width: 100%;
-    margin-inline:auto;
-    max-width: rem(1080);
-    box-shadow: 1px 2px 8px rgba(204,204,204,5.0);
-}
-}
 .contact-container {
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   @include mq(md){
   display: flex;
   padding: rem(91) rem(50) rem(67);

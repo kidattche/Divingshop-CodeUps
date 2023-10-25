@@ -8,18 +8,6 @@
 }
 }
 
-.aboutus__inner {
-    @include mq(md){
-    width: 100%;
-    max-width: rem(1080);
-    margin-inline:auto;
-}
-}
-.l-inner {
-
-}
-
-
 .aboutus__content {
 margin-top: rem(26);
 @include mq(md){
@@ -76,6 +64,7 @@ aspect-ratio: 400 / 606;
     position: absolute;
     right:0;
     max-width:81.7%;
+    width: 100%;
     padding: 0 0.9375rem;
     @include mq(md){
    // max-width:rem(880);
