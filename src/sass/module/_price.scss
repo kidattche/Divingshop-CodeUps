@@ -113,7 +113,7 @@ width: rem(253);
 font-size: rem(14);
 font-family: $base-font-family;
 letter-spacing: 0.02rem;
-white-space: nowrap;
+white-space: pre-wrap;
 @include mq(md){
 width: rem(300);
 letter-spacing: 0.15em;
