@@ -9,8 +9,10 @@
 }
 
 .price-wrapper {
+max-width: 37.5rem;
+margin-inline: auto;
 @include mq(md){
-
+max-width: none;
 }
 }
 .price__img--sp {
@@ -46,9 +48,8 @@ object-fit: cover;
 }
 .price-right {
     width: 100%;
-    transform: translateY(rem(30));
     @include mq(md){
-    margin-top:rem(8);
+    margin-top:rem(30);
 }
 }
 

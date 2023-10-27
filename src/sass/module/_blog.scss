@@ -24,12 +24,15 @@ z-index:-2;
 }
 
 .blog-card__items {
+    max-width: 37.5rem;
+    margin-inline: auto;
     @include mq(md){
     display: flex;
     gap: rem(40);
     margin-top: rem(51);
     position: relative;
     flex-wrap: wrap;
+    max-width: none;
 }
 }
 .blog-card__items::after {

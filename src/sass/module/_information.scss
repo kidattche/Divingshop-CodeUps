@@ -24,9 +24,12 @@
     position: relative;
     margin-top: rem(28.8);
     display:block;
+    max-width: 37.5rem;
+    margin-inline: auto;
     @include mq(md){
     display: flex;
     margin-top: rem(41.6);
+    max-width: none;
 }
 }
 

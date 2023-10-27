@@ -8,14 +8,17 @@
 }
 }
 
-.aboutus__content {
+.aboutus__container {
 margin-top: rem(26);
+max-width: 37.5rem;
+margin-inline: auto;
 @include mq(md){
 position: relative;
+max-width: none;
 }
 }
 
-.aboutus__content::after {
+.aboutus__containert::after {
 @include mq(md){
 content: '';
 background: url(..//images/common/sango.png) no-repeat right bottom;
@@ -30,77 +33,64 @@ top:34rem;
 }
 }
 .aboutus__images {
-    display: flex;
-
-    @include mq(md){
-    max-width: rem(1080);
-    width:100%;
-}
+    aspect-ratio: 345 / 212;
+    height:100%;
+    position:relative;
 }
 
-.aboutus-left {
-    max-width: 37%;
-    @include mq(md){
-    max-width: rem(400);
-    }
-}
+
 
 .aboutus__img--left {
-
-//position: relative;
-aspect-ratio: 400 / 606;
+position: relative;
+aspect-ratio: 128 / 194;
+left:0;
+top: rem(5);
+width: 37%;
+z-index:2;
+@include mq(md){
+top:0;
+}
 }
 
 
 .aboutus__img--left img {
     width: 100%;
     height: 100%;
+    object-fit:cover;
 }
 
 
-.aboutus-right{
-    z-index: -9999;
-    margin-top: rem(26);
-    position: absolute;
-    right:0;
-    max-width:81.7%;
-    width: 100%;
-    padding: 0 0.9375rem;
-    @include mq(md){
-   // max-width:rem(880);
-    margin-top: rem(80);
-    padding: 0 0 0 0.9375rem;
-}
-}
 .aboutus__img--right {
-    //position: relative;
+    position: relative;
     aspect-ratio: 281 / 186;
+    width: 81.45%;
+    margin-left:auto;
+    margin-top: -47.7%;
     @include mq(md){
-    aspect-ratio: 880 / 581;
+    margin-top: -48.8%;
     }
     }
 
 .aboutus__img--right img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .aboutus__text-body {
     margin-top:rem(56);
     @include mq(md){
         display: flex;
-        max-width: 78%;
-        width: 100%;
-        gap:2%;
+        left: -1.4rem;
+        //top: 50%;
         position:absolute;
         transform: translate(12.43rem, -28.8rem);
-        margin-top:rem(56);
-}
-        @include mq(lg){
-        width:  rem(840);
+        margin-top:0;
         gap:rem(40);
+        z-index:3;
 }
 }
+
 .aboutus__title {
     font-size: rem(40);
     font-family: $english-family;
@@ -108,33 +98,22 @@ aspect-ratio: 400 / 606;
     font-weight: normal;
     line-height: 2.5rem;
     @include mq(md){
-    width: 38%;
     font-size: rem(80);
     text-align: left;
     line-height: 6.25rem;
     color: $white;
-}
-@include mq(lg){
-    width: rem(400);
+    width: 25rem;
 }
 }
 .aboutus__contents {
     margin-top: rem(17.6);
     @include mq(md){
-    width: 38%;
+    width: 25rem;
     margin-top:0;
-    }
-    @include mq(lg){
-    width: rem(400);
     }
 }
 
-.aboutus__content {
-@include mq(md){
-color: $white;
-margin-top:rem(36);
-}
-}
+
 
 .about__text {
     @include mq(md){

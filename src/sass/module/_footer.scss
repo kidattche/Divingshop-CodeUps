@@ -8,7 +8,13 @@
     padding: rem(88) 0  rem(56);
     }
 }
-
+.footer-link__container {
+    max-width: 37.5rem;
+    margin-inline: auto;
+    @include mq(md){
+    max-width: none;
+}
+}
 // footer ロゴ　footer-sns
 .footer-link {
     @include mq(md) {

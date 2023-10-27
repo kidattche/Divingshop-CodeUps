@@ -8,11 +8,14 @@ padding: rem(124) 0 rem(100);
 }
 
 .contact-container {
+  max-width: 37.5rem;
+  margin-inline: auto;
   @include mq(md){
   display: flex;
   padding: rem(91) rem(50) rem(67);
   position: relative;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  max-width: none;
 }
 }
 .contact-container::before {
