@@ -3,15 +3,11 @@
 overflow:hidden;
 margin-bottom:0.125rem;
 }
-.campaign__inner {
 
-}
 
-.l-inner {
-
-}
 .campaign__swiper {
 margin-top: rem(24);
+margin-right: calc(50% - 50vw);
 }
 .campaign-card__item {
 width:rem(280);
@@ -42,20 +38,23 @@ aspect-ratio: 333 / 223;
     object-fit: cover;
 }
 
-.campaign-card__body {
-width:100%;
-padding: rem(17) rem(16) rem(8) rem(16);
+.campaign-card__inner {
 display: flex;
 flex-direction: column;
 flex-grow: 1;
+padding: 1rem 1rem 1.5rem;
 @include mq(md){
 padding: rem(24) rem(16) rem(8) rem(16);
+    }
+}
+.campaign-card__body {
+margin-bottom:auto;
 }
 .campaign-card__header {
 border-bottom: solid 1px $green;
 
 }
-}
+
 
 .campaign-category {
 font-size: rem(12);
