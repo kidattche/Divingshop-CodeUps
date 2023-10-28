@@ -10,7 +10,7 @@ margin-top: rem(24);
 margin-right: calc(50% - 50vw);
 }
 .campaign-card__item {
-width:100%;
+width:rem(280);
 display: flex;
 flex-direction: column;
 align-self: flex-start;
@@ -18,7 +18,7 @@ flex-shrink: 0;
 padding: 0 0 1.5rem;
 height: 100%;
 @include mq(md){
-width:100%;
+width:rem(333);
 overflow: hidden;
 padding: 0 0 2.5rem;
 }
@@ -66,9 +66,9 @@ margin-bottom:auto;
 display: flex;
 flex-direction: column;
 flex-grow: 1;
-padding: 1rem 1rem 1.5rem;
+padding: 1rem 1rem 0;
 @include mq(md){
-padding: rem(25.6) rem(16) rem(8) rem(16);
+padding: rem(25.6) rem(16) 0 rem(16);
     }
 }
 .campaign-card__header {

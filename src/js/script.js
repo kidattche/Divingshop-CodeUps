@@ -96,10 +96,9 @@ const swiper = new Swiper('.campaign-swiper__container', {
   autoplay: {
       delay: 0,
   },
-  spaceBetween: 40,
+  spaceBetween: 24,
   freeModeSticky: true,
   autoWidth: true,
-  autoHeight: true,
   speed: 4000,          //追記
   slidesPerView: 1.3,     //追記
   breakpoints: {
@@ -118,13 +117,12 @@ const swiper = new Swiper('.campaign-swiper__container', {
       // スライドの表示枚数：767px以上の場合
     767: {
       slidesPerView: 3,
+      spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 3.8,
+      slidesPerView: 3.6,
+      spaceBetween: 40,
     },
-    1440: {
-      slidesPerView: 4,
-    }
   },
   navigation: {
 		nextEl: '.swiper-button-next',
