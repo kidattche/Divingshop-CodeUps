@@ -91,7 +91,7 @@ window.addEventListener('load', () => {
 
 // Campaignスライド
 
-const swiper = new Swiper('.js-campaign-swiper', {
+const swiper = new Swiper('.campaign-swiper__container', {
   loop: true,
   autoplay: {
       delay: 0,
