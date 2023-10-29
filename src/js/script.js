@@ -102,25 +102,28 @@ const swiper = new Swiper('.campaign-swiper__container', {
   speed: 4000,          //追記
   slidesPerView: 1.3,     //追記
   breakpoints: {
-    // スライドの表示枚数：376px以上の場合
-    376: {
-      slidesPerView: 1.5,
+    480: {
+      slidesPerView: 1.6,
+      spaceBetween: 24,
     },
 
-      // スライドの表示枚数：540px以上の場合
     540: {
-      slidesPerView: 2,
+      slidesPerView: 1.8,
+      spaceBetween: 24,
     },
     630: {
       slidesPerView: 2.2,
     },
-      // スライドの表示枚数：767px以上の場合
     767: {
       slidesPerView: 3,
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 3.6,
+      slidesPerView: 3.1,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 3.7,
       spaceBetween: 40,
     },
   },

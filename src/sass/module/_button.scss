@@ -6,7 +6,7 @@
     padding-bottom:1rem;
     margin-top: 1.3rem;
     @include mq(md){
-    margin-top: rem(38.4);
+    margin-top: 2.5rem;
 }
 }
 
@@ -15,7 +15,7 @@
     padding-bottom:1rem;
     margin-top: rem(27.2);
     @include mq(md){
-    margin-top: rem(80);
+    margin-top: rem(91.2);
 }
 }
 .button__box--third {
@@ -23,8 +23,25 @@
     padding-bottom:1rem;
     margin-top: rem(43);
     @include mq(md){
-    margin-top: rem(112);
+    margin-top: rem(80);
 }
+}
+.button__box--fourth {
+    margin-top: rem(32);
+    text-align: center;
+    padding-bottom:1rem;
+    @include mq(md){
+    margin-top: rem(32);
+    }
+}
+
+.button__box--fifth {
+    margin-top: rem(32);
+    text-align: center;
+    padding-bottom:1rem;
+    @include mq(md){
+    margin-top: 1rem;
+    }
 }
 
 .button {
