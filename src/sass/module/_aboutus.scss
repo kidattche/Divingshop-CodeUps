@@ -16,6 +16,7 @@ margin-inline: auto;
 position: relative;
 max-width: none;
 margin-top: rem(40.4);
+
 }
 }
 
@@ -29,7 +30,6 @@ width: rem(194);
 height: rem(181);
 position: absolute;
 right: calc(50% - min(48vw, 40.125rem));
-//bottom:-9.5rem;
 top:36rem;
 }
 }
@@ -79,16 +79,15 @@ top:0;
 }
 
 .aboutus__text-body {
-    margin-top:rem(56);
+    margin-top:rem(40);
     @include mq(md){
         display: flex;
-        //left: -1.4rem;
-        //top: 50%;
         position:absolute;
-        transform: translate(12.43rem, -28.8rem);
         margin-top:0;
         gap:rem(40);
         z-index:3;
+        top: 12.43rem;
+        right: 2.5rem;
 }
 }
 
@@ -121,7 +120,6 @@ top:0;
 color:$white;
 font-family: $base-font-family;
 line-height: 1.5;
-overflow-wrap: break-all;
 }
 }
 

@@ -10,10 +10,10 @@ padding: rem(124) 0 rem(100);
 .contact-container {
   max-width: 37.5rem;
   margin-inline: auto;
+  position: relative;
   @include mq(md){
   display: flex;
   padding: rem(91) rem(50) rem(67);
-  position: relative;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   max-width: none;
 }
@@ -26,7 +26,7 @@ padding: rem(124) 0 rem(100);
     width: rem(109);
     height: rem(50);
     position: absolute;
-    //top: -2rem;
+    top: -2rem;
     right: calc(50% - min(48vw, 12.8125rem));
     @include mq(md){
     width: rem(301);
@@ -60,7 +60,9 @@ border-right: solid 1px $green;
     width:100%;
     text-align: center;
     border-bottom:solid 1px $green;
+    margin-top: rem(24);
     @include mq(md){
+    margin-top: 0;
 }
 }
 .contact-logo {

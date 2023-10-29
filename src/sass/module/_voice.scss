@@ -55,13 +55,14 @@ position:relative;
 }
 
 .voice-card__item {
-margin-top: rem(30);
+margin-top: rem(56);
 box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.25);
-padding: rem(8) rem(16) rem(24) rem(16);
+padding: rem(8) rem(16) rem(16) rem(16);
 height: 100%;
 @include mq(md){
 width: rem(496);
 padding: rem(8) rem(16) 0 rem(16);
+margin-top: rem(48);
 }
 }
 

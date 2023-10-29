@@ -68,13 +68,17 @@
     color: $black;
     font-family: $english-family;
     font-weight: $normal;
+    margin-top: -1rem;
+    @include mq(md){
+    margin-top: 0;
     }
+}
 .section-header__subtitle--contact {
     color: $green;
     font-size: rem(12);
     font-family: $base-font-family;
-    margin-top:-1.5rem;
-    }
+    margin-top: -1.5rem;
+}
 .section-header__title--contact:first-letter {
     color: $green;
     text-transform: capitalize;

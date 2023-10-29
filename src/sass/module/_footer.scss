@@ -2,7 +2,7 @@
 
 .footer {
     background-color:$green;
-    padding: rem(51.2) 0  rem(56);
+    padding: rem(40) 0  rem(56);
     overflow: hidden;
     @include mq(md) {
     padding: rem(88) 0  rem(56);
@@ -59,11 +59,11 @@
 // footer-nav
 .footer-nav {
     display: flex;
+    gap: 1.5rem;
 }
 
 .footer-nav__items--wrap {
     width: 50%;
-    margin-left: rem(8);
     @include mq(md) {
     display: flex;
 
@@ -115,11 +115,13 @@
 }
 
 .footer-nav__subitems {
-    margin-left:rem(18);
+    margin-left:rem(16);
+    @include mq(md) {
+     margin-left:rem(18);
 }
-
+}
 .footer-nav__subitem {
-    
+
 }
 .footer-nav__subitem a {
     font-family: $base-font-family;
@@ -127,6 +129,7 @@
     font-weight: $normal;
     color: $white;
     margin-top:rem(24);
+    white-space:nowrap;
 }
 
 
