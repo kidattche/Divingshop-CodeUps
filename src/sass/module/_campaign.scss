@@ -66,14 +66,14 @@ margin-bottom:auto;
 display: flex;
 flex-direction: column;
 flex-grow: 1;
-padding: 1rem 0 0;
+padding: 1rem 1rem 0;
 @include mq(md){
 padding: rem(25.6) rem(16) 0 rem(16);
     }
 }
 .campaign-card__header {
 border-bottom: solid 1px $green;
-padding: 0 1rem 0;
+
 }
 
 
