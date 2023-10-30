@@ -9,6 +9,7 @@ padding:0 0 rem(80);
 .voice-card__items {
 max-width: 37.5rem;
 margin-inline: auto;
+height:auto;
 @include mq(md){
 /*display: flex;
 gap:rem(30);

@@ -98,9 +98,9 @@ const swiper = new Swiper('.campaign-swiper__container', {
   },
   spaceBetween: 24,
   freeModeSticky: true,
-  autoWidth: true,
+  //autoWidth: true,
   speed: 4000,          //追記
-  slidesPerView: 1.3,     //追記
+  slidesPerView: 'auto',    //追記
   breakpoints: {
     480: {
       slidesPerView: 1.6,
@@ -123,7 +123,7 @@ const swiper = new Swiper('.campaign-swiper__container', {
       spaceBetween: 40,
     },
     1440: {
-      slidesPerView: 3.7,
+      slidesPerView: 3.6,
       spaceBetween: 40,
     },
   },
@@ -132,7 +132,7 @@ const swiper = new Swiper('.campaign-swiper__container', {
 		prevEl: '.swiper-button-prev',
     clickable: true
 	}
-})
+});
 
 
 //information・voice・price
