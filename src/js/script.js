@@ -123,7 +123,7 @@ const swiper = new Swiper('.campaign-swiper__container', {
       spaceBetween: 40,
     },
     1440: {
-      slidesPerView: 3.6,
+      slidesPerView: 3.7,
       spaceBetween: 40,
     },
   },
