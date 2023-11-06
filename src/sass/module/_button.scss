@@ -3,7 +3,6 @@
 
 .button__box {
     text-align: center;
-    padding-bottom:1rem;
     margin-top: 2rem;
     @include mq(md){
     margin-top: 2.5rem;
@@ -12,7 +11,6 @@
 
 .button__box--second {
     text-align: center;
-    padding-bottom:1rem;
     margin-top: rem(51.2);
     @include mq(md){
     margin-top: rem(91.2);
@@ -20,7 +18,6 @@
 }
 .button__box--third {
     text-align: center;
-    padding-bottom:1rem;
     margin-top: rem(43);
     @include mq(md){
     margin-top: rem(80);
@@ -29,7 +26,6 @@
 .button__box--fourth {
     margin-top: rem(32);
     text-align: center;
-    padding-bottom:1rem;
     @include mq(md){
     margin-top: rem(32);
     }
@@ -37,7 +33,6 @@
 
 .button__box--fifth {
     text-align: center;
-    padding-bottom:1rem;
     @include mq(md){
     margin-top: 1rem;
     }
