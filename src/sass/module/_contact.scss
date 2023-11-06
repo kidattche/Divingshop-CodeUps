@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .contact {
-padding: rem(54.4) 0 rem(100);
+
 @include mq(md){
-padding: rem(124) 0 rem(100);
+
 }
 }
 
