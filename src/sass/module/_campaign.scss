@@ -1,7 +1,7 @@
 @use "global" as *;
 .campaign {
 overflow:hidden;
-margin-bottom:0.125rem;
+padding-bottom: 0.3rem;;
 }
 
 
@@ -101,6 +101,7 @@ font-size:0.9rem;
 
 .campaign-card__footer {
 text-align: center;
+margin-top: auto;
 
 }
 .campaign-card__price {
