@@ -2,9 +2,9 @@
 .price {
     background-color: $lightgreen;
     background-size: cover;
-    padding:rem(69) 0 rem(48);
+    padding:rem(69) 0 rem(80);
     @include mq(md){
-    padding:rem(96) 0 rem(144);
+    padding:rem(100) 0 rem(112);
 }
 }
 
@@ -49,7 +49,7 @@ object-fit: cover;
 .price-right {
     width: 100%;
     @include mq(md){
-    margin-top:rem(30);
+    margin-top:rem(40);
 }
 }
 
@@ -70,12 +70,16 @@ margin-top: 0;
     background: url(..//images/common/hanadaigl.png) no-repeat bottom left;
     background-size:contain;
     display: inline-block;
-    width: rem(437);
-    height: rem(201);
+    width: rem(300);
+    height: rem(150);
     position: absolute;
     top: 48rem;
     left: calc(50% - min(48vw, 38.5475rem));
         }
+    @include mq(lg){
+    width: rem(437);
+    height: rem(201);
+}
 }
 
 
