@@ -19,9 +19,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 //ローディング
 $(function () {
   function end_loader() {
-    $('.loader').fadeOut(800, function(){
+    $('.loader').fadeOut(500, function(){
       // ローダーがフェードアウトした後に以下のコードを実行
-      $('.mv').fadeIn(500); // .mvを表示
+      $('.mv').fadeIn(300); // .mvを表示
     });
   }
 
@@ -102,8 +102,8 @@ const swiper = new Swiper('.campaign-swiper__container', {
   speed: 4000,          //追記
   slidesPerView: 'auto',    //追記
   breakpoints: {
-    480: {
-      slidesPerView: 1.6,
+    375: {
+      slidesPerView: 1.3,
       spaceBetween: 24,
     },
 
