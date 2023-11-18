@@ -5,13 +5,13 @@ padding-bottom: 0.3rem;;
 }
 
 
-.campaign__swiper {
+/*.campaign__swiper {
 margin-top: rem(24);
 margin-right: calc(50% - 50vw);
 }
 .campaign-card__item {
 width:rem(280);
-display: flex;
+//display: flex;
 flex-direction: column;
 align-self: flex-start;
 flex-shrink: 0;
@@ -156,7 +156,135 @@ font-size: rem(35);
     @include mq(md){
     width:rem(240);
 }
+*/
 
+.campaign-card {
+	background-color: #fff;
+	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	transition: opacity 0.4s;
+	width: 100%;
 }
 
+.campaign-card:hover {
+	opacity: 0.7;
+}
+
+.campaign-card__body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1.25rem 1rem 1rem;
+}
+
+.campaign-card__body-head {
+	flex-grow: 1;
+}
+
+.campaign-card__img {
+	position: relative;
+	width: 100%;
+}
+
+.campaign-card__img::before {
+	content: "";
+	display: block;
+	padding-top: 67.14%;
+}
+
+.campaign-card__img img {
+	-o-object-fit: cover;
+	height: 100%;
+	left: 50%;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.campaign-card__category {
+	border: 1px solid #408F95;
+	color: #408F95;
+	display: inline-block;
+	font-size: 0.75rem;
+	padding: 0.3125rem 0.75rem;
+	text-align: center;
+}
+
+.campaign-card__title {
+	flex-grow: 1;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.campaign-card__title--aside {
+	text-align: center;
+}
+
+.campaign-card__text {
+	border-top: 1px solid #408F95;
+	font-size: 0.875rem;
+	margin-top: 0.5rem;
+	padding-top: 0.5rem;
+	text-align: center;
+}
+
+.campaign-card__price {
+	align-items: baseline;
+	display: flex;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	gap: 6.5%;
+	justify-content: center;
+	margin-top: 0.1875rem;
+}
+
+.campaign-card__before-price {
+	font-size: 1.25rem;
+	position: relative;
+}
+
+.campaign-card__before-price::after {
+	background-color: #c94800;
+	bottom: 0.9375rem;
+	content: "";
+	height: 0.1875rem;
+	left: 0;
+	position: absolute;
+	width: 102%;
+}
+
+.campaign-card__after-price {
+	color: #408F95;
+	font-size: 2rem;
+}
+
+.campaign-cards {
+	position: relative;
+}
+
+.campaign-cards__swiper {
+	margin-right: calc(50% - 50vw);
+	padding-bottom: 0.625rem;
+	padding-left: 0.9375rem;
+	padding-top: 0.3125rem;
+	width: 100%;
+}
+
+.campaign-cards__swiper-slide {
+	max-width: 17.5rem;
+}
+
+.campaign__inner.inner {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.campaign__cards {
+	margin-top: 1.625rem;
+}
 

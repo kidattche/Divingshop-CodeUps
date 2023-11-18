@@ -19,7 +19,7 @@
     width: 100%;
     height: 100vh;
     background-color: $green;
-    padding: rem(21) rem(15)  rem(111);
+    padding: rem(21) rem(15)  0;
 }
 .sp-nav.is-active {
     display: block;
@@ -85,3 +85,7 @@
     margin-top:rem(24);
 }
 
+body.active {
+    height: 100%;
+    overflow: hidden;
+}

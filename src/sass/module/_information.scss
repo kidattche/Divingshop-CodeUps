@@ -43,7 +43,7 @@
     width:50%;
 }
 }
-.information-img {
+/*.information-img {
     aspect-ratio: 345 /227;
     @include mq(md){
     aspect-ratio: 540/356;
@@ -57,8 +57,34 @@
     height:100%;
     object-fit: cover;
     display: block;
+}*/
+.information-img {
+	position: relative;
 }
 
+.information-img::after {
+	background-color: #408F95;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.information-img.is-active {
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: boxAnimation;
+}
+
+.is-active.information-img::after {
+	animation-delay: 0.7s;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: colorAnimation;
+}
 
 
 .information__title {
