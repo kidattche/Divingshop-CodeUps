@@ -41,6 +41,7 @@ object-fit: cover;
     overflow: hidden;
 }
 
+
 .price-left {
     @include mq(md){
     width: 100%;
@@ -49,7 +50,7 @@ object-fit: cover;
 .price-right {
     width: 100%;
     @include mq(md){
-    margin-top:rem(40);
+        padding-top: 1.5rem;
 }
 }
 

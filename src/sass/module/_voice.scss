@@ -90,7 +90,7 @@ padding: 1rem 0.5rem 0;
 @include mq(md){
 display: flex;
 justify-content: space-between;
-margin-top: rem(25.6);
+padding-top: rem(25.6);
 align-items: end;
 }
 }
