@@ -2,10 +2,7 @@
 
 .aboutus {
     padding: 0 rem(15);
-    @include mq(md){
-    padding: rem(15) rem(15) rem(160);
 
-}
 }
 
 .aboutus__container {
