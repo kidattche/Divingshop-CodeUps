@@ -115,39 +115,7 @@ const swiper = new Swiper('.js-campaign-swiper', {
 
 
 
-/*information・voice・price
-$(window).on("scroll", function () {
-  //.information__img
-  if ($(".information__img").length > 0) {
-    var windowPosition = $(window).scrollTop() + $(window).height();
-    var boxPosition = $(".information__img").offset().top;
-    if (windowPosition >= boxPosition) {
-      $(".information__img").addClass("is-active");
-    }
-  }
-  if ($(".voice-card__img").length > 0) {
-    var voicePosition = $(".voice-card__img").offset().top;
-    if (windowPosition >= voicePosition) {
-      $(".voice-card__img").addClass("is-active");
-    }
-  }
 
-   .voice-card__img--2
-  if ($(".voice-card__img--2").length > 0) {
-    var voicePosition2 = $(".voice-card__img--2").offset().top;
-    if (windowPosition >= voicePosition2) {
-      $(".voice-card__img--2").addClass("is-active");
-    }
-  }
-
-  // .price__img
-  if ($(".price__img").length > 0) {
-    var pricePosition = $(".price__img").offset().top;
-    if (windowPosition >= pricePosition) {
-      $(".price__img").addClass("is-active");
-    }
-  }
-});*/
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function BgFadeAnime(){
 
@@ -200,3 +168,23 @@ $(window).scroll(function () {
     header.removeClass('is-color');
   }
 });
+
+//sp-nav背景noscroll$(function(){
+  $(function () {
+    // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+    $(".c-hamberger").click(function () {
+  
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+  
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+  
+      } else {
+  
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+  
+      }
+    });
+  });
