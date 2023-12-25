@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.contact {
-
-@include mq(md){
-
-}
-}
 
 .contact-container {
   max-width: 37.5rem;
@@ -87,7 +81,7 @@ margin-bottom: rem(9);
 
 }
 
-.address-content {
+.address_content {
 color: $black;
 text-align: center;
 white-space: nowrap;
@@ -135,25 +129,5 @@ font-weight: $normal;
 color: $green;
 text-align: center;
 margin-top: rem(8);
-}
-
-.button__box {
-
-}
-
-.button {
-
-}
-
-.button-arrow {
-
-}
-
-.button__line-f {
-
-}
-
-.button__line-s {
-
 }
 
