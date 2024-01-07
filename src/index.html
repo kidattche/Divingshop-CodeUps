@@ -184,45 +184,42 @@
 
 
 <!-- メインビュ------------------------------------------------------------------->
-    <div id="mv" class="mv">
-      <div class="p-swiper-container">
-        <div class="swiper-wrapper mv-swiper-slide">
-            <div class="swiper-slide" style="background-image: url('./assets/images/common/mv1-pc.jpg'); background-position: 40% center; background-size:cover;">
-                <div class="p-swiper__desc">
-                    <h2 class="p-swiper__heading">diving</h2>
-                    <div class="p-swiper__text">
-                        <p>into the ocean</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url('./assets/images/common/mv2-pc.jpg'); background-position: 20% center; background-size:cover;">
-                <div class="p-swiper__desc">
-                    <h2 class="p-swiper__heading">diving</h2>
-                    <div class="p-swiper__text">
-                        <p>into the ocean</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url('./assets/images/common/mv3-pc.jpg'); background-position: 40% center; background-size:cover;">
-                <div class="p-swiper__desc">
-                    <h2 class="p-swiper__heading">diving</h2>
-                    <div class="p-swiper__text">
-                        <p>into the ocean</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url('./assets/images/common/mv4-pc.jpg'); background-position: 20% center; background-size:cover;">
-              <div class="p-swiper__desc">
-                  <h2 class="p-swiper__heading">diving</h2>
-                  <div class="p-swiper__text">
-                      <p>into the ocean</p>
-                  </div>
-              </div>
+ <div class="mv">
+  <div class="mv__inner">
+    <div class="mv__slider swiper js-mv-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="mv-sp1.jpg" media="(max-width:767px)">
+              <img src="./assets/images/common/mv1-pc.jpg" alt="海と白い砂浜の画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="mv-sp2.jpg" media="(max-width:767px)">
+              <img src="./assets/images/common/mv2-pc.jpg" alt="海中をカメとダイバーが泳いでいる画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="mv-sp3.jpg" media="(max-width:767px)">
+              <img src="./assets/images/common/mv3-pc.jpg" alt="海上にいる船の画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="mv-sp3.jpg" media="(max-width:767px)">
+              <img src="./assets/images/common/mv4-pc.jpg" alt="海上にいる船の画像">
+            </picture>
           </div>
         </div>
-    </div>
-  </div>
- </div>
+        <div class="mv__title-wrap">
+          <h2 class="mv__title">diving</h2>
+          <p class="mv__title-sub">into&nbsp;the&nbsp;ocean</p>
+        </div>
+      </div>
+   </div>
+</div>
 
 <!-- Campaign----------------------------------------------------------------->
   <section class="l-campaign campaign">
@@ -479,8 +476,8 @@
           <h2 class="section-header__subtitle">ダイビング情報</h2>
         </div>
         <div class="information__container">
-          <div class="information-box">
-            <div class="information-img bgextend bgRLextendTrigger">
+          <div class="information__box">
+            <div class="information__img bgextend bgRLextendTrigger">
               <div class="bgappearTrigger">
                 <img src="./assets/images/common/information.jpg" alt="海中画像" class="bgappear infoimg">
               </div>
@@ -519,8 +516,8 @@
         </div>
         <div class="blog-card__items">
           <!-- ループ処理開始 -->
-            <div class="blog-card__item p-card">
-              <a class="p-card__item">
+            <div class="blog-card__item card">
+              <a class="card__item">
                 <div class="card__img">
                   <img src="./assets/images/common/blog1.jpg" alt="ブログ画像１">
                 </div>
@@ -535,8 +532,8 @@
                 </div>
               </a>
             </div>
-            <div class="blog-card__item p-card">
-              <a class="p-card__item">
+            <div class="blog-card__item card">
+              <a class="card__item">
                 <div class="card__img">
                   <img src="./assets/images/common/blog2.jpg" alt="ブログ画像２">
                 </div>
@@ -551,8 +548,8 @@
                 </div>
               </a>
             </div>
-            <div class="blog-card__item p-card">
-              <a class="p-card__item">
+            <div class="blog-card__item card">
+              <a class="card__item">
                 <div class="card__img">
                   <img src="./assets/images/common/blog3.jpg" alt="ブログ画像３">
                 </div>

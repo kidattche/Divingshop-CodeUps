@@ -68,7 +68,7 @@ display:"none",
 
 //swiper
 window.addEventListener('load', () => {
-  const elem = document.querySelector('.p-swiper-container');
+  const elem = document.querySelector('.js-mv-swiper');
   if (elem === null) return;
   const swiperParams = {
     loop: true, // ループさせる
@@ -86,7 +86,7 @@ window.addEventListener('load', () => {
       clickable: true, //この行を追記する
     },
   };
-  const swiper = new Swiper('.p-swiper-container', swiperParams);
+  const swiper = new Swiper('.js-mv-swiper', swiperParams);
 });
 
 // Campaignスライド
