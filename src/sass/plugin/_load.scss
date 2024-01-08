@@ -1,6 +1,6 @@
 @use "global" as *;
 
-#container {
+.loading__container {
     overflow: hidden;
     width: 100%; /* コンテナの幅 */
     height: 100vh; /* 画像の高さ */

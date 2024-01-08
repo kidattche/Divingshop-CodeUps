@@ -26,8 +26,8 @@ $(function () {
   }
 
 const jsLoaderBg = '.loader' // カーテン（白い背景）
-const jsTextbox = '.text-box' //テキストボックス
-const jsText = '.p-swiper-desc'//メインビジュアルのタイトル
+const jsTextbox = '.loader-title__box' //テキストボックス
+const jsText = '.mv__title-wrap'//メインビジュアルのタイトル
 /*const jsLeftimg = '.loading__left-image'
 const jsRightimg = '.loading__right-image'*/
 const mv = '.mv'
@@ -52,7 +52,7 @@ tl.to(
   stagger:0.2,
   delay: 0
 })
-.to("#container",{
+.to(".loading__container",{
 opacity: 0,
 display:"none",
 })
