@@ -22,7 +22,16 @@ left:0;
 z-index:-2;
 }
 }
-
+.blog__container {
+    margin-top: rem(26);
+    max-width: 37.5rem;
+    margin-inline: auto;
+    @include mq(md){
+    position: relative;
+    max-width: none;
+    margin-top: rem(40.4);
+    }
+    }
 
 .blog-card__items {
     display: grid;
@@ -43,7 +52,7 @@ display: inline-block;
 width: rem(437);
 height: rem(201);
 position: absolute;
-top: 2.2rem;
+top: -13.4rem;
 left: calc(50% - min(48vw, 38.6875rem));
 }
 }

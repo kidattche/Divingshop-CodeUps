@@ -5,6 +5,16 @@
 
 }
 }
+.voice__container {
+    margin-top: rem(26);
+    max-width: 37.5rem;
+    margin-inline: auto;
+    @include mq(md){
+    position: relative;
+    max-width: none;
+    margin-top: rem(40.4);
+    }
+    }
 
 .voice-card__items {
 max-width: 37.5rem;
