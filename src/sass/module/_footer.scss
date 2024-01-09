@@ -8,42 +8,41 @@
     padding: rem(88) 0  rem(56);
     }
 }
-.footer-link__container {
+.footer__container {
     max-width: 37.5rem;
     margin-inline: auto;
     @include mq(md){
     max-width: none;
 }
 }
-// footer ロゴ　footer-sns
-.footer-link {
-    @include mq(md) {
+
+.footer__link {
+    @include mq(md){
     display: flex;
     }
 }
-.footer-logo {
+// footer ロゴ　footer__sns
+.footer-link__items {
+    display: flex;
+}
+
+.footer__logo {
     width: rem(120);
     @include mq(md) {
     width: rem(200);
 }
 }
 
-.footer-sns {
+.footer__sns {
     display: flex;
     align-items: end;
     margin-top:1rem;
     @include mq(md) {
     margin-top:0;
+    margin-left:rem(40);
 }
 }
-.footer-sns__items {
-    display: flex;
-    justify-content: center;
-    align-items: initial;
-    @include mq(md) {
-    margin-left: rem(40);
-    }
-}
+
 
 .sns {
     width:rem(24);
@@ -56,32 +55,43 @@
     margin-left:rem(16);
 
 }
-// footer-nav
-.footer-nav {
+// footer__nav
+.footer__nav {
     display: flex;
     gap: 1.5rem;
+    @include mq(md) {
     margin-top:rem(24);
 }
+}
 
-.footer-nav__items--wrap {
+.footer__wrap {
     width: 50%;
     @include mq(md) {
     display: flex;
 
 }
-}
+} 
 
-.footer-nav__items {
+.footer__items {
     @include mq(md) {
     width:50%;
     display: grid;
     gap:rem(40);
 }
 }
-.footer-nav__item {
-    position:relative;
+.footer__items:first-child {
+    @include mq(md) {
+        margin-left: 0;
 }
-.footer-nav__item a {
+}
+.footer__item {
+    position:relative;
+    margin-top:rem(40);
+    @include mq(md) {
+    margin-top:0;
+}
+}
+.footer__item a {
     font-family: $base-font-family;
     line-height: calc(18 / 16 );
     font-weight: $bold;
@@ -92,11 +102,11 @@
         }
 
 }
-.footer-nav__item a:hover {
+.footer__item a:hover {
     opacity: 0.5;
 }
 
-.footer-nav__item a::before {
+.footer__item a::before {
     content: '';
     display: inline-block;
     width: rem(22);/*画像の幅*/
@@ -107,25 +117,25 @@
     vertical-align: middle;
 }
 
-.footer-nav__item a::before:hover {
+.footer__item a::before:hover {
     opacity: 0.5;
 }
 
-.footer-nav__subitem a::before {
+.footer__subitem a::before {
     content:none;
 }
 
-.footer-nav__subitems {
+.footer__subitems {
     margin-left:rem(16);
     @include mq(md) {
      margin-left:rem(18);
      display:grid;
 }
 }
-.footer-nav__subitem {
+.footer__subitem {
 
 }
-.footer-nav__subitem a {
+.footer__subitem a {
     font-family: $base-font-family;
     line-height: calc(18 / 16 );
     font-weight: $normal;
