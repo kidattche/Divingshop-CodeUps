@@ -52,7 +52,7 @@ tl.to(
   stagger:0.2,
   delay: 0
 })
-.to(".loading__container",{
+.to(".loader__container",{
 opacity: 0,
 display:"none",
 })
@@ -172,7 +172,7 @@ $(window).scroll(function () {
 //sp-nav背景noscroll$(function(){
   $(function () {
     // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-    $(".c-hamberger").click(function () {
+    $(".hamberger").click(function () {
   
       // 現在のbodyタグのoverflowスタイルを確認
       if ($("body").css("overflow") === "hidden") {

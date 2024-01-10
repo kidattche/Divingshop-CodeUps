@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.loading__container {
+.loader__container {
     overflow: hidden;
     width: 100%; /* コンテナの幅 */
     height: 100vh; /* 画像の高さ */
@@ -10,13 +10,13 @@
     z-index:556;
 
 }
-  .loading__left-image {
+  .loader__left-image {
     width: 50%; /* 画像の幅 */
     height: 100vh; /* 画像の高さ */
     transform: translateY(100%);
   }
 
-  .loading__right-image{
+  .loader__right-image{
     width: 50%; /* 画像の幅 */
     height: 100vh; /* 画像の高さ */
     transform: translateY(100%);
@@ -24,7 +24,7 @@
 
 
 
-  .loading__left-image  {
+  .loader__left-image  {
    display:none;
    @include mq(md){
     display: block;
@@ -33,7 +33,7 @@
   }
 }
 
-.loading__left-image  img{
+.loader__left-image  img{
   display:none;
   @include mq(md){
    display: block;
@@ -44,7 +44,7 @@
 }
 
 }
-.loading__right-image img{
+.loader__right-image img{
   display:none;
   @include mq(md){
    display: block;
@@ -55,7 +55,7 @@
  }
 }
 
-  .loading__right-image {
+  .loader__right-image {
   display:none;
   @include mq(md){
     display: block;

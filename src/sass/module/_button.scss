@@ -1,7 +1,7 @@
 @use "global" as *;
 
 
-.button__box {
+.campaign__box {
     text-align: center;
     margin-top: 2rem;
     @include mq(md){
@@ -30,13 +30,20 @@
     margin-top: rem(32);
     }
 }
+.blog__box,.voice__box, .price__box {
+    text-align: center;
+    @include mq(md){
+    margin-top:rem(80);
+    }
+}
 
-// .button__box--fifth {
-//     text-align: center;
-//     @include mq(md){
-//     margin-top: 5rem;
-//     }
-// }
+
+.aboutus__box, .information__box, .contact__box {
+    text-align: center;
+    @include mq(md){
+    margin-top:rem(40);
+    }
+}
 
 .button {
     align-items: center;
