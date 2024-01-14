@@ -15,7 +15,7 @@ margin-inline: auto;
 max-width: none;
 }
 }
-.price-img__sp {
+.price__img--sp {
 display: block;
 @include mq(md){
 display: none;
@@ -140,4 +140,7 @@ font-size: rem(16);
 letter-spacing:0.0175rem;
 }
 }
-
+.price__button {
+    margin-top: 5rem;
+	text-align: center;
+}
