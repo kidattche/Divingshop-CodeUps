@@ -12,12 +12,12 @@
     place-items: center;
 }
 
-.loader-title__box {
+.loader__title-box {
     max-width:100%;
     width: 100%;
     text-align: center;
 }
-.loader .loader-title__text{
+.loader .loader__title-text{
     font-size: rem(40);
     font-weight: $normal;
     color: $green;
@@ -31,7 +31,7 @@
     letter-spacing: rem(43.2);
 }
 }
-.loader .loader-title__sub{
+.loader .loader__title-sub{
     font-size: rem(20);
     font-weight: $normal;
     color: $green;

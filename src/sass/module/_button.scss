@@ -1,146 +1,179 @@
 @use "global" as *;
 
 
-.campaign__box {
-    text-align: center;
-    margin-top: 2rem;
-    @include mq(md){
-    margin-top: 2.5rem;
-}
-}
-
-.button__box--second {
-    text-align: center;
-    margin-top: rem(51.2);
-    @include mq(md){
-    margin-top: rem(91.2);
-}
-}
-.button__box--third {
-    text-align: center;
-    margin-top: rem(43);
-    @include mq(md){
-    margin-top: rem(80);
-}
-}
-.button__box--fourth {
-    margin-top: rem(32);
-    text-align: center;
-    @include mq(md){
-    margin-top: rem(32);
-    }
-}
-.blog__box,.voice__box, .price__box {
-    text-align: center;
-    @include mq(md){
-    margin-top:rem(80);
-    }
-}
 
 
-.aboutus__box, .information__box, .contact__box {
-    text-align: center;
-    @include mq(md){
-    margin-top:rem(40);
-    }
-}
+// .button__box--second {
+//     text-align: center;
+//     margin-top: rem(51.2);
+//     @include mq(md){
+//     margin-top: rem(91.2);
+// }
+// }
+// .button__box--third {
+//     text-align: center;
+//     margin-top: rem(43);
+//     @include mq(md){
+//     margin-top: rem(80);
+// }
+// }
+// .button__box--fourth {
+//     margin-top: rem(32);
+//     text-align: center;
+//     @include mq(md){
+//     margin-top: rem(32);
+//     }
+// }
+// .blog__box,.voice__box {
+//     text-align: center;
+//     @include mq(md){
+//     margin-top:rem(80);
+//     }
+// }
+
+
+// .aboutus__box, .information__box {
+//     text-align: center;
+//     @include mq(md){
+//     margin-top:rem(40);
+//     }
+// }
 
 .button {
-    align-items: center;
-    background-color: #408F95;
-    border: 1px solid #408F95;
+    background-color: #408f95;
+    border: 1px solid #408f95;
     color: #fff;
-    display: block;
-    font-weight: $normal;
-    max-width: rem(202);
-    padding: rem(16) rem(88) rem(16) rem(40);
-    text-align: center;
+    display: inline-block;
+    font-family: "Gotu", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.57143;
+    margin-right: 0.1875rem;
+    padding-bottom: 0.9375rem;
+    padding-top: 0.9375rem;
     position: relative;
-    display: inline-flex;
-    white-space: nowrap;
-    font-family: $english-family;
-    height:rem(54);
+    text-align: center;
+    transition: color 0.2s;
+    width: 12.625rem;
     z-index: 1;
-
 }
-.button::after {
-    background-color: #fff;
+
+// .button::after {
+//     background-color: #fff;
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     transform: scale(0, 1);
+//     transform-origin: left top;
+//     transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+//     z-index: -1;
+
+// }
+
+// .button:hover {
+//     color: $green;
+//   }
+// .button:hover::after {
+//     transform: scale(1, 1);
+//     color: $green;
+//   }
+// .button-arrow {
+//     margin-left:rem(8);
+//     position: relative;
+//     width: rem(38.4);
+//     z-index:1;
+// }
+
+// .button__line-f {
+//     background-color: #fff;
+//     display: block;
+//     height: 2px;
+//     width:rem(40);
+//     z-index:-1;
+// }
+// .button__line-f::after  {
+//     content:"";
+//     background:$green;
+//     display: block;
+//     height: 1px;
+//     width:rem(40);
+//     z-index:1;
+// }
+
+// .button__line-s {
+//     background-color: #fff;
+//     display: block;
+//     height: 2px;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     transform: rotate(45deg);
+//     transform-origin: right bottom;
+//     width: rem(10);
+//     z-index:-1;
+// }
+
+// .button__line-s::after {
+//     content: "";
+//     background: $green;
+//     display: block;
+//     height: 1px;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     transform-origin: right bottom;
+//     width: rem(10);
+//     z-index: 1;
+// }
+// .button::before {
+//     border: solid 0.0625rem #408F95;
+//     height: rem(54);
+//     content: "";
+//     position: absolute;
+//     left: rem(4);
+//     top: rem(4);
+//     width: rem(202);
+//     z-index: -1
+// }
+
+.button::before {
+    background: #fff;
     content: "";
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     transform: scale(0, 1);
     transform-origin: left top;
-    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+    width: 100%;
     z-index: -1;
-
 }
 
-.button:hover {
-    color: $green;
-  }
-.button:hover::after {
-    transform: scale(1, 1);
-    color: $green;
-  }
-.button-arrow {
-    margin-left:rem(8);
+.button span {
+    display: inline-block;
+    padding-right: 3.046875rem;
     position: relative;
-    width: rem(38.4);
-    z-index:1;
 }
-
-.button__line-f {
-    background-color: #fff;
-    display: block;
-    height: 2px;
-    width:rem(40);
-    z-index:-1;
-}
-.button__line-f::after  {
-    content:"";
-    background:$green;
-    display: block;
-    height: 1px;
-    width:rem(40);
-    z-index:1;
-}
-
-.button__line-s {
-    background-color: #fff;
-    display: block;
-    height: 2px;
+.button span::after {
+    background: url(../../assets/images/common/button-arrow.png) no-repeat center center/contain;
+    content: "";
+    height: 0.5rem;
     position: absolute;
     right: 0;
-    top: 0;
-    transform: rotate(45deg);
-    transform-origin: right bottom;
-    width: rem(10);
-    z-index:-1;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 2.5625rem;
 }
-
-.button__line-s::after {
+.button::after {
+    border: 1px solid #408f95;
     content: "";
-    background: $green;
-    display: block;
-    height: 1px;
+    height: 100%;
     position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: right bottom;
-    width: rem(10);
-    z-index: 1;
-}
-.button::before {
-    border: solid 0.0625rem #408F95;
-    height: rem(54);
-    content: "";
-    position: absolute;
-    left: rem(4);
-    top: rem(4);
-    width: rem(202);
-    z-index: -1
-    
+    right: -0.25rem;
+    top: 0.25rem;
+    width: 100%;
+    z-index: -2;
 }
