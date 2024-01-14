@@ -29,17 +29,8 @@
 }
 /*---blog---------------------------*/
 .section-header__title--blog {
-    color: $black;
-    font-family: $english-family;
-    font-size: rem(32);
-    line-height: 40px;
-    font-weight: $normal;
     @include mq(md){
     color: $white;
-    font-family: $english-family;
-    font-size: rem(40);
-    line-height: 40px;
-    font-weight: $normal;
 }
 }
 
@@ -65,19 +56,14 @@
 /*---contact---------------------------*/
 .section-header__title--contact {
     font-size: rem(80);
-    color: $black;
-    font-family: $english-family;
-    font-weight: $normal;
-    margin-top: -1rem;
     @include mq(md){
     margin-top: 0;
+    font-size: rem(80);
     }
 }
 .section-header__subtitle--contact {
     color: $green;
-    font-size: rem(12);
-    font-family: $base-font-family;
-    margin-top: -1.5rem;
+    font-weight:300;
 }
 .section-header__title--contact:first-letter {
     color: $green;
