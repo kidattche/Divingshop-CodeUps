@@ -5,7 +5,7 @@ padding-bottom: 0.3rem;;
 }
 
 
-.campaign-card {
+.campaign__card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
 	display: flex;
@@ -16,33 +16,33 @@ padding-bottom: 0.3rem;;
 	width: 100%;
 }
 
-.campaign-card:hover {
+.campaign__card:hover {
 	opacity: 0.7;
 }
 
-.campaign-card__body {
+.campaign__card-body {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	padding: 1.25rem 1rem 1rem;
 }
 
-.campaign-card__head {
+.campaign__card-head {
 	flex-grow: 1;
 }
 
-.campaign-card__img {
+.campaign__card-img {
 	position: relative;
 	width: 100%;
 }
 
-.campaign-card__img::before {
+.campaign__card-img::before {
 	content: "";
 	display: block;
 	padding-top: 67.14%;
 }
 
-.campaign-card__img img {
+.campaign__card-img img {
 	-o-object-fit: cover;
 	height: 100%;
 	left: 50%;
@@ -53,7 +53,7 @@ padding-bottom: 0.3rem;;
 	width: 100%;
 }
 
-.campaign-card__category {
+.campaign__card-category {
 	border: 1px solid #408F95;
 	color: #408F95;
 	display: inline-block;
@@ -62,17 +62,17 @@ padding-bottom: 0.3rem;;
 	text-align: center;
 }
 
-.campaign-card__title {
+.campaign__card-title {
 	flex-grow: 1;
 	font-size: 1rem;
 	font-weight: 500;
 }
 
-.campaign-card__title--aside {
+.campaign__card-title--aside {
 	text-align: center;
 }
 
-.campaign-card__text {
+.campaign__card-text {
 	border-top: 1px solid #408F95;
 	font-size: 0.875rem;
 	margin-top: 0.5rem;
@@ -80,7 +80,7 @@ padding-bottom: 0.3rem;;
 	text-align: center;
 }
 
-.campaign-card__price {
+.campaign__card-price {
 	align-items: baseline;
 	display: flex;
 	font-family: "Lato", sans-serif;
@@ -90,12 +90,12 @@ padding-bottom: 0.3rem;;
 	margin-top: 0.1875rem;
 }
 
-.campaign-card__before-price {
+.campaign__card-before-price {
 	font-size: 1.25rem;
 	position: relative;
 }
 
-.campaign-card__before-price::after {
+.campaign__card-before-price::after {
 	background-color: #c94800;
 	bottom: 0.9375rem;
 	content: "";
@@ -105,16 +105,16 @@ padding-bottom: 0.3rem;;
 	width: 102%;
 }
 
-.campaign-card__after-price {
+.campaign__card-after-price {
 	color: #408F95;
 	font-size: 2rem;
 }
 
-.campaign-cards {
+.campaign__cards {
 	position: relative;
 }
 
-.campaign-cards__swiper {
+.campaign__cards-swiper {
 	margin-right: calc(50% - 50vw);
 	padding-bottom: 0.625rem;
 	padding-left: 0.9375rem;
@@ -122,7 +122,7 @@ padding-bottom: 0.3rem;;
 	width: 100vw;
 }
 
-.campaign-cards__swiper-slide {
+.campaign__cards-swiper-slide {
 	max-width: 17.5rem;
 	height: auto;
 }

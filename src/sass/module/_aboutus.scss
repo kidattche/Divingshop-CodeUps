@@ -37,7 +37,7 @@ top:36rem;
 
 
 
-.aboutus__img--left {
+.aboutus__img-left {
 position: relative;
 aspect-ratio: 128 / 194;
 left:0;
@@ -50,14 +50,14 @@ top:0;
 }
 
 
-.aboutus__img--left img {
+.aboutus__img-left img {
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
 
 
-.aboutus__img--right {
+.aboutus__img-right {
     position: relative;
     aspect-ratio: 281 / 186;
     width: 81.45%;
@@ -68,7 +68,7 @@ top:0;
     }
     }
 
-.aboutus__img--right img {
+.aboutus__img-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
