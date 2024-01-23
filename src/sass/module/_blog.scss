@@ -23,16 +23,25 @@ z-index:-2;
 }
 }
 
-.blog__items {
+.blog-cards {
     display: grid;
     gap: rem(30);
     grid-template-columns: repeat(1, 1fr);
+    @include mq(md){
+        gap: rem(40);
+        grid-template-columns: repeat(3, 1fr);
+}
+}
+.blog__items {
+    // display: grid;
+    // gap: rem(30);
+    // grid-template-columns: repeat(1, 1fr);
     margin-top: 1.5rem;
     max-width: 37.5rem;
     margin-inline: auto;
     @include mq(md){
-        gap: rem(40);
-        grid-template-columns: repeat(3, 1fr);
+        // gap: rem(40);
+        // grid-template-columns: repeat(3, 1fr);
         margin-top: 5rem;
         position: relative;
         max-width: none;
