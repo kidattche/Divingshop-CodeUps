@@ -43,14 +43,8 @@
 }
 .section-header__subtitle--blog {
     color: $green;
-    font-family: $base-font-family;
-    font-size: rem(12);
-    margin-top:rem(8);
     @include mq(md){
     color: $white;
-    font-family: $base-font-family;
-    font-size: rem(12);
-    margin-top:rem(8);
 }
 }
 /*---contact---------------------------*/
