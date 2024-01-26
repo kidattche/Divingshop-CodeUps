@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.bgextend {
-  animation-name: bgextendAnimeBase;
+.fadein {
+  animation-name: fadeinAnimeBase;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   position: relative;
@@ -9,7 +9,7 @@
   opacity: 0;
 }
 
-@keyframes bgextendAnimeBase {
+@keyframes fadeinAnimeBase {
   from {
     opacity: 0;
   }
@@ -18,8 +18,8 @@
     opacity: 1;
   }
 }
-.bgRLextend::before {
-  animation-name: bgRLextendAnime;
+.fadeinRLextend::before {
+  animation-name: fadeinRLextendAnime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   content: "";
@@ -28,7 +28,7 @@
   height: 100%;
   background-color: $green; /*伸びる背景色の設定*/
 }
-@keyframes bgRLextendAnime {
+@keyframes fadeinRLextendAnime {
   0% {
     transform-origin: right;
     transform: scaleX(0);
@@ -47,29 +47,22 @@
 }
 
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-.bgappearTrigger,
-.bgRLextendTrigger {
+.fadeinappearTrigger,
+.fadeinTrigger {
   opacity: 0;
 }
 
-.information__text-body {
-  @include mq(md) {
-    margin-top: rem(56);
-    width: 50%;
-    padding-top: 0;
-    padding-left: 2.8rem;
-  }
-}
+
 /*中の要素*/
-.bgappear {
-  animation-name: bgextendAnimeSecond;
+.fadeinappear {
+  animation-name: fadeinAnimeSecond;
   animation-duration: 1s;
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes bgextendAnimeSecond {
+@keyframes fadeinAnimeSecond {
   0% {
     opacity: 0;
   }
