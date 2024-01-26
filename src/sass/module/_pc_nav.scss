@@ -1,60 +1,63 @@
-@use 'global' as *;
-
+@use "global" as *;
 
 .pc-nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(40);
+  height: inherit;
+  @include mq(md) {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: rem(40);
-    height: inherit;
-    @include mq(md){
-    display: flex;
-    }
-    }
-
-
-
-.header__pc-nav {
-    height: inherit;
+  }
 }
+
 .pc-nav__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-
-}
-
-
-.pc-nav__item a {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .pc-nav__item a {
-    display: block;
-    align-items: center;
-    text-align: center;
-    color: $white;
-    font-family: serif;
-    font-family:$english-family;
-    font-size: rem(18);
-    line-height: 1;
-    font-weight: $normal;
-    height: inherit;
-    }
-
-.pc-nav__item:last-child a{
-   padding-right: 0;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  font-family: serif;
+  font-family: $english-family;
+  font-size: rem(18);
+  line-height: 1;
+  font-weight: $normal;
+  height: inherit;
+  position: relative;
+}
+.pc-nav__item a::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.pc-nav__item a:hover::before {
+  width: 100%;
 }
 
-.pc-nav__item:first-child a{
-    padding-left: 0;
+.pc-nav__item:last-child a {
+  padding-right: 0;
+}
+
+.pc-nav__item:first-child a {
+  padding-left: 0;
 }
 
 .pc-nav__item span {
-    display: block;
-    font-size: rem(10);
-    font-weight: $normal;
-    text-align: center;
-    margin-top:rem(4);
+  display: block;
+  font-size: rem(10);
+  font-weight: $normal;
+  text-align: center;
+  margin-top: rem(4);
 }

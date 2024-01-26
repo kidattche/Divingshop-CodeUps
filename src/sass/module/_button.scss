@@ -1,82 +1,79 @@
 @use "global" as *;
 
 .button {
-    background-color: #408F95;
-    border: 1px solid #408F95;
-    color: #fff;
-    display: inline-block;
-    font-family: "Gotu", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 300;
-    line-height: 1.4;
-    padding: 1rem 5.5rem 1rem 2.3125rem;
-    position: relative;
-    text-align: center;
-    transition: color 0.3s, background-color 0.3s;
-    width: 12.625rem;
-    z-index: 1;
+  background-color: #408f95;
+  border: 1px solid #408f95;
+  color: #fff;
+  display: inline-block;
+  font-family: "Gotu", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1rem 5.5rem 1rem 2.3125rem;
+  position: relative;
+  text-align: center;
+  transition: color 0.3s, background-color 0.3s;
+  width: 12.625rem;
+  z-index: 1;
 }
 .button:hover {
-    background-color: #fff;
-    color: #408F95;
+  background-color: #fff;
+  color: #408f95;
 }
-
-
 
 .button::before {
-    background-color: transparent;
-    border: 1px solid #408F95;
-    content: "";
-    display: inline-block;
-    height: 3.375rem;
-    left: 0.125rem;
-    position: absolute;
-    top: 0.1875rem;
-    width: 12.625rem;
-    z-index: -2
+  background-color: transparent;
+  border: 1px solid #408f95;
+  content: "";
+  display: inline-block;
+  height: 3.375rem;
+  left: 0.125rem;
+  position: absolute;
+  top: 0.1875rem;
+  width: 12.625rem;
+  z-index: -2;
 }
 
-
-
-
 .button:hover span::after {
-    background: url(..//images/common/button-arrow-green.png) no-repeat;
-    background-size: contain;
-    content: "";
-    height: 0.375rem;
-    position: absolute;
-    right: 2.25rem;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: background-image 0.3s;
-    width: 2.5rem;
+  background: url(..//images/common/button-arrow-green.png) no-repeat;
+  background-size: contain;
+  content: "";
+  height: 0.375rem;
+  position: absolute;
+  right: 2.25rem;
+  top: 45%;
+  transform: translateY(-50%);
+  transition: background-image 0.3s;
+  width: 2.5rem;
 }
 
 .button::after {
-    background: #fff;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: scaleX(0); /* scaleXを使用することで、水平方向のみスケールが変更されます */
-    transform-origin: left top;
-    transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
-    width: 100%;
-    z-index: -1;
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleX(
+    0
+  ); /* scaleXを使用することで、水平方向のみスケールが変更されます */
+  transform-origin: left top;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  width: 100%;
+  z-index: -1;
 }
 .button:hover::after {
-    transform: scaleX(1); /* ホバー時に完全に表示されるようにスケールを元に戻す */
+  transform: scaleX(1); /* ホバー時に完全に表示されるようにスケールを元に戻す */
 }
 .button span::after {
-    background: url(..//images/common/button-arrow-white.svg) no-repeat;
-    background-size: contain;
-    content: "";
-    height: 0.375rem;
-    position: absolute;
-    right: 2.25rem;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: background-image 0.3s;
-    width: 2.5rem;
+  background: url(..//images/common/button-arrow-white.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  height: 0.375rem;
+  position: absolute;
+  right: 2.25rem;
+  top: 45%;
+  transform: translateY(-50%);
+  transition: background-image 0.3s;
+  width: 2.5rem;
 }
