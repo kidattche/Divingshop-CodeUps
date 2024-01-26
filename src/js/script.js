@@ -26,7 +26,7 @@ $(function () {
   }
 
 const jsLoaderBg = '.loader' // カーテン（白い背景）
-const jsTextbox = '.loader-title__box' //テキストボックス
+const jsTextbox = '.loader__title-box' //テキストボックス
 const jsText = '.mv__title-wrap'//メインビジュアルのタイトル
 /*const jsLeftimg = '.loading__left-image'
 const jsRightimg = '.loading__right-image'*/
@@ -79,12 +79,7 @@ window.addEventListener('load', () => {
     },
     speed: 4000, // ２秒かけながら次の画像へ移動
     allowTouchMove: false, // マウスでのスワイプを禁止
-    navigation: {
-      // 左右のページ送りを有効にする
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      clickable: true, //この行を追記する
-    },
+
   };
   const swiper = new Swiper('.js-mv-swiper', swiperParams);
 });

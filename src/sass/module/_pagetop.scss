@@ -1,18 +1,18 @@
 @use "global" as *;
 .pagetop {
-    position:fixed;
-    bottom: 20px;
-    right:20px;
-    z-index:3;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
 }
 
 .pagetop a {
-    display: block;
-    text-decoration: none;
-    width:rem(80);
-    height:rem(80);
+  display: block;
+  text-decoration: none;
+  width: rem(80);
+  height: rem(80);
 }
 
-pagetop:hover {
-    opacity: 0.85;
+.pagetop:hover {
+  opacity: 0.85;
 }

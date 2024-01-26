@@ -1,65 +1,69 @@
 @use "global" as *;
 .mv {
-	height: 100vh;
-	height: 100dvh;
-	width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  width: 100%;
 }
 
 .mv__inner {
-	height: inherit;
-	position: relative;
-	width: 100%;
+  height: inherit;
+  position: relative;
+  width: 100%;
 }
-
+.mv__swiper-wrapper {
+  @include mq(md) {
+  margin-top: 0;
+}
+}
 .mv__slider,
 .swiper-slide picture,
 .swiper-slide img {
-	height: inherit;
-	width: 100%;
+  height: inherit;
+  width: 100%;
 }
 
 .swiper-slide img {
-	-o-object-fit: cover;
-	aspect-ratio: 375/667;
-	height: 100%;
-	object-fit: cover;
-	width: 100%;
-  @include mq(md){
-  aspect-ratio: 1440/768;
+  -o-object-fit: cover;
+  aspect-ratio: 375/667;
   height: 100%;
-	object-fit: cover;
-	width: 100%;
-}
+  object-fit: cover;
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 1440/768;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .mv__title-wrap {
-	color: #fff;
-	left: 50%;
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .mv__title {
-	font-family: "Lato", sans-serif;
-	font-size: 2.5rem;
-	font-weight: 300;
-	letter-spacing: 0.53em;
-	line-height: 1.2;
-	text-indent: 0.54em;
-	text-transform: uppercase;
-  @include mq(md){
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.53em;
+  line-height: 1.2;
+  text-indent: 0.54em;
+  text-transform: uppercase;
+  @include mq(md) {
     font-size: rem(80);
   }
 }
 
 .mv__title-sub {
-	font-family: "Gotu", sans-serif;
-	font-size: 1.25rem;
-	font-weight: 300;
-  @include mq(md){
+  font-family: "Gotu", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  @include mq(md) {
     font-size: rem(20);
   }
 }
