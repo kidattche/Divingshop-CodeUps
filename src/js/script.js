@@ -115,25 +115,25 @@ const swiper = new Swiper('.js-campaign-swiper', {
 function BgFadeAnime(){
 
   // 背景色が伸びて出現（右から左）
-$('.bgRLextendTrigger').each(function(){ //bgRLextendTriggerというクラス名が
+$('.fadeinTrigger').each(function(){ //fadeinTriggerというクラス名が
   var elemPos = $(this).offset().top-50;//要素より、50px上の
   var scroll = $(window).scrollTop();
   var windowHeight = $(window).height();
   if (scroll >= elemPos - windowHeight){
-    $(this).addClass('bgRLextend');// 画面内に入ったらbgRLextendというクラス名を追記
+    $(this).addClass('fadeinRLextend');// 画面内に入ったらfadeinRLextendというクラス名を追記
   }else{
-    $(this).removeClass('bgRLextend');// 画面外に出たらbgRLextendというクラス名を外す
+    $(this).removeClass('fadeinRLextend');// 画面外に出たらfadeinRLextendというクラス名を外す
   }
 });
  // 文字列を囲う子要素
-$('.bgappearTrigger').each(function(){ //bgappearTriggerというクラス名が
+$('.fadeinappearTrigger').each(function(){ //fadeinappearTriggerというクラス名が
   var elemPos = $(this).offset().top-50;//要素より、50px上の
   var scroll = $(window).scrollTop();
   var windowHeight = $(window).height();
   if (scroll >= elemPos - windowHeight){
-    $(this).addClass('bgappear');// 画面内に入ったらbgappearというクラス名を追記
+    $(this).addClass('fadeinappear');// 画面内に入ったらfadeinappearというクラス名を追記
   }else{
-    $(this).removeClass('bgappear');// 画面外に出たらbgappearというクラス名を外す
+    $(this).removeClass('fadeinappear');// 画面外に出たらfadeinappearというクラス名を外す
   }
 });   
 }
@@ -147,9 +147,6 @@ $(window).scroll(function (){
 $(window).on('load', function(){
   BgFadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
-
-Resources
 
 
 //headerクラス付与
