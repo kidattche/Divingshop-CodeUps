@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.sub-gallery__header {
+    margin-top: rem(120);
+}
+.sub-gallery {
+margin-top: rem(80);
+}
+.sub-gallery__inner {
+    margin: auto;
+    max-width: rem(600);
+    padding: $padding-sp;
+    width: 100%;
+    @include mq(md){
+        max-width: rem(1080);
+    }
+}
