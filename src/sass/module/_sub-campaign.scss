@@ -1,0 +1,10 @@
+@use "global" as *;
+.sub-campaign__container {
+    width: 100%;
+    padding-left: rem(15);
+    padding-right: rem(15);
+    text-align: center;
+    @include mq(md) {
+      text-align: initial;
+    }
+  }

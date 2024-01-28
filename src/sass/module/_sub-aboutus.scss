@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.aboutus {
+.sub-aboutus {
 }
 
-.aboutus__container {
+.sub-aboutus__container {
   margin-top: rem(26);
   max-width: 37.5rem;
   margin-inline: auto;
@@ -14,26 +14,26 @@
   }
 }
 
-.aboutus__container::after {
+.sub-aboutus__container::after {
   @include mq(md) {
     content: "";
-    background: url(..//images/common/sango.png) no-repeat right bottom;
+    background: url(..//images/common/hanadaism.png) no-repeat right bottom;
     background-size: contain;
     display: inline-block;
-    width: rem(194);
-    height: rem(181);
+    width: rem(301);
+    height: rem(138);
     position: absolute;
     right: calc(50% - min(48vw, 40.125rem));
-    top: 36rem;
+    top: 43rem;
   }
 }
-.aboutus__images {
+.sub-aboutus__images {
   aspect-ratio: 345 / 212;
   height: 100%;
   position: relative;
 }
 
-.aboutus__img-left {
+.sub-aboutus__img-left {
   position: relative;
   aspect-ratio: 128 / 194;
   left: 0;
@@ -45,13 +45,13 @@
   }
 }
 
-.aboutus__img-left img {
+.sub-aboutus__img-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.aboutus__img-right {
+.sub-aboutus__img-right {
   position: relative;
   aspect-ratio: 281 / 186;
   width: 81.45%;
@@ -62,13 +62,13 @@
   }
 }
 
-.aboutus__img-right img {
+.sub-aboutus__img-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.aboutus__text-body {
+.sub-aboutus__text-body {
   margin-top: rem(40);
   @include mq(md) {
     display: flex;
@@ -81,7 +81,7 @@
   }
 }
 
-.aboutus__title {
+.sub-aboutus__title {
   font-size: rem(40);
   font-family: $english-family;
   color: $green;
@@ -95,7 +95,7 @@
     width: 25rem;
   }
 }
-.aboutus__contents {
+.sub-aboutus__contents {
   margin-top: rem(17.6);
   @include mq(md) {
     width: 25rem;
@@ -103,7 +103,7 @@
   }
 }
 
-.aboutus__text {
+.sub-aboutus__text {
   @include mq(md) {
     color: $white;
     font-family: $base-font-family;
@@ -111,7 +111,7 @@
   }
 }
 
-.aboutus__button {
+.sub-aboutus__button {
   margin-top: 2.5rem;
   text-align: center;
 }
