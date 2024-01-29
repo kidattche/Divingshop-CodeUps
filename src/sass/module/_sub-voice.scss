@@ -1,0 +1,51 @@
+@use "global" as *;
+.sub-voice {
+  //padding:0 0 rem(80);
+  @include mq(md) {
+  }
+}
+
+.sub-voice__items {
+  max-width: 37.5rem;
+  margin-inline: auto;
+  height: auto;
+  margin-top: rem(40);
+  @include mq(md) {
+    width: 100%;
+    position: relative;
+    max-width: none;
+    margin-top: 1.5rem;
+  }
+}
+
+.sub-voice__items::after {
+  @include mq(md) {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    display: inline-block;
+    width: rem(437);
+    height: rem(137);
+    position: absolute;
+    top: -13.5rem;
+    left: calc(50% - min(48vw, 38.6875rem));
+  }
+}
+
+.sub-voice__button {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.sub-voice__contact {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
+.sub-voice-footer {
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
