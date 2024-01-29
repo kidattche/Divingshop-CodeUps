@@ -181,7 +181,7 @@ $(window).scroll(function () {
     });
   });
 
-  // Campaignページのtabメニュー
+  // Campaignページ,informationページのtabメニュー
   jQuery(function ($) {
     $('.js-tab-menu').on('click', function () {
         $('.js-tab-menu').removeClass('is-active');

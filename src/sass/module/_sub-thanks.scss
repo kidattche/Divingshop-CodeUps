@@ -1,0 +1,26 @@
+@use "global" as *;
+.sub-contact-thanks__content-container {
+text-align: center;
+}
+
+.sub-contact-thanks__title {
+    color: $black;
+    text-align: center;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(18);
+}
+
+.sub-contact-thanks__content {
+    color: $black;
+    text-align: center;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+

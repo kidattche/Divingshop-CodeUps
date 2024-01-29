@@ -1,0 +1,14 @@
+@use "global" as *;
+.sub-price{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-price__inner {
+    max-width:rem(800);
+    width:100%;
+}
+
+.sub-price__box {
+    margin-top: rem(80);
+}
