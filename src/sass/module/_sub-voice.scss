@@ -49,3 +49,9 @@
     margin-top: rem(140);
   }
 }
+.sub-voice__page-sp {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

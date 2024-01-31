@@ -12,3 +12,9 @@
   margin-top: rem(140);
 }
 
+.sub-campaign__page-sp {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

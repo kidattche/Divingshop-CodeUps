@@ -28,7 +28,18 @@
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
+  .sub-mv__information {
+    height: rem(548);
+  }
+}
+.sub-mv__blog {
+  height: rem(460);
+  background-image: url(..//images/common/sub-blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .sub-mv__information {
     height: rem(548);
   }
 }
@@ -39,7 +50,7 @@
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
+  .sub-mv__voice{
     height: rem(548);
   }
 }
@@ -50,7 +61,7 @@
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
+  .sub-mv__price {
     height: rem(548);
   }
 }
@@ -61,7 +72,18 @@
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
+  .sub-mv__contact {
+    height: rem(548);
+  }
+}
+.sub-mv__faq {
+  height: rem(460);
+  background-image: url(..//images/common/sub-contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .sub-mv__faq{
     height: rem(548);
   }
 }
@@ -73,7 +95,7 @@
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
+  .sub-mv__bnother {
     height: rem(548);
   }
 }
@@ -87,12 +109,11 @@
       height: rem(274);
     }
   }
-}
+} 
 .sub-mv__engtitle {
   color: #fff;
-  font-family: Lato;
   font-size: rem(40);
-  font-family: $english-family;
+  font-family: $main-title-family;
   font-weight: 400;
   line-height: 100px;
 }

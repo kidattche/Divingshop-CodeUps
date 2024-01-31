@@ -44,7 +44,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: rem(40);
   @include mq(md) {
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
   }
   animation: fade 0.3s;
 }

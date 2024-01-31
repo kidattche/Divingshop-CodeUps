@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.sub-blog-pagenavi {
+  margin-top: rem(50);
+}
+
+.sub-blog-pagenavi__inner {
+  margin: auto;
+  padding: 0 rem(20);
+  max-width: rem(600);
+  width: 100%;
+  @include mq(md) {
+    padding: 0 rem(25);
+    max-width: rem(1080);
+  }
+}
+
+.sub-blog-pagenavi .wp-pagenavi {
+  clear: both;
+  text-align: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.sub-blog-pagenavi .wp-pagenavi a,
+.sub-blog-pagenavi .wp-pagenavi span {
+  color: $green;
+  font-family: $main-title-family;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid $green;
+  transition: 0.3s;
+  padding: rem(10) rem(14);
+}
+
+.sub-blog-pagenavi .wp-pagenavi a:hover {
+  color: #fff;
+  background-color: $green;
+  border-color: $green;
+  opacity: 1;
+}
+
+.sub-blog-pagenavi .wp-pagenavi .current {
+  color: #fff;
+  background-color: $green;
+  border-color: $green;
+}
+.wp-pagenavi__nav-prev {
+  margin-right: rem(28);
+}
+.wp-pagenavi__nav-next {
+  margin-left: rem(28);
+}
+
+.sub-blog-pagenavi__wp-pagenavi {
+}
