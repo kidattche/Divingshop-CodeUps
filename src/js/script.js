@@ -222,3 +222,28 @@ function toggleActiveState(element) {
   // クリックされた年のリンクにactiveクラスを追加
   element.classList.add('active');
 }
+
+//モーダル要素を取得
+var modal = document.getElementById("myModal");
+
+// モーダルで表示する画像を取得
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+
+var galleryImages = document.querySelectorAll(".sub-gallery-list__item img");
+galleryImages.forEach(function(img) {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt; // ここでalt属性を設定
+  }
+});
+
+// クローズボタンを取得
+var span = document.getElementsByClassName("close")[0];
+
+// クローズボタンをクリックしたらモーダルを閉じる
+span.onclick = function() {
+  modal.style.display = "none";
+}

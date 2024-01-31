@@ -12,7 +12,15 @@
     @include mq(md) {
         grid-column: span 5;
         grid-row: span 1;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
+}
+.item {
+    flex: 1;
+    display: block;
 }
 
 .sub-gallery-list__item:nth-of-type(6n+1),

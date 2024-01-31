@@ -1,0 +1,54 @@
+@use "global" as *;
+@use "global" as *;
+/* モーダルのスタイル */
+.modal {
+  display: none; /* 最初は非表示 */
+  position: fixed; /* 画面上に固定 */
+  z-index: 3; /* 他の要素の上に表示 */
+  padding-top: 100px; /* 上部に少しスペースを作る */
+  left: 0;
+  top: 0;
+  width: 100%; /* 幅を全体に */
+  height: 100%; /* 高さを全体に */
+  overflow: auto; /* スクロール可能に */
+  background-color: rgb(0,0,0); /* 背景色 */
+  background-color: rgba(0,0,0,0.9); /* 背景色（少し透明） */
+}
+
+/* モーダル内の画像 */
+.modal-content {
+  margin-top:rem(50);
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* クローズボタン */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* キャプション */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
