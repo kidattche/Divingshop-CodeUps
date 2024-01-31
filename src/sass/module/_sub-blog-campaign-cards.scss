@@ -1,0 +1,7 @@
+@use "global" as *;
+.sub-blog-campaign-cards {
+margin-top: rem(24);
+  }
+.sub-blog-campaign-cards__item:not(:first-child) {
+  margin-top: rem(40);
+}

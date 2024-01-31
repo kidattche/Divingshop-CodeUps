@@ -191,3 +191,34 @@ $(window).scroll(function () {
         $('#' + number).addClass('is-active');
     });
 });
+
+// FAQページのドロワーオープン
+jQuery(function ($) {
+  $('.js-faq-question, .js-blog-question').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('is-open');
+  });
+});
+
+// home.htmlのアーカイブの矢印
+document.addEventListener("DOMContentLoaded", function() {
+  var yearLinks = document.querySelectorAll('.sub-blog-archive__year > a, .single-archive__year > a');
+
+  yearLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      toggleActiveState(link.parentElement);
+    });
+  });
+});
+
+function toggleActiveState(element) {
+  // 全ての年のリンクからactiveクラスを削除
+  var allYearLinks = document.querySelectorAll('.sub-blog-archive__year, .single-archive__year');
+  allYearLinks.forEach(function(year) {
+    year.classList.remove('active');
+  });
+
+  // クリックされた年のリンクにactiveクラスを追加
+  element.classList.add('active');
+}

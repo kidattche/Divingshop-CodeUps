@@ -1,0 +1,79 @@
+@use "global" as *;
+.sub-faq-list__item {
+    background-color: #fff;
+
+}
+.sub-faq-list + .sub-faq-list {
+    margin-top: rem(44);
+    @include mq(md){
+    margin-top: rem(40);
+    }
+}
+.sub-faq-list__item + .sub-faq-list__item {
+    margin-top: rem(44);
+    @include mq(md){
+    margin-top: rem(40);
+    }
+}
+
+.sub-faq-list__item-question {
+    padding: rem(16) rem(42) rem(16)rem(16);
+    position: relative;
+    color:#fff;
+    font-family: $base-font-family;
+    font-size: rem(20);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: $green;
+    cursor: pointer;
+    @include mq(md){
+        padding: rem(26) rem(64) rem(26)rem(40);
+        font-size: rem(18);
+    }
+}
+
+.sub-faq-list__item-question::before,
+.sub-faq-list__item-question::after {
+    content: "";
+    position: absolute;
+    top: rem(28);
+    right: rem(16);
+    width: rem(28);
+    height: rem(3);
+    background: #fff;
+    transition: .3s;
+    @include mq(md){
+        top: rem(40);
+        right: rem(40);
+        width: rem(32);
+    }
+}
+
+.sub-faq-list__item-question::after {
+    transform: rotate(90deg);
+}
+
+.sub-faq-list__item-question.is-open::after {
+    transform: rotate(0deg);
+}
+
+
+
+.sub-faq-list__item-answer {
+    padding: rem(28) rem(16);
+    display: none;
+    color: $black;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid $green;
+    // text-indent: rem(-20);
+    @include mq(md){
+        padding: rem(40);
+        font-size: rem(16);
+        margin-top: rem(16);
+    }
+}

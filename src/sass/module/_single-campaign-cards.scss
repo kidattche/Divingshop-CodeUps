@@ -1,0 +1,7 @@
+@use "global" as *;
+.single-campaign-cards {
+margin-top: rem(24);
+display: grid;
+ gap: rem(40);
+  grid-template-columns: repeat(1, 1fr);
+  }

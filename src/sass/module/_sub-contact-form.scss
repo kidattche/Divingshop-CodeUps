@@ -1,0 +1,10 @@
+@use "global" as *;
+.sub-contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-contact-form__inner {
+    max-width: rem(800);
+    width: 100%;
+}

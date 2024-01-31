@@ -1,0 +1,96 @@
+@use "global" as *;
+.sub-card-reviews__img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 301 /201;
+  width: 100%;
+}
+.sub-card-reviews__img img {
+  height: auto;
+  transition: all 0.6s;
+  width: 100%;
+}
+
+.sub-card-reviews__img:hover img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.sub-card-reviews__img::before {
+  content: "";
+  display: block;
+  padding-top: 65.92592%;
+}
+
+.sub-card-reviews__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub-card-reviews__body {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.sub-card-reviews__title {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: $base-font-family;
+  color: $black;
+  border-bottom: solid 1px $green;
+}
+
+.sub-card-reviews__text {
+  font-size: rem(16);
+  font-weight: 400;
+  margin-top: 0.4rem;
+  @include mq(md) {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.0115em;
+    line-height: 1.5;
+  }
+}
+
+.sub-card-reviews-content__date {
+  font-size: rem(12);
+  font-family: Gotu;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  padding-left: 0.5rem;
+  color: $black;
+}
+.sub-card-reviews {
+  padding: rem(16) rem(16) rem(24) rem(16);
+  // height: 100%;
+  background-color: #fff;
+  @include mq(md) {
+  }
+}
+
+.sub-card-reviews__img {
+  overflow: hidden;
+  aspect-ratio: 301 /201;
+  width: 100%;
+}
+
+.sub-card-reviews__item {
+}
+.sub-card-reviews__item:hover {
+  opacity: 0.5;
+}
+.sub-card-reviews__button {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.sub-card-reviews__button {
+  margin-top: 2.5rem;
+  text-align: center;
+}
