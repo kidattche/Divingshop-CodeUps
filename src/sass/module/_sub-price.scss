@@ -5,8 +5,14 @@
 }
 
 .sub-price__inner {
-    max-width:rem(800);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include mq(md) {
+    max-width:rem(700);
     width:100%;
+    }
 }
 
 .sub-price__box {
