@@ -149,6 +149,9 @@ $(window).on('load', function(){
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
+
+
+
 //headerクラス付与
 let header = $('.header');
 let headerHeight = $('.header').height();
@@ -160,6 +163,9 @@ $(window).scroll(function () {
     header.removeClass('is-color');
   }
 });
+
+
+
 
 //sp-nav背景noscroll$(function(){
   $(function () {
@@ -192,6 +198,9 @@ $(window).scroll(function () {
     });
 });
 
+
+
+
 // FAQページのドロワーオープン
 jQuery(function ($) {
   $('.js-faq-question, .js-blog-question').on('click', function () {
@@ -199,6 +208,9 @@ jQuery(function ($) {
       $(this).toggleClass('is-open');
   });
 });
+
+
+
 
 // home.htmlのアーカイブの矢印
 document.addEventListener("DOMContentLoaded", function() {
@@ -247,3 +259,23 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+
+
+// ページトップ
+// jQuery(function ($) {
+//   $('.pagetop').on("click",function () {
+//       $('body,html').animate({
+//           scrollTop: 0
+//       }, 500);
+//       return false;
+//   });
+// });
+
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('pagetop')) {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+      e.preventDefault(); // デフォルトのアンカー動作を防ぐ
+  }
+});
