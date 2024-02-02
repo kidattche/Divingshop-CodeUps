@@ -22,6 +22,9 @@
   gap: 12px;
   justify-content: center;
 }
+.single-pagenavi:hover {
+  color: $green;
+}
 
 .single-pagenavi .wp-pagenavi a,
 .single-pagenavi .wp-pagenavi span {

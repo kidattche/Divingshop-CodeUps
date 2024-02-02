@@ -1,0 +1,121 @@
+@use "global" as *;
+.sub-price-table {
+  width: 100%;
+  line-height: 1;
+  text-align: center;
+  border-collapse: collapse;
+  // border: solid 1px $green;
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.sub-price-table__data-title {
+  background-color: $green;
+  color: #fff;
+  padding: rem(8) rem(100);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  @include mq(md) {
+    padding: rem(41) rem(44);
+    display: block;
+    text-align: -webkit-center;
+    width: 12.5rem;
+  }
+}
+.sub-price-table__title {
+  margin-left: rem(8);
+  @include mq(md) {
+    margin-left: 0;
+}
+}
+
+.sub-price-table__row {
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+  width: 12.5rem;
+}
+}
+
+.sub-price-table__data {
+  display: flex;
+}
+
+.sub-price-table__second-line {
+  width: rem(240);
+  @include mq(md) {
+    width: rem(340);
+  }
+}
+
+.sub-price-table__third-line {
+  @include mq(md) {
+    width: 100%;
+    
+    
+  }
+}
+
+.sub-price-table__data-second {
+  padding: rem(7) rem(24);
+  border: solid 1px $green;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: 400;
+  // line-height: rem(24);
+  letter-spacing: 0em;
+  color: $black;
+  white-space: nowrap;
+  height: rem(60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+    padding: rem(18) rem(16);
+    width: rem(340);
+    justify-content: start;
+  }
+}
+.sub-price-table__data-third {
+  width: rem(106);
+  text-align: end;
+  padding: rem(7) rem(6);
+  border: solid 1px $green;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: 400;
+  // line-height: rem(24);
+  letter-spacing: 0em;
+  color: $black;
+  height: rem(60);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  @include mq(md) {
+    padding: rem(18) rem(16);
+    width:rem(162);
+  }
+}
+.sub-price-table__data span {
+  margin-bottom: rem(5);
+  position: relative;
+  display: block;
+  text-decoration-line: line-through;
+}
+.sub-price-table__img {
+  width: rem(24);
+  height: rem(24);
+  display: flex;
+  justify-content: center;
+  @include mq(md) {
+    width: rem(64);
+    height: rem(64);
+    margin-top: rem(8);
+  }
+}

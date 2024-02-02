@@ -13,5 +13,6 @@ margin-top: rem(80);
     width: 100%;
     @include mq(md){
         max-width: rem(1080);
+        position: relative;
     }
 }
