@@ -3,6 +3,20 @@
 .sub-campaign-tab__content {
   margin-top: rem(40);
 }
+.sub-campaign-tab__content:before {
+  @include mq(md) {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    position: absolute;
+    top: 41.3rem;
+    width: 27.3125rem;
+  }
+}
 
 .sub-campaign-tab__menu {
   display: grid;
@@ -41,9 +55,10 @@
 .sub-campaign-tab__content-item.is-active {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: rem(40);
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem; // Specify the horizontal gap
+    grid-row-gap: 5rem;    // Specify the vertical gap
   }
   animation: fade 0.3s;
 }

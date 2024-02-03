@@ -273,9 +273,9 @@ span.onclick = function() {
 //   });
 // });
 
-document.addEventListener('click', function(e) {
-  if (e.target.classList.contains('pagetop')) {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-      e.preventDefault(); // デフォルトのアンカー動作を防ぐ
-  }
-});
+// document.addEventListener('click', function(e) {
+//   if (e.target.classList.contains('pagetop')) {
+//       window.scrollTo({top: 0, behavior: 'smooth'});
+//       e.preventDefault(); // デフォルトのアンカー動作を防ぐ
+//   }
+// });
