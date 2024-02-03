@@ -12,10 +12,7 @@
     @include mq(md) {
         grid-column: span 5;
         grid-row: span 1;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        height: rem(369);
     }
 }
 .item {
@@ -28,17 +25,21 @@
     @include mq(md) {
         grid-column: span 4;
         grid-row: span 2;
+        height: rem(746);
     }
 }
 
 .sub-gallery-list__item img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 520/400;
+    // aspect-ratio: 520/400;
     object-fit: cover;
 }
 
 .sub-gallery-list__item:nth-of-type(6n+1) img,
 .sub-gallery-list__item:nth-of-type(6n+6) img {
     aspect-ratio: 300/440;
+    @include mq(md) {
+        aspect-ratio: 492/746;
+}
 }

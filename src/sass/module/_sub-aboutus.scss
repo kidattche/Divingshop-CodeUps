@@ -13,7 +13,20 @@
     margin-top: rem(40.4);
   }
 }
-
+.sub-aboutus__container:before {
+  @include mq(md) {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    position: absolute;
+    top: -4rem;
+    width: 27.3125rem;
+  }
+}
 .sub-aboutus__container::after {
   @include mq(md) {
     content: "";
@@ -24,7 +37,7 @@
     height: rem(138);
     position: absolute;
     right: calc(50% - min(48vw, 40.125rem));
-    top: 43rem;
+    top: 44rem;
   }
 }
 .sub-aboutus__images {
@@ -99,7 +112,7 @@
   margin-top: rem(17.6);
   @include mq(md) {
     width: 25rem;
-    margin-top: 0;
+    margin-top: 1.5rem;;
   }
 }
 
