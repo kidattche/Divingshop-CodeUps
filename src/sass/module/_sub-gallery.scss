@@ -4,7 +4,9 @@
     margin-top: rem(120);
 }
 .sub-gallery {
-margin-top: rem(80);
+    @include mq(md){
+margin-top: rem(88);
+}
 }
 .sub-gallery__inner {
     margin: auto;
@@ -14,5 +16,6 @@ margin-top: rem(80);
     @include mq(md){
         max-width: rem(1080);
         position: relative;
+        padding: 0;
     }
 }
