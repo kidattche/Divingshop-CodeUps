@@ -37,14 +37,9 @@
 }
 
 .sub-blog__items {
-  // display: grid;
-  // gap: rem(30);
-  // grid-template-columns: repeat(1, 1fr);
   max-width: 37.5rem;
   margin-inline: auto;
   @include mq(md) {
-    // gap: rem(40);
-    // grid-template-columns: repeat(3, 1fr);
     position: relative;
     max-width: none;
   }
@@ -52,14 +47,14 @@
 .sub-blog__items::after {
   @include mq(md) {
     content: "";
-    background: url(..//images/common/hanadaill.png) no-repeat top left;
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
     background-size: contain;
     display: inline-block;
-    width: rem(437);
-    height: rem(201);
+    width: rem(301);
+    height: rem(138);
     position: absolute;
-    top: -13.4rem;
-    left: calc(50% - min(48vw, 38.6875rem));
+    top: -9.4rem;
+    left: calc(50% - min(36vw, 28.6875rem));
   }
 }
 
