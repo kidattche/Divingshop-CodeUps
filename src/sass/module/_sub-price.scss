@@ -3,17 +3,9 @@
     display: flex;
     justify-content: center;
 }
-
-.sub-price__inner {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    @include mq(md) {
-    max-width:rem(700);
-    width:100%;
-    }
-}
+.sub-price__container {
+    max-width: rem(700);
+    margin-inline: auto;}
 
 .sub-price__box {
     margin-top: rem(80);

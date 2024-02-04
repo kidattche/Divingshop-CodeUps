@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .sub-voice-tab__content {
-  margin-top: rem(40);
+  margin-top: 0;;
+  @include mq(md) {
+
 }
+}
+
 
 .sub-voice-tab__menu {
   display: grid;
@@ -35,9 +39,11 @@
 }
 
 .sub-voice-tab__content-item {
-  padding: rem(25);
+  padding: 0;
   display: none;
   background-color: #fff;
+  @include mq(md) {
+}
 }
 .sub-voice-tab__content-item.is-active {
   display: grid;

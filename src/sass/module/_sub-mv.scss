@@ -16,23 +16,21 @@
   background-image: url(..//images/common/sub-aboutus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 @media screen and (min-width: 768px) {
-  .sub-mv__aboutus {
     height: rem(548);
-  }
+  
 }
 
 .sub-mv__information {
   height: rem(460);
-  background-image: url(..//images/common/sub-information.jpg);
+  background-image: url(..//images/common/info-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 @media screen and (min-width: 768px) {
-  .sub-mv__information {
     height: rem(548);
+    background-image: url(..//images/common/sub-information.jpg);
   }
+}
 }
 
 
@@ -41,23 +39,22 @@
   background-image: url(..//images/common/sub-blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 @media screen and (min-width: 768px) {
-  .sub-mv__information {
     height: rem(548);
+    background-image: url(..//images/common/sub-blog.jpg);
   }
 }
 
 
+
 .sub-mv__voice {
   height: rem(460);
-  background-image: url(..//images/common/sub-voice.jpg);
+  background-image: url(..//images/common/voice-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 @media screen and (min-width: 768px) {
-  .sub-mv__voice{
-    height: rem(548);
+  height: rem(548);
+  background-image: url(..//images/common/sub-voice.jpg);
   }
 }
 .sub-mv__price {
@@ -115,7 +112,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: rem(206);
+  padding-top: rem(190);
   @media screen and (min-width: 768px) {
     .sub-mv__title {
       height: rem(274);

@@ -32,9 +32,6 @@
 
 .sub-card-reviews__body {
   margin-top: rem(16);
-  @include mq(md) {
-    margin-top: rem(24);
-  }
 }
 
 .sub-card-reviews__title {
@@ -49,11 +46,14 @@
   font-size: rem(16);
   font-weight: 400;
   margin-top: 0.4rem;
+  font-family: Noto Sans JP;
   @include mq(md) {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.0115em;
-    line-height: 1.5;
+    font-size: rem(24);
+    font-weight: 500;
+    line-height: rem(35);
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:1rem;
   }
 }
 
@@ -67,16 +67,17 @@
   color: $black;
 }
 .sub-card-reviews {
-  padding: rem(16) rem(16) rem(24) rem(16);
+  // padding: rem(16) rem(16) rem(24) rem(16);
   // height: 100%;
   background-color: #fff;
   @include mq(md) {
+    margin-top: rem(32);
   }
 }
 
 .sub-card-reviews__img {
   overflow: hidden;
-  aspect-ratio: 301 /201;
+  aspect-ratio: 301 /221;
   width: 100%;
 }
 
@@ -93,4 +94,15 @@
 .sub-card-reviews__button {
   margin-top: 2.5rem;
   text-align: center;
+}
+.sub-card-reviews__year {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: rem(18);
+  letter-spacing: 0em;
+  @include mq(md) {
+    text-align: left;
+    font-size: rem(12);
+  }
 }

@@ -4,11 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: rem(40);
+  column-gap: rem(48);
   height: inherit;
-  @include mq(md) {
-    display: flex;
-  }
 }
 
 .pc-nav__item {

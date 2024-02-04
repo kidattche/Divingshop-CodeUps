@@ -22,13 +22,43 @@
     z-index: -2;
   }
 }
+
+.single__title {
+font-family: $base-font-family;
+font-size: rem(32);
+font-weight: 500;
+line-height: rem(46);
+letter-spacing: 0em;
+text-align: left;
+border-bottom: 1px solid $green;
+padding-bottom: 0.5rem;
+
+@include mq(md){
+font-size: rem(32);
+}
+}
 .single__content {
   display: block;
   margin-top: rem(80);
   @include mq(md){
     display: flex;
     gap:rem(80);
-    margin-top: rem(178);
+    margin-top: rem(144);
+  }
+}
+
+.single__content:after {
+  @include mq(md) {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    position: absolute;
+    top: 41.3rem;
+    width: 27.3125rem;
   }
 }
 .single__content-item {
@@ -49,19 +79,7 @@
     max-width: none;
   }
 }
-.single__items::after {
-  @include mq(md) {
-    content: "";
-    background: url(..//images/common/hanadaill.png) no-repeat top left;
-    background-size: contain;
-    display: inline-block;
-    width: rem(437);
-    height: rem(201);
-    position: absolute;
-    top: -13.4rem;
-    left: calc(50% - min(48vw, 38.6875rem));
-  }
-}
+
 
 .single__button {
   margin-top: 5rem;
@@ -75,6 +93,41 @@
   }
 }
 
+.single__subitems {
+    margin-left: rem(16);
+    @include mq(md) {
+      margin-left: rem(18);
+      display: grid;
+      margin-top: 3.2rem;
+    }
+  }
+  .single__subitem {
+  }
+  .single__subitem a {
+    font-family: $base-font-family;
+    line-height: calc(18 / 16);
+    font-weight: $normal;
+    color: $black;
+    margin-top: rem(24);
+    white-space: nowrap;
+  }
+
+  .single__subitem a::before {
+    content: "";
+    display: inline-block;
+    width: rem(22); /*画像の幅*/
+    height: rem(18); /*画像の高さ*/
+    background-image: url(..//images/common/hitode2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .single__subitem a::before:hover {
+    opacity: 0.5;
+  }
+  
+  
 // サイドバー
 //  見出し
 .single__parts {
@@ -180,12 +233,4 @@
     padding-top: 0;
     padding-left: 1rem;
 
-}
-.sub-card__text {
-  color: $black;
-  font-family:$base-font-family;
-  font-size:rem(24);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }

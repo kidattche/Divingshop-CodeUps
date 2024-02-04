@@ -66,7 +66,7 @@
                 <a href="#">Blog<span>ブログ</span></a>
                 </li>
                 <li class="pc-nav__item">
-                <a href="#">Campaign<span>お客様の声</span></a>
+                <a href="#">Voice<span>お客様の声</span></a>
                 </li>
                 <li class="pc-nav__item">
                 <a href="#">Price<span>料金一覧</span></a>
@@ -178,16 +178,19 @@
             <!-- </div> -->
         </div>
     </div>
-    <!-- パンクず -->
-    <div class="breadcrumb">
-        <div class="breadcrumb__inner">
-        <div>TOP&nbsp;>&nbsp;ブログ一覧</div>
+   <div class="single__inner inner">
+        <!-- パンクず -->
+        <div class="breadcrumb">
+            <div class="breadcrumb__inner">
+            <div>TOP&nbsp;>&nbsp;ブログ一覧&nbsp;>&nbsp;ブログ詳細</div>
+            </div>
         </div>
-    </div>
-    <!-- tab--------------------------------------------------------------- -->
-            <div class="l-single single__inner inner">
+        <!-- tab--------------------------------------------------------------- -->
+            <div class="l-single">
                     <ul class="single__content">
                         <li class="single__content-item">
+                            <time datetime="2023/11/17" class="sub-card__date">2023/11/17</time>
+                            <h3 class="single__title">ライセンス取得</h3>
                             <div class="single__items single-cards">
                                 <!-- ループ処理開始 -->
                                 <div class="single-cards__item single-card">
@@ -199,14 +202,11 @@
                                         />
                                         </div>
                                         <div class="single-card__body">
-                                        <time datetime="2023/11/17" class="single-card__date"
-                                            >2023/11/17</time
-                                        >
-                                        <h3 class="single-card__title">ライセンス取得</h3>
-                                        <p class="single-card__text">
-                                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                                            ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                                        </p>
+                                            <p class="single-card__text">
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -219,39 +219,55 @@
                                         />
                                         </div>
                                         <div class="single-card__body">
-                                        <time datetime="2023/11/17" class="single-card__date"
-                                            >2023/11/17</time
-                                        >
-                                        <h3 class="single-card__title">ライセンス取得</h3>
-                                        <p class="single-card__text">
-                                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                                            ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                                        </p>
+                                            <p class="single-card__text">
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <!----ページナビ  -------------------------------------------------->
-                            <div class="single-pagenavi">
-                                <div class="single-pagenavi__inner inner">
-                                <!-- WP-PageNaviで出力される部分 ここから -->
-                                <div class='single-pagenavi__wp-pagenavi wp-pagenavi' role='navigation'>
-                                    <a class="wp-pagenavi__nav-prev previouspostslink" rel="prev" href="#"><</a>
-                                    <a class="wp-pagenavi__nav-next nextpostslink" rel="next" href="#">></a>
-                                </div>
-                                <!-- WP-PageNaviで出力される部分 ここまで -->
-                                </div>
+
+                            <!-- リスト -->
+                            <ul class="single__subitems">
+                                <li class="single__subitem">
+                                    <a href="#">リスト１</a>
+                                </li>
+                                <li class="single__subitem">
+                                    <a href="#">リスト2</a>
+                                </li>
+                                <li class="single__subitem">
+                                    <a href="#">リスト3</a>
+                                </li>
+                                <!-- /.footer__subitem -->
+                            </ul>
+                            <p class="single-card__text">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        <!----ページナビ  -------------------------------------------------->
+                        <div class="single-pagenavi">
+                            <div class="single-pagenavi__inner inner">
+                            <!-- WP-PageNaviで出力される部分 ここから -->
+                            <div class='single-pagenavi__wp-pagenavi wp-pagenavi' role='navigation'>
+                                <a class="wp-pagenavi__nav-prev previouspostslink" rel="prev" href="#">＜</a>
+                                <a class="wp-pagenavi__nav-next nextpostslink" rel="next" href="#">＞</a>
                             </div>
-                        </li>
+                            <!-- WP-PageNaviで出力される部分 ここまで -->
+                            </div>
+                        </div>
+                    </li>
                         <!-- サイドバー------------------------------------------------------------->
-                        <li class="single__content-item-sidebar">
-                            <div class="single__parts"><span><img src="./assets/images/common/blog-parts.png"
+                        <li class="sub-blog__content-item-sidebar">
+                            <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
                                 alt="ブログ見出しアイコン"></span><span>人気記事</span>
                             </div>
-                            <div class="single__container">
-                                <div class="single__box">
-                                    <div class="single__img fadein fadeinTrigger">
-                                        <div class="single__trigger fadeinappearTrigger">
+                            <div class="sub-blog__container">
+                                <div class="sub-blog__box">
+                                    <div class="sub-blog__img fadein fadeinTrigger">
+                                        <div class="sub-blog__trigger fadeinappearTrigger">
                                         <img
                                             src="./assets/images/common/blog-saidebar1.jpg"
                                             alt="海中画像"
@@ -260,19 +276,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single__text-body">
-                                    <h2 class="single__date">2023.11/17</h2>
-                                    <div class="single__contents">
-                                        <p class="single__content-sidebar">
+                                <div class="sub-blog__text-body">
+                                    <h2 class="sub-blog__date">2023.11/17</h2>
+                                    <div class="sub-blog__contents">
+                                        <p class="sub-blog__content-sidebar">
                                             ライセンス講習
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single__container">
-                                <div class="single__box">
-                                    <div class="single__img fadein fadeinTrigger">
-                                        <div class="single__trigger fadeinappearTrigger">
+                            <div class="sub-blog__container">
+                                <div class="sub-blog__box">
+                                    <div class="sub-blog__img fadein fadeinTrigger">
+                                        <div class="sub-blog__trigger fadeinappearTrigger">
                                         <img
                                             src="./assets/images/common/blog-saidebar2.jpg"
                                             alt="海中画像"
@@ -281,19 +297,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single__text-body">
-                                    <h2 class="single__date">2023.11/17</h2>
-                                    <div class="single__contents">
-                                        <p class="single__content-sidebar">
+                                <div class="sub-blog__text-body">
+                                    <h2 class="sub-blog__date">2023.11/17</h2>
+                                    <div class="sub-blog__contents">
+                                        <p class="sub-blog__content-sidebar">
                                             ウミガメと泳ぐ
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single__container">
-                                <div class="single__box">
-                                    <div class="single__img fadein fadeinTrigger">
-                                        <div class="single__trigger fadeinappearTrigger">
+                            <div class="sub-blog__container">
+                                <div class="sub-blog__box">
+                                    <div class="sub-blog__img fadein fadeinTrigger">
+                                        <div class="sub-blog__trigger fadeinappearTrigger">
                                         <img
                                             src="./assets/images/common/blog-saidebar3.jpg"
                                             alt="海中画像"
@@ -302,107 +318,102 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single__text-body">
-                                    <h2 class="single__date">2023.11/17</h2>
-                                    <div class="single__contents">
-                                        <p class="single__content-sidebar">
+                                <div class="sub-blog__text-body">
+                                    <h2 class="sub-blog__date">2023.11/17</h2>
+                                    <div class="sub-blog__contents">
+                                        <p class="sub-blog__content-sidebar">
                                             カクレクマノミ
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single__parts"><span><img src="./assets/images/common/blog-parts.png"
+                            <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
                                 alt="ブログ見出しアイコン"></span><span>口コミ</span>
                             </div>
-                            <div class="single-cards__item  single-card-reviews">
-                                <a class="single-card-reviews__item">
-                                    <div class="single-card-reviews__img">
+                            <div class="sub-blog-cards__item  sub-card-reviews">
+                                <a class="sub-card-reviews__item">
+                                    <div class="sub-card-reviews__img">
                                     <img
                                         src="./assets/images/common/blog-reviews.jpg"
                                         alt="口コミ画像"
                                     />
                                     </div>
-                                    <div class="single-card-reviews__body">
-                                        <div class="single-card-reviews__year">
+                                    <div class="sub-card-reviews__body">
+                                        <div class="sub-card-reviews__year">
                                             30代(カップル)
                                         </div>
-                                        <div class="single-card-reviews__text">ここにタイトルが入ります。ここにタイトル</div>
+                                        <div class="sub-card-reviews__text">ここにタイトルが入ります。ここにタイトル</div>
                                     </div>
-                                    <div class="single-card-reviews__button">
+                                    <div class="sub-card-reviews__button">
                                         <a href="" class="button">
                                             <span>View more</span>
                                         </a>
                                     </div>
                                 </a>
                             </div>
-                            <div class="single__parts"><span><img src="./assets/images/common/blog-parts.png"
+                            <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
                                 alt="ブログ見出しアイコン"></span><span>キャンペーン</span>
                             </div>
-                            <div class="single-campaign-cards">
-                                <div class="single-campaign-cards__item single-campaign-card">
-                                    <figure class="single-campaign-card__img">
+                            <div class="sub-blog-campaign-cards">
+                                <div class="sub-blog-campaign-cards__item sub-blog-campaign-card">
+                                    <figure class="sub-blog-campaign-card__img">
                                         <img
                                             src="./assets/images/common/campaign1.jpg"
                                             alt="ライセンス取得"/>
                                     </figure>
-                                    <div class="single-campaign-card__body">
-                                        <div class="single-campaign-card__head">
-                                            <span class="single-campaign-card__category"
-                                            >ライセンス講習</span
-                                            >
-                                            <h3 class="single-campaign-card__title">ライセンス取得</h3>
+                                    <div class="sub-blog-campaign-card__body">
+                                        <div class="sub-blog-campaign-card__head">
+                                            <h3 class="sub-blog-campaign-card__title">ライセンス取得</h3>
                                         </div>
-                                        <p class="single-campaign-card__text">全部コミコミ(お一人様)</p>
-                                        <div class="single-campaign-card__price">
-                                            <div class="single-campaign-card__before-price">¥56,000</div>
-                                            <span class="single-campaign-card__after-price">¥46,000</span>
+                                        <p class="sub-blog-campaign-card__text">全部コミコミ(お一人様)</p>
+                                        <div class="sub-blog-campaign-card__price">
+                                            <div class="sub-blog-campaign-card__before-price">¥56,000</div>
+                                            <span class="sub-blog-campaign-card__after-price">¥46,000</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single-campaign-cards__item single-campaign-card">
-                                    <figure class="single-campaign-card__img">
+                                <div class="sub-blog-campaign-cards__item sub-blog-campaign-card">
+                                    <figure class="sub-blog-campaign-card__img">
                                         <img
                                             src="./assets/images/common/campaign1.jpg"
                                             alt="ライセンス取得"
                                         />
                                     </figure>
-                                    <div class="single-campaign-card__body">
-                                        <div class="single-campaign-card__head">
-                                            <span class="single-campaign-card__category"
-                                            >ライセンス講習</span>
-                                            <h3 class="single-campaign-card__title">ライセンス取得</h3>
+                                    <div class="sub-blog-campaign-card__body">
+                                        <div class="sub-blog-campaign-card__head">
+                                            <h3 class="sub-blog-campaign-card__title">貸切体験ダイビング</h3>
                                         </div>
-                                        <p class="single-campaign-card__text">全部コミコミ(お一人様)</p>
-                                        <div class="single-campaign-card__price">
-                                            <div class="single-campaign-card__before-price">¥56,000</div>
-                                            <span class="single-campaign-card__after-price">¥46,000</span>
+                                        <p class="sub-blog-campaign-card__text">全部コミコミ(お一人様)</p>
+                                        <div class="sub-blog-campaign-card__price">
+                                            <div class="sub-blog-campaign-card__before-price">¥24,000</div>
+                                            <span class="sub-blog-campaign-card__after-price">¥18,000</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single-campaign-card__button">
+                                <div class="sub-blog-campaign-card__button">
                                     <a href="" class="button">
                                         <span>View more</span>
                                     </a>
                                 </div>
-                                <div class="single__parts"><span><img src="./assets/images/common/blog-parts.png"
+                                <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
                                     alt="ブログ見出しアイコン"></span><span>アーカイブ</span>
                                 </div>
-                                <nav class="single-archive">
-                                    <ul class="single-archive__container">
-                                        <li class="single-archive__year"><a class="year js-blog-question" href="#">2023</a>
-                                            <ul class="single-archive__month-box">
-                                                <li class="single-archive__month"><a href="#">3月</a></li>
-                                                <li class="single-archive__month"><a href="#">2月</a></li>
-                                                <li class="single-archive__month"><a href="#">1月</a></li>
+                                <nav class="sub-blog-archive">
+                                    <ul class="sub-blog-archive__container">
+                                        <li class="sub-blog-archive__year "><a class="year js-blog-question" href="#">2023</a>
+                                            <ul class="sub-blog-archive__month-box">
+                                                <li class="sub-blog-archive__month"><a href="#">3月</a></li>
+                                                <li class="sub-blog-archive__month"><a href="#">2月</a></li>
+                                                <li class="sub-blog-archive__month"><a href="#">1月</a></li>
                                             </ul>
                                         </li>
                                     </ul>
-                                    <ul class="single-archive__container">
-                                        <li class="single-archive__year"><a class="year js-blog-question" href="#">2022</a>
-                                            <ul class="single-archive__month-box">
-                                                <li class="single-archive__month"><a href="#">3月</a></li>
-                                                <li class="single-archive__month"><a href="#">2月</a></li>
-                                                <li class="single-archive__month"><a href="#">1月</a></li>
+                                    <ul class="sub-blog-archive__container">
+                                        <li class="sub-blog-archive__year"><a class="year js-blog-question" href="#">2022</a>
+                                            <ul class="sub-blog-archive__month-box">
+                                                <li class="sub-blog-archive__month"><a href="#">3月</a></li>
+                                                <li class="sub-blog-archive__month"><a href="#">2月</a></li>
+                                                <li class="sub-blog-archive__month"><a href="#">1月</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -410,8 +421,9 @@
                         </li>
                     </ul>
             </div>
+        </div>
             <!-------コンタクト--------------------------------------------------->
-            <section class="single__contact contact">
+            <section class="l-contact contact">
                 <div class="contact__inner inner">
                 <div class="contact__container">
                     <div class="contact__address">
@@ -475,9 +487,10 @@
                 </a>
                 </div>
                 <!-- /.pagetop -->
+        </div>
             </main>
                 <!--ーーーーーーーーーーー フッターーーーーーーーーーーーーーーーーーーーーーー-->
-            <footer class="single-footer footer">
+            <footer class="l-footer footer">
                 <div class="footer__inner inner">
                 <div class="footer__container">
                     <div class="footer__link">

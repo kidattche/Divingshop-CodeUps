@@ -19,16 +19,19 @@
 }
 
 .sub-voice__items::after {
-  @include mq(md) {
     content: "";
     background: url(..//images/common/hanadaigr.png) no-repeat top left;
     background-size: contain;
     display: inline-block;
-    width: rem(437);
-    height: rem(137);
+    width: rem(120);
+    height: rem(55);
     position: absolute;
-    top: -13.5rem;
+    top:34rem;
     left: calc(50% - min(48vw, 38.6875rem));
+    @include mq(md) {
+      width: rem(437);
+      height: rem(137);
+      top: -8.5rem;
   }
 }
 
