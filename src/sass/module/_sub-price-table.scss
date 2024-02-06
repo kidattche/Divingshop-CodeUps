@@ -45,20 +45,22 @@
 
 .sub-price-table__data {
   display: flex;
+  width: 100%;
 }
 
 .sub-price-table__second-line {
-  width: rem(240);
+  width: 69.3641%;
+  // width: calc(346px / 240);
   @include mq(md) {
     width: rem(340);
   }
 }
 
+
 .sub-price-table__third-line {
+  width: 30.6358%;
   @include mq(md) {
     width: 100%;
-    
-    
   }
 }
 
@@ -76,6 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-collapse: collapse;
   @include mq(md) {
     padding: rem(18) rem(16);
     width: rem(340);
@@ -83,7 +86,7 @@
   }
 }
 .sub-price-table__data-third {
-  width: rem(106);
+  width: 100%;
   text-align: end;
   padding: rem(7) rem(6);
   border: solid 1px $green;
@@ -97,6 +100,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  border-collapse: collapse;
   @include mq(md) {
     padding: rem(18) rem(16);
     width:rem(162);

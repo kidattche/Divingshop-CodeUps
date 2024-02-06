@@ -16,45 +16,41 @@
   background-image: url(..//images/common/sub-aboutus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     height: rem(548);
-  
-}
+  }
 
-.sub-mv__information {
-  height: rem(460);
-  background-image: url(..//images/common/info-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-@media screen and (min-width: 768px) {
-    height: rem(548);
-    background-image: url(..//images/common/sub-information.jpg);
+  .sub-mv__information {
+    height: rem(460);
+    background-image: url(..//images/common/info-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+      height: rem(548);
+      background-image: url(..//images/common/sub-information.jpg);
+    }
   }
 }
-}
-
 
 .sub-mv__blog {
   height: rem(460);
   background-image: url(..//images/common/sub-blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     height: rem(548);
     background-image: url(..//images/common/sub-blog.jpg);
   }
 }
-
-
 
 .sub-mv__voice {
   height: rem(460);
   background-image: url(..//images/common/voice-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-@media screen and (min-width: 768px) {
-  height: rem(548);
-  background-image: url(..//images/common/sub-voice.jpg);
+  @media screen and (min-width: 768px) {
+    height: rem(548);
+    background-image: url(..//images/common/sub-voice.jpg);
   }
 }
 .sub-mv__price {
@@ -69,28 +65,22 @@
   }
 }
 
-
 .sub-mv__contact {
   height: rem(460);
   background-image: url(..//images/common/sub-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .sub-mv__contact {
+  @media screen and (min-width: 768px) {
     height: rem(548);
   }
 }
-
 
 .sub-mv__faq {
   height: rem(460);
   background-image: url(..//images/common/sub-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .sub-mv__faq{
+  @media screen and (min-width: 768px) {
     height: rem(548);
   }
 }
@@ -100,13 +90,10 @@
   background-image: url(..//images/common/page-sitemap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .sub-mv__bnother {
+  @media screen and (min-width: 768px) {
     height: rem(548);
   }
 }
-
 
 .sub-mv__title {
   display: flex;
@@ -118,8 +105,7 @@
       height: rem(274);
     }
   }
-} 
-
+}
 
 .sub-mv__engtitle {
   color: #fff;

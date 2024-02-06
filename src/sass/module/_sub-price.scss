@@ -4,9 +4,26 @@
     justify-content: center;
 }
 .sub-price__container {
+    @include mq(md) {
     max-width: rem(700);
-    margin-inline: auto;}
+    margin-inline: auto;
+}
+}
 
+.sub-price__container::after{
+    @include mq(md) {
+        content: "";
+        background: url(..//images/common/hanadaigr.png) no-repeat top left;
+        background-size: contain;
+        content: "";
+        display: inline-block;
+        height: 8.5625rem;
+        left: calc(50% - min(45vw, 38.6875rem));
+        position: absolute;
+        top: 41.3rem;
+        width: 27.3125rem;
+      }
+}
 .sub-price__box {
     margin-top: rem(80);
 }

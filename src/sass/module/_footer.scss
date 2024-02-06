@@ -6,7 +6,7 @@
   overflow: hidden;
   @include mq(md) {
     padding: rem(88) 0 rem(60);
-    margin-top: 10.5rem;
+    margin-top: rem(120);
   }
 }
 .footer__container {

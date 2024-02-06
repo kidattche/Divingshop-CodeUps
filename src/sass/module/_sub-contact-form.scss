@@ -4,7 +4,29 @@
     justify-content: center;
 }
 
+.sub-contact-form:before {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    display: inline-block;
+    height: 3.4375rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    position: absolute;
+    top: 34rem;
+    width:7.5rem;
+@include mq(md) {
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    top: 41.3rem;
+    width: 27.3125rem;
+  }
+    }
+
 .sub-contact-form__inner {
-    max-width: rem(800);
+    margin: auto;
+    max-width: rem(600);
     width: 100%;
+    @include mq(md){
+        max-width: rem(700);
+}
 }

@@ -1,15 +1,47 @@
 @use "global" as *;
-.terms__title {
+.sub-terms {
+    @include mq(md) {
+        width: rem(800);
+        margin-inline: auto;
+}
+}
+
+.sub-terms:after {
+    content: "";
+    background: url(..//images/common/hanadaigr.png) no-repeat top left;
+    background-size: contain;
+    display: inline-block;
+    height: 3.4375rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    position: absolute;
+    top: 34rem;
+    width:7.5rem;
+@include mq(md) {
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
+    top: 41.3rem;
+    width: 27.3125rem;
+  }
+}
+
+.sub-terms__title {
     color: $black;
     font-family: $base-font-family;
     font-size: rem(24);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
+    @include mq(md) {
+    font-family: Noto Sans JP;
+    font-size: rem(32);
+    font-weight: 500;
+    line-height: rem(46);
+    letter-spacing: 0em;
+    text-align: left;
+}
 }
 
-.terms__content {
+.sub-terms__content {
     margin-top: rem(40);
     color:  $black;
     font-family:  $base-font-family;
@@ -20,7 +52,7 @@
 
 }
 
-.terms__content-detail {
+.sub-terms__content-detail {
     margin-top: rem(40);
     color:  $black;
     font-family:  $base-font-family;
@@ -30,7 +62,7 @@
     line-height: rem(32) /* 200% */
 }
 
-.terms__content-finish {
+.sub-terms__content-finish {
     margin-top: rem(40);
     color:  $black;
     font-family:  $base-font-family;
@@ -40,3 +72,8 @@
     line-height: rem(32) /* 200% */
 }
 
+.sub-privacy__description-numbers {
+    @include mq(md) {
+    margin-top: rem(40);
+}
+}

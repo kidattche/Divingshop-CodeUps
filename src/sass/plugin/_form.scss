@@ -67,6 +67,7 @@ textarea {
     max-width: 100%;
 	background: $back-cr;
 	border: 1px solid $green;
+	height: rem(40);
 	// border-radius: $border-r;
 	/*↓↓↓↓不要ならコメントアウト or 削除 */
 	// &:hover {  //ホバーしたときの色
@@ -253,7 +254,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 textarea {
-	height: $textarea-height;
+	height: 11.9475rem;
   width: 100%;
   max-width: rem(600);
 }
