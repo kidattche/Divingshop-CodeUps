@@ -1,8 +1,10 @@
 @use "global" as *;
 .sub-blog__inner {
+  @include mq(md){
   max-width: rem(1160);
   margin-inline: auto;
   padding: 0 rem(25);
+}
 }
 
 .sub-blog__content {
@@ -23,24 +25,31 @@
 .sub-blog__items {
   max-width: 37.5rem;
   margin-inline: auto;
+  padding:  0 rem(20);
   @include mq(md) {
     position: relative;
     max-width: none;
     grid-row-gap: 5.2rem;
-    grid-column-gap: 2.2rem; 
+    grid-column-gap: 2.2rem;
+    padding: 0;
   }
 }
 .sub-blog__items::after {
+  content: "";
+  background: url(..//images/common/hanadaigr.png) no-repeat top left;
+  background-size: contain;
+  display: inline-block;
+  height: rem(55);
+  left: calc(50% - min(45vw, 38.6875rem));
+  position: absolute;
+  top: 35.875rem;
+  width: rem(120);
   @include mq(md) {
-    content: "";
-    background: url(..//images/common/hanadaigr.png) no-repeat top left;
-    background-size: contain;
-    display: inline-block;
     width: rem(301);
     height: rem(138);
     position: absolute;
     top: -3.4rem;
-    left: calc(50% - min(36vw, 28.6875rem));
+    left: calc(50% - min(31vw, 28.6875rem));
     z-index: -2;
   }
 }
@@ -88,16 +97,26 @@
 }
 
 .sub-blog__content-item-sidebar {
+  max-width: 37.5rem;
   margin-top: rem(80);
-  padding: 0 1rem;
+  margin-inline:auto;
+  padding: 0 rem(20);
   @include mq(md) {
     max-width: rem(296);
     width: 100%;
     margin-top: 0;
     padding: 0;
-   
   }
 }
+.sub-blog__content-item-sidebar-inner {
+  padding: 0 1.25rem;
+  @include mq(md) {
+padding: 0;
+}
+}
+
+
+
 .sub-blog__container {
     position: relative;
     margin-top: rem(30);
@@ -157,11 +176,11 @@
 }
 
 .sub-blog__content-sidebar {
-
   margin-top: rem(8);
   line-height: 1.5;
   color: $black;
   padding: 0 0.5rem 0 0;
+  white-space: nowrap;
   @include mq(md) {
   font-family: $base-font-family;
   font-size: 1rem;

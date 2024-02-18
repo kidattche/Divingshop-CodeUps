@@ -2,6 +2,12 @@
 .sub-contact-form {
     display: flex;
     justify-content: center;
+    max-width:37.5rem;
+    margin-inline: auto;
+    @include mq(md) {
+    max-width: rem(700);
+    margin-inline: auto;
+}
 }
 
 .sub-contact-form:before {

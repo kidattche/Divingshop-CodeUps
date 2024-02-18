@@ -1,23 +1,35 @@
 @use "global" as *;
 .breadcrumb {
-    color: $black;
-    font-family:$base-font-family;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: rem(8);
+  color: $black;
+  font-family: $base-font-family;
+  font-size: rem(14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: rem(8) 0 0 0;
 }
 .breadcrumb__inner {
-    width: 100%;
-    padding-right: 20px;
+  width: 100%;
+  padding: rem(8) rem(20) 0 0;
+  @include mq(md) {
+    max-width: rem(1080);
     margin-right: auto;
     margin-left: auto;
+    padding: rem(8) 0 0;
   }
-  @media screen and (min-width: 768px) {
-    .breadcrumb__inner{
-      max-width: rem(1080);
-      padding-right: 25px;
-    }
+}
+
+.sub-blog__inner .breadcrumb__inner, .single__inner .breadcrumb__inner {
+  padding: rem(8) rem(20) 0;
+}
+.breadcrumb__inner--white {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  width: 100%;
+  color: white;
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(90);
   }
-  
+}

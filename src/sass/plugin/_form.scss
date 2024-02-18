@@ -164,14 +164,14 @@ color:#fff;
 		padding: 0 0 0 calc($check-size + $check-space);
 		margin: 0 $check-space-betweenRadio 0 0;
 		font-size: $check-fz;
-		line-height: 1;
+		line-height: rem(22);
 		cursor: pointer;
 		transition: 0.3s ease;
 
 		&::before {
 			position: absolute;
 			content: "";
-			top: 50%;
+			top: 0.8rem;
 			left: 0;
 			transform: translateY(-50%);
 			background: $check-bg-cr;
@@ -242,7 +242,7 @@ select {
 	// background-position: right 12px center;
 	// background-repeat: no-repeat;
 	&:focus {
-		border-color: 1px solid $border-cr;
+		border-color: $border-cr;
 	}
 }
 

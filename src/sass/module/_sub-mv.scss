@@ -1,23 +1,27 @@
 @use "global" as *;
 .sub-mv__campaign {
   height: rem(460);
-  background-image: url(..//images/common/sub-campaign.jpg);
+  background-image: url(..//images/common/sub-mv-campaign.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .sub-mv__campaign {
+  background-position: center;
+  @include mq(md) {
     height: rem(548);
+    background-image: url(..//images/common/sub-campaign.jpg);
   }
 }
 
+
 .sub-mv__aboutus {
   height: rem(460);
-  background-image: url(..//images/common/sub-aboutus.jpg);
+  background-image: url(..//images/common/sub-mv-aboutus-sp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (min-width: 768px) {
+  background-position: center;
+  @include mq(md) {
     height: rem(548);
+    background-image: url(..//images/common/sub-aboutus.jpg);
+    }
   }
 
   .sub-mv__information {
@@ -30,13 +34,14 @@
       background-image: url(..//images/common/sub-information.jpg);
     }
   }
-}
+
 
 .sub-mv__blog {
   height: rem(460);
   background-image: url(..//images/common/sub-blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   @media screen and (min-width: 768px) {
     height: rem(548);
     background-image: url(..//images/common/sub-blog.jpg);
@@ -48,6 +53,7 @@
   background-image: url(..//images/common/voice-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   @media screen and (min-width: 768px) {
     height: rem(548);
     background-image: url(..//images/common/sub-voice.jpg);
@@ -58,6 +64,7 @@
   background-image: url(..//images/common/sub-price.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .sub-mv__price {
@@ -80,6 +87,7 @@
   background-image: url(..//images/common/sub-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   @media screen and (min-width: 768px) {
     height: rem(548);
   }
@@ -90,6 +98,7 @@
   background-image: url(..//images/common/page-sitemap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   @media screen and (min-width: 768px) {
     height: rem(548);
   }

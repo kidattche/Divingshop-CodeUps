@@ -4,6 +4,9 @@
     justify-content: center;
 }
 .sub-price__container {
+    max-width:37.5rem;
+    margin-inline: auto;
+    position: relative;
     @include mq(md) {
     max-width: rem(700);
     margin-inline: auto;
@@ -11,19 +14,27 @@
 }
 
 .sub-price__container::after{
-    @include mq(md) {
-        content: "";
-        background: url(..//images/common/hanadaigr.png) no-repeat top left;
-        background-size: contain;
-        content: "";
-        display: inline-block;
-        height: 8.5625rem;
-        left: calc(50% - min(45vw, 38.6875rem));
-        position: absolute;
-        top: 41.3rem;
-        width: 27.3125rem;
-      }
+content: "";
+  background: url(..//images/common/hanadaigr.png) no-repeat top left;
+  background-size: contain;
+  display: inline-block;
+  height: rem(55);
+  left: calc(50% - min(45vw, 38.6875rem));
+  position: absolute;
+  top: -2rem;
+  width: rem(120);
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+    position: absolute;
+    top: -3.4rem;
+    left: calc(50% - min(31vw, 28.6875rem));
+    z-index: -2;
+  }
 }
 .sub-price__box {
+    margin-top: rem(40);
+    @include mq(md) {
     margin-top: rem(80);
+}
 }

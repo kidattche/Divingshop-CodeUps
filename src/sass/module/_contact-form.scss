@@ -64,6 +64,7 @@
 }
 .form__checkbox {
     display: grid;
+    row-gap: 0.25rem;
 }
 
 .form__input,
@@ -77,6 +78,13 @@
     @include mq(md){
     margin-top: rem(31);
 }
+}
+
+.form__submit .button {
+    padding: 1rem 4rem 1rem 3.5rem;
+}
+.form__submit .button span:after {
+    right: 3.25rem;
 }
 .form__checkbox--confirmation {
     text-align: center;
