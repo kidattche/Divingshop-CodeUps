@@ -261,21 +261,13 @@ span.onclick = function() {
 }
 
 
-
-
-// ページトップ
-// jQuery(function ($) {
-//   $('.pagetop').on("click",function () {
-//       $('body,html').animate({
-//           scrollTop: 0
-//       }, 500);
-//       return false;
-//   });
-// });
-
-// document.addEventListener('click', function(e) {
-//   if (e.target.classList.contains('pagetop')) {
-//       window.scrollTo({top: 0, behavior: 'smooth'});
-//       e.preventDefault(); // デフォルトのアンカー動作を防ぐ
-//   }
-// });
+// スクロールトップ
+$(document).ready(function(){
+  $('.pagetop a').on('click', function(e){
+    e.preventDefault(); // Prevent the default anchor behavior
+    var target = $(this).attr('href'); // Get the target element's id
+    $('html, body').animate({
+      scrollTop: $(target).offset().top // Scroll to the target element
+    }, 1000); // Duration in milliseconds
+  });
+});

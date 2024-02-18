@@ -20,6 +20,7 @@
   align-items: center;
   flex-direction: row-reverse;
   font-size: rem(16);
+  text-align: -moz-center;
   @include mq(md) {
     padding: rem(41) rem(19);
     display: block;
