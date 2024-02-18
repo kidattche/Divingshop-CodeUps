@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.l-terms {
+.l-sub-privacy {
   margin-top: rem(80);
   @include mq(md) {
-    margin-top: rem(178);
+    margin-top: rem(146);
   }
 }

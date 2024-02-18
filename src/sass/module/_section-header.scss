@@ -52,6 +52,13 @@
   @include mq(md) {
     margin-top: 0;
     font-size: rem(79);
+    font-family: Gotu;
+    font-size: rem(80);
+    font-weight: 400;
+    line-height:rem(80);
+    letter-spacing: 0em;
+    text-align: center;
+
   }
 }
 .section-header__subtitle--contact {

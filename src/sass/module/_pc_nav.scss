@@ -6,9 +6,6 @@
   justify-content: center;
   column-gap: rem(40);
   height: inherit;
-  @include mq(md) {
-    display: flex;
-  }
 }
 
 .pc-nav__item {

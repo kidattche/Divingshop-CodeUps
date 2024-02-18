@@ -4,7 +4,7 @@
     @include mq(md){
         display: flex;
         align-items: flex-start;
-        gap: rem(40);
+        gap: rem(24);
     }
 }
 
@@ -64,6 +64,7 @@
 }
 .form__checkbox {
     display: grid;
+    row-gap: 0.25rem;
 }
 
 .form__input,
@@ -74,11 +75,66 @@
 .form__submit {
     margin-top: rem(60);
     text-align: center;
+    @include mq(md){
+    margin-top: rem(31);
+}
+}
+
+.form__submit .button {
+    padding: 1rem 4rem 1rem 3.5rem;
+}
+.form__submit .button span:after {
+    right: 3.25rem;
 }
 .form__checkbox--confirmation {
     text-align: center;
+    padding: 0 rem(46);
     margin-top: rem(40);
     @include mq(md){
+        padding: 0;
         margin-top: rem(80);
 }
 }
+.form__checkbox--confirmation span {
+    font-family: $base-font-family;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(22);
+    letter-spacing: 0em;
+    text-align: left;
+    @include mq(md){
+
+}
+}
+.form__checkbox span {
+    @include mq(md){
+        font-family:$base-font-family;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(23);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+
+.contact-form__border {
+    border-bottom: 1px solid $green;
+    padding-bottom: rem(24);
+    padding-top: rem(24);
+    @include mq(md){
+    padding-bottom: rem(40);
+    padding-top: rem(40);
+    border-bottom: 1px solid $green;
+}
+}
+
+.contact-form__border:last-child {
+    padding-top: 0;
+}
+
+.contact-form__border:first-child {
+    padding-top: 0;
+}
+
+

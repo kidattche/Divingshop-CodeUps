@@ -6,8 +6,14 @@
   overflow: hidden;
   @include mq(md) {
     padding: rem(88) 0 rem(60);
-    margin-top: 10.5rem;
   }
+}
+.footer__404 {
+  padding: 4rem 0 3.75rem;
+  @include mq(md) {
+    padding: 9.5rem 0 3.75rem;
+    margin-top: 0;
+}
 }
 .footer__container {
   max-width: 37.5rem;
@@ -90,6 +96,18 @@
     margin-top: 0;
   }
 }
+
+.footer__item-single {
+  position: relative;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+.footer__item-box {
+  position: relative;
+  display: flex;
+}
 .footer__item a {
   font-family: $base-font-family;
   line-height: calc(18 / 16);
@@ -100,10 +118,33 @@
   @include mq(md) {
   }
 }
+.footer__item-single a {
+  font-family: $base-font-family;
+  line-height: calc(18 / 16);
+  font-weight: $bold;
+  color: $white;
+  font-size: 1rem;
+  display: block;
+  @include mq(md) {
+  }
+
+}
 .footer__item a:hover {
   opacity: 0.5;
 }
-
+.footer__item-single a:hover {
+  opacity: 0.5;
+}
+.footer__item-box::before {
+  content: "";
+  display: inline-block;
+  width: rem(22); /*画像の幅*/
+  height: rem(18); /*画像の高さ*/
+  background-image: url(..//images/common/hitode.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
 .footer__item a::before {
   content: "";
   display: inline-block;
@@ -116,6 +157,9 @@
 }
 
 .footer__item a::before:hover {
+  opacity: 0.5;
+}
+.footer__item-single a::before:hover {
   opacity: 0.5;
 }
 

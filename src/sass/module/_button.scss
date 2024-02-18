@@ -9,9 +9,11 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.4;
-  padding: 1rem 5.5rem 1rem 2.3125rem;
+  // padding: 1rem 5.5rem 1rem 2.3125rem;
+  padding: 1rem 2.5rem 1rem 2.3125rem;
   position: relative;
-  text-align: center;
+  // text-align: center;
+  text-align: left;
   transition: color 0.3s, background-color 0.3s;
   width: 12.625rem;
   z-index: 1;
@@ -77,3 +79,5 @@
   transition: background-image 0.3s;
   width: 2.5rem;
 }
+
+

@@ -1,16 +1,24 @@
 @use "global" as *;
 .pagetop {
   position: fixed;
+  z-index: 3;
+  bottom: 15px;
+  right: 15px;
+  @include mq(md) {
   bottom: 20px;
   right: 20px;
-  z-index: 3;
+}
 }
 
 .pagetop a {
   display: block;
   text-decoration: none;
+  width: rem(48);
+  height: rem(48);
+  @include mq(md) {
   width: rem(80);
   height: rem(80);
+}
 }
 
 .pagetop:hover {

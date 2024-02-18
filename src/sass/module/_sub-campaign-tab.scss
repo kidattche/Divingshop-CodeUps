@@ -2,6 +2,13 @@
 
 .sub-campaign-tab__content {
   margin-top: rem(40);
+  max-width: rem(600);
+  margin-inline: auto;
+  padding: 0 rem(25);
+  @include mq(md) {
+    max-width: none;
+    padding: 0;
+}
 }
 .sub-campaign-tab__content:before {
   @include mq(md) {
@@ -21,11 +28,17 @@
 .sub-campaign-tab__menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: rem(21);
+  grid-gap: rem(16);
+  max-width: fit-content;
+  justify-items: center;
+  align-items: center;
+  margin-inline: auto;
+  max-width: rem(345);
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: rem(32);
     max-width: rem(744);
+    display: inline-grid;
   }
 }
 
@@ -55,12 +68,13 @@
 .sub-campaign-tab__content-item.is-active {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  row-gap: rem(40);
+  animation: fade 0.3s;
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem; // Specify the horizontal gap
     grid-row-gap: 5rem;    // Specify the vertical gap
   }
-  animation: fade 0.3s;
 }
 
 @keyframes fade {

@@ -36,7 +36,7 @@
   .sub-blog-campaign-card__img::before {
     content: "";
     display: block;
-    padding-top: 67.14%;
+    padding-top: 62.14%;
   }
   
   .sub-blog-campaign-card__img img {
@@ -63,6 +63,7 @@
     flex-grow: 1;
     font-size: 1rem;
     font-weight: 500;
+    text-align: center;
   }
   
   .sub-blog-campaign-card__title--aside {
@@ -87,14 +88,19 @@
     margin-top: 0.1875rem;
   }
   
-  .sub-blog-campaign__card-before-price {
-    font-size: 1.25rem;
+  .sub-blog-campaign-card__before-price{
+    font-family: $main-title-family;
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: rem(20);
+    letter-spacing: 0em;
+    text-align: left;
     position: relative;
   }
   
-  .sub-blog-campaign__card-before-price::after {
+  .sub-blog-campaign-card__before-price::after {
     background-color: #c94800;
-    bottom: 0.9375rem;
+    bottom: 0.5rem;
     content: "";
     height: 0.1875rem;
     left: 0;

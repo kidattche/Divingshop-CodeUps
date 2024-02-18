@@ -24,15 +24,20 @@
   max-width: 700px;
 }
 
+
 /* クローズボタン */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: rem(80);
+  right: rem(25);
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  @include mq(md) {
+    top: rem(100);
+  right: rem(25);
+}
 }
 .close:hover,
 .close:focus {
