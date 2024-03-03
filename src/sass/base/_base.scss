@@ -46,4 +46,8 @@ body.active {
   height: 100%;
   overflow: hidden;
 }
-
+body.noscroll {
+  overflow: hidden;
+  position: fixed; /* iOSでのスクロール問題を解決 */
+  width: 100%; /* 横幅が変わらないように固定 */
+}
