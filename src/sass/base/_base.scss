@@ -50,9 +50,6 @@ body.noscroll {
   overflow: hidden;
   position: fixed; /* iOSでのスクロール問題を解決 */
   width: 100%; /* 横幅が変わらないように固定 */
-<<<<<<< HEAD
-=======
   top: 0; // Add this to ensure the page stays at the top
-  left: 0; // Add this to ensure the page doesn't 
->>>>>>> 8e00e7a (noscroll修正)
+  left: 0; // Add this to ensure the page doesn't
 }
