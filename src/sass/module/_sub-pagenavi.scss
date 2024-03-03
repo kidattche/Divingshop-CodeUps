@@ -1,31 +1,25 @@
 @use "global" as *;
 
-.sub-pagenavi__inner {
-  margin: auto;
-  max-width: rem(600);
-  width: 100%;
-  @include mq(md) {
-    max-width: rem(480);
-  }
-}
+// .sub-pagenavi__inner {
+//   margin: auto;
+//   max-width: rem(600);
+//   width: 100%;
+//   @include mq(md) {
+//     max-width: rem(480);
+//   }
+// }
 
-.sub-pagenavi .wp-pagenavi {
-  clear: both;
-  text-align: center;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-.single-pagenavi .wp-pagenavi {
-  justify-content: space-between;
-}
 
-.sub-pagenavi .wp-pagenavi .current {
-  color: #fff;
-  background-color: $green;
-  border-color: $green;
-}
-.sub-pagenavi .sub-pagenavi-sp {
+// .single-pagenavi {
+//   justify-content: space-between;
+// }
+
+// .sub-pagenavi .wp-pagenavi .current {
+//   color: #fff;
+//   background-color: $green;
+//   border-color: $green;
+// }
+.wp-pagenavi a.sub-pagenavi-sp {
   display: none;
   @include mq(md) {
     display: flex;

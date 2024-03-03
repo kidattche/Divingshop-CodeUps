@@ -108,11 +108,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: rem(190);
+  height: inherit;
   @media screen and (min-width: 768px) {
-    .sub-mv__title {
-      height: rem(274);
-    }
   }
 }
 
@@ -125,7 +122,7 @@
 }
 @media screen and (min-width: 768px) {
   .sub-mv__engtitle {
-    height: rem(274);
+    height: inherit;
     font-size: rem(80);
     display: flex;
     align-items: center;

@@ -1,4 +1,13 @@
 @use "global" as *;
+.wp-pagenavi {
+  margin-top: 4rem;
+  clear: both;
+  text-align: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
 .wp-pagenavi a {
   align-content: center;
   border: 1px solid #408f95;
@@ -12,57 +21,32 @@
   width: 2.375rem;
 }
 .wp-pagenavi a:hover {
-    background-color: #408f95;
-    color: #fff;
+  background-color: #408f95;
+  color: #fff;
 }
 .wp-pagenavi__nav-prev:hover {
   background: url(..//images/common/clear-arrow.png) no-repeat top left;
-  background-size:  rem(8) rem(16);
+  background-size: rem(8) rem(16);
   background-position: center;
 }
-
 
 .wp-pagenavi__nav-next:hover {
- background: url(..//images/common/clear-arrow2.png) no-repeat top left;
- background-size:  rem(8) rem(16);
+  background: url(..//images/common/clear-arrow2.png) no-repeat top left;
+  background-size: rem(8) rem(16);
   background-position: center;
 }
 
-.wp-pagenavi__nav-prev::before {
-  border-left: 1px solid #408f95;
-  border-top: 1px solid #408f95;
-  content: "";
-  height: 0.6875rem;
-  left: 55%;
-  position: absolute;
-  top: 50%;
-  transform: rotate(-45deg) translateY(-53%);
-  transition: border-color 0.3s ease;
-  width: 0.6875rem;
-}
-.wp-pagenavi__nav-next::before {
-  border-left: 1px solid #408f95;
-  border-top: 1px solid #408f95;
-  content: "";
-  height: 0.6875rem;
-  left: 55%;
-  position: absolute;
-  top: 50%;
-  transform: rotate(-45deg) translateY(-53%);
-  transition: border-color 0.3s ease;
-  width: 0.6875rem;
-}
 .wp-pagenavi__nav-prev {
   background: url(..//images/common/prev-sub.png) no-repeat top left;
-  background-size:  rem(8) rem(16);
+  background-size: rem(8) rem(16);
   background-position: center;
-    @include mq(md) {
+  @include mq(md) {
   }
 }
 .wp-pagenavi__nav-next {
   background: url(..//images/common/next-sub.png) no-repeat top left;
-  background-size:  rem(8) rem(16);
+  background-size: rem(8) rem(16);
   background-position: center;
-    @include mq(md) {
+  @include mq(md) {
   }
 }

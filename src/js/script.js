@@ -187,7 +187,7 @@ $(window).scroll(function () {
     });
   });
 
-  // Campaignページ,informationページのtabメニュー
+  // informationページのtabメニュー
   jQuery(function ($) {
     $('.js-tab-menu').on('click', function () {
         $('.js-tab-menu').removeClass('is-active');
@@ -203,37 +203,27 @@ $(window).scroll(function () {
 
 // FAQページのドロワーオープン
 jQuery(function ($) {
+  // 初期状態でドロワーをオープンにする
+  $('.js-faq-question, .js-blog-question').next().slideDown();
+  $('.js-faq-question, .js-blog-question').addClass('is-open');
+
+  // クリック時のトグル機能を追加
   $('.js-faq-question, .js-blog-question').on('click', function () {
-      $(this).next().slideToggle();
-      $(this).toggleClass('is-open');
+    $(this).next().slideToggle();
+    $(this).toggleClass('is-open');
   });
 });
-
-
 
 
 // home.htmlのアーカイブの矢印
-document.addEventListener("DOMContentLoaded", function() {
-  var yearLinks = document.querySelectorAll('.sub-blog-archive__year > a, .single-archive__year > a');
 
-  yearLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      toggleActiveState(link.parentElement);
-    });
+$(function () {
+  $('.sub-blog-archive__year').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("is-open");
   });
 });
 
-function toggleActiveState(element) {
-  // 全ての年のリンクからactiveクラスを削除
-  var allYearLinks = document.querySelectorAll('.sub-blog-archive__year, .single-archive__year');
-  allYearLinks.forEach(function(year) {
-    year.classList.remove('active');
-  });
-
-  // クリックされた年のリンクにactiveクラスを追加
-  element.classList.add('active');
-}
 
 //モーダル要素を取得
 var modal = document.getElementById("myModal");
