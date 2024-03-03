@@ -1,0 +1,24 @@
+@use "global" as *;
+.tabs__menu-item {
+    display: flex;
+    width: rem(162);
+    height: rem(32);
+    padding: rem(6) 0;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: solid 1px $green;
+    color: $green;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .tabs__menu-item.is-active {
+    color: #fff;
+    background-color: $green;
+  }
+
+  .tabs__menu-item:hover {
+    background-color: #408f95;
+    color: #fff;
+}

@@ -1,6 +1,6 @@
 @use "global" as *;
 .l-sub-faq{
-    margin-top: rem(80);
+    margin-top: rem(64);
     @include mq(md) {
     margin-top: rem(146);
     }

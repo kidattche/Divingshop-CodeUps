@@ -33,6 +33,7 @@
   max-width: 100%;
   width: 100%;
   text-align: center;
+  padding: 0 1.25rem;
   @include mq(md) {
     border-right: solid 1px #408F95;
     padding: 0 5rem 0 0;

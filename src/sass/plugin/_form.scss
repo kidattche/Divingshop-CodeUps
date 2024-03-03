@@ -223,11 +223,13 @@ select {
     border: 1px solid $green;
 //   border-radius: $border-r;
 	/*↓デフォルトのアイコンを消す場合はコメントアウト（noneにする）*/
-	appearance: auto;
-	/*↓デフォルトではないアイコンを使う場合は入力する*/
-	// background-image: url();
-	// background-position: right 12px center;
-	// background-repeat: no-repeat;
+	appearance: none;
+	// ↓デフォルトではないアイコンを使う場合は入力する*/
+	background: url(..//images/common/polygon3.png) no-repeat;
+	background-position: right 12px center;
+	background-repeat: no-repeat;
+	background-size: rem(12) rem(12);
+
 	&:focus {
 		border: 1px solid $border-cr;
 	}

@@ -6,22 +6,23 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: rem(8) 0 0 0;
+  // padding: rem(8) 0 0 0;
 }
-.breadcrumb__inner {
-  width: 100%;
-  padding: rem(8) rem(20) 0 0;
-  @include mq(md) {
-    max-width: rem(1080);
-    margin-right: auto;
-    margin-left: auto;
-    padding: rem(8) 0 0;
-  }
-}
+// .breadcrumb__inner {
+//   width: 100%;
+//   margin: rem(16) 0 0;
+//   // padding: rem(8) rem(20) 0 0;
+//   @include mq(md) {
+//     max-width: rem(1080);
+//     margin-right: auto;
+//     margin-left: auto;
+//     margin: rem(16) 0 0;
+//   }
+// }
 
-.sub-blog__inner .breadcrumb__inner, .single__inner .breadcrumb__inner {
-  padding: rem(8) rem(20) 0;
-}
+// .sub-blog__inner .breadcrumb__inner, .single__inner .breadcrumb__inner {
+//   padding: rem(8) rem(20) 0;
+// }
 .breadcrumb__inner--white {
   margin-left: auto;
   margin-right: auto;

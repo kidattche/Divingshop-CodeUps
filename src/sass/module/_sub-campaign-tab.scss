@@ -11,19 +11,24 @@
 }
 }
 .sub-campaign-tab__content:before {
-  @include mq(md) {
-    content: "";
+  content: "";
     background: url(..//images/common/hanadaigr.png) no-repeat top left;
     background-size: contain;
-    content: "";
     display: inline-block;
-    height: 8.5625rem;
+    height: 3.4375rem;
     left: calc(50% - min(45vw, 38.6875rem));
     position: absolute;
+    top: 34rem;
+    width:7.5rem;
+    z-index: -1;
+@include mq(md) {
+    height: 8.5625rem;
+    left: calc(50% - min(45vw, 38.6875rem));
     top: 41.3rem;
     width: 27.3125rem;
   }
 }
+
 
 .sub-campaign-tab__menu {
   display: grid;
@@ -33,33 +38,15 @@
   justify-items: center;
   align-items: center;
   margin-inline: auto;
-  max-width: rem(345);
   @include mq(md) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 10rem);
     grid-gap: rem(32);
-    max-width: rem(744);
-    display: inline-grid;
+    max-width:100%;
+    display: grid;
+    margin: 0;
   }
 }
 
-.sub-campaign-tab__menu-item {
-  display: flex;
-  width: rem(162);
-  height: rem(32);
-  padding: rem(6) 0;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border: solid 1px $green;
-  color: $green;
-  height: 100%;
-  cursor: pointer;
-}
-
-.sub-campaign-tab__menu-item.is-active {
-  color: #fff;
-  background-color: $green;
-}
 
 .sub-campaign-tab__content-item {
   display: none;

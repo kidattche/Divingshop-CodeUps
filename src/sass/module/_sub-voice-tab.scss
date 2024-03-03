@@ -17,30 +17,12 @@
   align-items: center;
   margin-inline: auto;
   @include mq(md) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 10rem);
     grid-gap: rem(32);
-    max-width: rem(744);
-    display: inline-grid;
+    max-width: 100%;
+    display: grid;
+    margin: 0;
   }
-}
-
-.sub-voice-tab__menu-item {
-  display: flex;
-  width: rem(162);
-  height: rem(32);
-  padding: rem(6) 0;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border: solid 1px $green;
-  color: $green;
-  height: 100%;
-  cursor: pointer;
-}
-
-.sub-voice-tab__menu-item.is-active {
-  color: #fff;
-  background-color: $green;
 }
 
 .sub-voice-tab__content-item {

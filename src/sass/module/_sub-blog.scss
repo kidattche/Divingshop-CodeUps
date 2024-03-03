@@ -25,13 +25,11 @@
 .sub-blog__items {
   max-width: 37.5rem;
   margin-inline: auto;
-  padding:  0 rem(20);
   @include mq(md) {
     position: relative;
     max-width: none;
     grid-row-gap: 5.2rem;
     grid-column-gap: 2.2rem;
-    padding: 0;
   }
 }
 .sub-blog__items::after {
@@ -100,12 +98,10 @@
   max-width: 37.5rem;
   margin-top: rem(80);
   margin-inline:auto;
-  padding: 0 rem(20);
   @include mq(md) {
     max-width: rem(296);
     width: 100%;
     margin-top: 0;
-    padding: 0;
   }
 }
 .sub-blog__content-item-sidebar-inner {

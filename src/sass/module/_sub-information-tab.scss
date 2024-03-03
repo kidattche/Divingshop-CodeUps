@@ -77,12 +77,12 @@
 
 .sub-information-tab__menu-item span::before {
   @include mq(md) {
-  background: url(..//images/common/price-icon2.png) no-repeat;
+  background: url(..//images/common/licence-green.png) no-repeat;
   background-size: contain;
   content: "";
   height:rem(64);
   position: absolute;
-  left:rem(30);
+  left:rem(25);
   top: 45%;
   transform: translateY(-50%);
   transition: background-image 0.3s;
@@ -97,7 +97,7 @@
   content: "";
   height:rem(64);
   position: absolute;
-  left:rem(22);
+  left:rem(25);
   top: 45%;
   transform: translateY(-50%);
   transition: background-image 0.3s;
@@ -112,7 +112,7 @@
   content: "";
   height:rem(64);
   position: absolute;
-  left:rem(30);
+  left:rem(25);
   top: 52%;
   transform: translateY(-50%);
   transition: background-image 0.3s;
@@ -132,7 +132,6 @@
   background-color: $green;
 }
 
-
 .sub-information-tab__menu-item.is-active  span::before {
   @include mq(md) {
     background: url(..//images/common/price-icon.png) no-repeat;
@@ -140,12 +139,88 @@
     content: "";
     height:rem(64);
     position: absolute;
-    left:rem(30);
+    left:rem(25);
     top: 45%;
     transform: translateY(-50%);
     transition: background-image 0.3s;
     width:rem(64);
   }
+}
+
+.sub-information-tab__menu-item--second.is-active span::before {
+  @include mq(md) {
+    background: url(..//images/common/licence-white.png) no-repeat;
+    background-size: contain;
+    content: "";
+    height:rem(64);
+    position: absolute;
+    left:rem(25);
+    top: 45%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s;
+    width:rem(64);
+  }
+}
+.sub-information-tab__menu-item--third.is-active span::before {
+  @include mq(md) {
+    background: url(..//images/common/trial-white.png) no-repeat;
+    background-size: contain;
+    content: "";
+    height:rem(64);
+    position: absolute;
+    left:rem(25);
+    top: 52%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s;
+    width:rem(64);
+  }
+}
+.sub-information-tab__menu-item:hover  span::before {
+  @include mq(md) {
+    background: url(..//images/common/price-icon.png) no-repeat;
+    background-size: contain;
+    content: "";
+    height:rem(64);
+    position: absolute;
+    left:rem(25);
+    top: 45%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s;
+    width:rem(64);
+  }
+}
+
+.sub-information-tab__menu-item--second:hover span::before {
+  @include mq(md) {
+    background: url(..//images/common/licence-white.png) no-repeat;
+    background-size: contain;
+    content: "";
+    height:rem(64);
+    position: absolute;
+    left:rem(25);
+    top: 45%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s;
+    width:rem(64);
+  }
+}
+.sub-information-tab__menu-item--third:hover span::before {
+  @include mq(md) {
+    background: url(..//images/common/trial-white.png) no-repeat;
+    background-size: contain;
+    content: "";
+    height:rem(64);
+    position: absolute;
+    left:rem(25);
+    top: 52%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s;
+    width:rem(64);
+  }
+}
+.sub-information-tab__menu-item:hover {
+    background-color: #408f95;
+    color: #fff;
 }
 
 

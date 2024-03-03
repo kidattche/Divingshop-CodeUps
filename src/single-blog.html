@@ -170,15 +170,15 @@
                 <!-- </div> -->
             </div>
         </div>
-        <div class="single__inner inner">
             <!-- パンクず -->
-            <div class="breadcrumb">
-                <div class="breadcrumb__inner">
-                    <div>TOP&nbsp;>&nbsp;ブログ一覧&nbsp;>&nbsp;ブログ詳細</div>
+            <div class="l-breadcrumb breadcrumb">
+                <div class="inner">
+                    <div>TOP&nbsp;>&nbsp;お客様の声</div>
                 </div>
             </div>
             <!-- tab--------------------------------------------------------------- -->
-            <div class="l-single">
+            <div class="l-single single">
+                <div class="single__inner inner">
                     <ul class="single__content">
                         <li class="single__content-item">
                             <div class="single__content-item-inner">
@@ -242,16 +242,12 @@
                                 </div>
                             </div>
                             <!----ページナビ  -------------------------------------------------->
-                            <div class="single-pagenavi sub-pagenavi">
-                                <div class="sub-pagenavi__inner">
-                                <!-- WP-PageNaviで出力される部分 ここから -->
-                                <div class='sub-pagenavi__wp-pagenavi wp-pagenavi' role='navigation'>
-                                    <a class="wp-pagenavi__nav-prev previouspostslink" rel="prev" href="#"></a>
-                                    <a class="wp-pagenavi__nav-next nextpostslink" rel="next" href="#"></a>
-                                </div>
-                                <!-- WP-PageNaviで出力される部分 ここまで -->
-                                </div>
+                            <!-- WP-PageNaviで出力される部分 ここから -->
+                            <div class='sub-pagenavi__wp-pagenavi wp-pagenavi' role='navigation'>
+                                <a class="wp-pagenavi__nav-prev previouspostslink" rel="prev" href="#"></a>
+                                <a class="wp-pagenavi__nav-next nextpostslink" rel="next" href="#"></a>
                             </div>
+                            <!-- WP-PageNaviで出力される部分 ここまで -->
                         </li>
                         <!-- サイドバー------------------------------------------------------------->
                         <li class="sub-blog__content-item-sidebar">
@@ -390,35 +386,34 @@
                                             <span>View more</span>
                                         </a>
                                     </div>
-                                    <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
-                                        alt="ブログ見出しアイコン"></span><span>アーカイブ</span>
-                                    </div>
-                                    <nav class="sub-blog-archive">
-                                        <ul class="sub-blog-archive__container">
-                                            <li class="sub-blog-archive__year "><a class="year js-blog-question" href="#">2023</a>
-                                                <ul class="sub-blog-archive__month-box">
-                                                    <li class="sub-blog-archive__month"><a href="#">3月</a></li>
-                                                    <li class="sub-blog-archive__month"><a href="#">2月</a></li>
-                                                    <li class="sub-blog-archive__month"><a href="#">1月</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="sub-blog-archive__container">
-                                            <li class="sub-blog-archive__year"><a class="year js-blog-question" href="#">2022</a>
-                                                <ul class="sub-blog-archive__month-box">
-                                                    <li class="sub-blog-archive__month"><a href="#">3月</a></li>
-                                                    <li class="sub-blog-archive__month"><a href="#">2月</a></li>
-                                                    <li class="sub-blog-archive__month"><a href="#">1月</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </nav>
                                 </div>
+                                <div class="sub-blog__parts"><span><img src="./assets/images/common/blog-parts.png"
+                                    alt="ブログ見出しアイコン"></span><span>アーカイブ</span>
+                                </div>
+
+                                <ul class="sub-blog__archive sub-blog-archive__items">
+                                    <li class="sub-blog-archive__item">
+                                        <div class="sub-blog-archive__year js-archive">2023</div>
+                                        <ul class="sub-blog-archive__months">
+                                            <li class="sub-blog-archive__month"><a href="#">3月</a></li>
+                                            <li class="sub-blog-archive__month"><a href="#">2月</a></li>
+                                            <li class="sub-blog-archive__month"><a href="#">1月</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-blog-archive__item">
+                                        <div class="sub-blog-archive__year js-archive">2022</div>
+                                        <ul class="sub-blog-archive__months">
+                                            <li class="sub-blog-archive__month"><a href="#">3月</a></li>
+                                            <li class="sub-blog-archive__month"><a href="#">2月</a></li>
+                                            <li class="sub-blog-archive__month"><a href="#">1月</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-        </div>
+            </div>
                     <!-- contact------------------------------------------------------------>
               <section class="l-contact contact">
                 <div class="contact__inner inner">
@@ -489,125 +484,141 @@
         <footer class="l-footer footer">
             <div class="footer__inner inner">
                 <div class="footer__container">
-                    <div class="footer__link">
-                        <div class="footer__logo">
-                            <a href="index.html">
-                                <img
-                                src="./assets/images/common/codeups.png"
-                                alt="コードアップスロゴ"/>
-                            </a>
-                        </div>
-                        <div class="footer__footer-sns">
-                            <ul class="footer__link-items">
-                            <li class="footer__sns footer__facebook">
-                                <a href="https://ja-jp.footer__facebook.com/">
-                                <img
-                                    src="./assets/images/common/facebook.png"
-                                    alt="フェイスブックアイコン"
-                                />
-                                </a>
-                            </li>
-                            <li class="footer__sns footer__instagram">
-                                <a href="https://ja-jp.footer__instagram.com/">
-                                <img
-                                    src="./assets/images/common/instagram.png"
-                                    alt="インスタグラムアイコン"
-                                />
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
+                <div class="footer__link">
+                    <div class="footer__logo">
+                        <a href="index.html">
+                            <img
+                            src="./assets/images/common/codeups.png"
+                            alt="コードアップスロゴ"/>
+                        </a>
                     </div>
-                    <div class="footer__nav">
-                        <div class="footer__wrap">
-                            <ul class="footer__items">
-                                <li class="footer__item">
-                                    <a href="archive-campaign.html">キャンペーン</a>
-                                    <ul class="footer__subitems">
-                                    <li class="footer__subitem">
-                                        <a href="archive-campaign.html">ライセンス取得</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="archive-campaign.html">貸切体験ダイビング</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="archive-campaign.html">ナイトダイビング</a>
-                                    </li>
-                                    <!-- /.footer__subitem -->
-                                    </ul>
-                                    <!-- /.footer__subitems -->
-                                </li>
-                                <li class="footer__item">
-                                    <a href="page-aboutus.html">私たちについて</a>
-                                </li>
-                            </ul>
-                            <ul class="footer__items">
-                                <li class="footer__item">
-                                    <a href="page-information.html">ダイビング情報</a>
-                                    <ul class="footer__subitems">
-                                    <li class="footer__subitem">
-                                        <a href="page-information.html">ライセンス講習</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="page-information.html">体験ダイビング</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="page-information.html">ファンダイビング</a>
-                                    </li>
-                                    <!-- /.footer__subitem -->
-                                    </ul>
-                                    <!-- /.footer__subitems -->
-                                </li>
-                                <li class="footer__item">
-                                    <a href="home.html">ブログ</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__wrap">
-                            <ul class="footer__items">
-                                <li class="footer__item">
-                                    <a href="archive-voice.html">お客様の声</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="page-price.html">料金一覧</a>
-                                    <ul class="footer__subitems">
-                                    <li class="footer__subitem">
-                                        <a href="page-price.html">ライセンス講習</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="page-price.html">体験ダイビング</a>
-                                    </li>
-                                    <li class="footer__subitem">
-                                        <a href="page-price.html">ファンダイビング</a>
-                                    </li>
-                                    <!-- /.footer__subitem -->
-                                    </ul>
-                                    <!-- /.footer__subitems -->
-                                </li>
-                            </ul>
-                            <ul class="footer__items">
-                                <li class="footer__item">
-                                    <a href="archive-faq.html">よくある質問</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="page-privacy.html">プライバシー<br class="u-mobile" />ポリシー</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="page-terms.html">利用規約</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="page-contact.html">お問い合わせ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__copyright">
-                    <small
-                        >&copy; Copyright © 2021 - 2023 CodeUps LLC. All Rights
-                        Reserved.</small>
+                    <div class="footer__footer-sns">
+                    <ul class="footer__link-items">
+                        <li class="footer__sns footer__facebook">
+                        <a href="https://ja-jp.footer__facebook.com/">
+                            <img
+                            src="./assets/images/common/facebook.png"
+                            alt="フェイスブックアイコン"
+                            />
+                        </a>
+                        </li>
+                        <li class="footer__sns footer__instagram">
+                        <a href="https://ja-jp.footer__instagram.com/">
+                            <img
+                            src="./assets/images/common/instagram.png"
+                            alt="インスタグラムアイコン"
+                            />
+                        </a>
+                        </li>
+                    </ul>
                     </div>
                 </div>
+                <div class="footer__nav">
+                    <div class="footer__wrap">
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a href="archive-campaign.html">キャンペーン</a>
+                            <ul class="footer__subitems">
+                            <li class="footer__subitem">
+                                <a href="archive-campaign.html">ライセンス取得</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="archive-campaign.html">貸切体験ダイビング</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="archive-campaign.html">ナイトダイビング</a>
+                            </li>
+                            <!-- /.footer__subitem -->
+                        </ul>
+                        <!-- /.footer__subitems -->
+                        </li>
+                        <li class="footer__item-single">
+                            <div class="footer__item-box">
+                            <a href="page-aboutus.html">私たちについて</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a href="page-information.html">ダイビング情報</a>
+                            <ul class="footer__subitems">
+                            <li class="footer__subitem">
+                                <a href="page-information.html">ライセンス講習</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="page-information.html">体験ダイビング</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="page-information.html">ファンダイビング</a>
+                            </li>
+                            <!-- /.footer__subitem -->
+                        </ul>
+                        <!-- /.footer__subitems -->
+                        </li>
+                        <li class="footer__item-single">
+                            <div class="footer__item-box">
+                            <a href="home.html">ブログ</a>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="footer__wrap">
+                    <ul class="footer__items">
+                        <li class="footer__item-single">
+                        <div class="footer__item-box">
+                            <a href="archive-voice.html">お客様の声</a>
+                        </div>
+                        </li>
+                        <li class="footer__item">
+                            <a href="page-price.html">料金一覧</a>
+                            <ul class="footer__subitems">
+                            <li class="footer__subitem">
+                                <a href="page-price.html">ライセンス講習</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="page-price.html">体験ダイビング</a>
+                            </li>
+                            <li class="footer__subitem">
+                                <a href="page-price.html">ファンダイビング</a>
+                            </li>
+                            <!-- /.footer__subitem -->
+                        </ul>
+                        <!-- /.footer__subitems -->
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item-single">
+                        <div class="footer__item-box">
+                            <a href="archive-faq.html">よくある質問</a>
+                        </div>
+                        </li>
+                        <li class="footer__item-single">
+                        <div class="footer__item-box">
+                            <a href="page-privacy.html">プライバシー<br class="u-mobile"/>ポリシー</a>
+                        </div>
+                        </li>
+                        <li class="footer__item-single">
+                        <div class="footer__item-box">
+                            <a href="page-terms.html">利用規約</a>
+                        </div>
+                        </li>
+                        <li class="footer__item-single">
+                        <div class="footer__item-box">
+                            <a href="page-contact.html">お問い合わせ</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <small
+                    >&copy; Copyright © 2021 - 2023 CodeUps LLC. All Rights
+                    Reserved.</small
+                    >
+                </div>
+                </div>
             </div>
-        </footer>
-    </body>
-</html>
+            </footer>
+        </body>
+    </html>
+    
