@@ -169,23 +169,16 @@ $(window).scroll(function () {
 
 //sp-nav背景noscroll$(function(){
   $(function () {
-    // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-    $(".hamberger").click(function () {
-  
-      // 現在のbodyタグのoverflowスタイルを確認
+    // Correct the class name from ".hamberger" to ".js-hamburger"
+    $(".js-hamburger").click(function () {
+      // The rest of the code remains the same
       if ($("body").css("overflow") === "hidden") {
-  
-        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
         $("body").css({ height: "", overflow: "" });
-  
       } else {
-  
-        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
         $("body").css({ height: "100%", overflow: "hidden" });
-  
       }
     });
-  });
+});
 
   // informationページのtabメニュー
   jQuery(function ($) {
