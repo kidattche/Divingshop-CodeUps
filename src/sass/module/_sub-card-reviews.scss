@@ -66,8 +66,6 @@
   color: $black;
 }
 .sub-card-reviews {
-  // padding: rem(16) rem(16) rem(24) rem(16);
-  // height: 100%;
   background-color: #fff;
   @include mq(md) {
     margin-top: rem(32);
