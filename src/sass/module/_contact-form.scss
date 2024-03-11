@@ -88,7 +88,7 @@
 }
 .form__checkbox--confirmation {
     text-align: center;
-    padding: 0 rem(46);
+    padding: 0 0.875rem;
     margin-top: rem(40);
     @include mq(md){
         padding: 0;
@@ -114,6 +114,7 @@
         line-height: rem(23);
         letter-spacing: 0em;
         text-align: left;
+        padding: 0 0 0 2.065rem!important
     }
 }
 
